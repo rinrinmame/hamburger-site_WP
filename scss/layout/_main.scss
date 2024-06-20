@@ -1,0 +1,25 @@
+@use "../foundation/" as *;
+
+.l-main {
+        grid-row: 2;
+        grid-column: 1;
+        position: relative;
+
+    &__contents {
+        height: auto;
+        display: inline-block;
+    }
+
+    &__access {
+        height: auto;
+        display: block;
+    }
+
+    &__section {
+        margin-bottom: 3rem;
+
+        @include breakpoint(tablet) {
+            margin-bottom: 6rem;
+        }
+    }
+}

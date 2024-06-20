@@ -1,0 +1,38 @@
+@use "../foundation/" as *;
+
+.l-sidebar {
+    position: fixed;
+    display: block;
+    background-color: $color--offWhite;
+    height: 100%;
+    width: 87.5%;
+    top: 0%;
+    transition: all 300ms 0s ease;
+    z-index: 100;
+    overflow-y: auto;
+    left: 100%;
+
+    @include breakpoint(tablet) {
+        width: 44%;
+    }
+
+    @include breakpoint(pc) {
+        grid-row: 1/3;
+        grid-column: 2;
+        height: auto;
+        width: auto;
+        position: relative;
+        transition: inherit;
+        z-index: inherit;
+        overflow-y: inherit;
+        left: inherit;
+    }
+
+    &.is-open {
+        left: 12.5%;
+
+        @include breakpoint(tablet) {
+            left: 56%;
+        }
+    }
+}

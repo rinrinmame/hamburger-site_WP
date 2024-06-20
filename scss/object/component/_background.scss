@@ -1,0 +1,181 @@
+@use "../../foundation/" as *;
+@use "sass:math";
+
+.c-background {
+
+    &__branch-menu {
+        background-color: $color--white;
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+    }
+
+    &__title {
+        height: 28.5rem;
+        width: 100%;
+        display: block;
+        position: relative;
+        overflow: hidden;
+        background-size: cover;
+        background-position: center;
+        background-image: url(../../../images/main__title--sp.jpg);
+
+        @include breakpoint(tablet) {
+            background-image: url(../../../images/main__title--tablet.jpg);
+        }
+
+        @include breakpoint(pc) {
+            background-image: url(../../../images/main__title--pc.jpg);
+            height: 53rem;
+        }
+    }
+
+    &__category {
+        height: auto;
+        width: 100%;
+        overflow: hidden;
+        background-size: cover;
+        background: rgba($color: $color--white, $alpha: 0.79);
+        margin-bottom: 3.2%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__access {
+        height: auto;
+        width: 100%;
+        display: block;
+        position: relative;
+        overflow: hidden;
+        background-size: cover;
+        background-position: center;
+        background-image: url(../../../images/main__map-sp.jpg);
+
+        @include breakpoint(tablet) {
+            background-image: url(../../../images/main__map-tablet.jpg);
+        }
+
+        @include breakpoint(pc) {
+            background-image: url(../../../images/main__map-pc.jpg);
+            
+        }
+    }
+
+    &__map {
+        height: auto;
+        width: auto;
+        display: block;
+        position: relative;
+        overflow: hidden;
+        background-size: cover;
+        background-position: bottom;
+        background: rgba($color: $color--clearblack, $alpha: 0.5);
+    }
+
+    &__cheeseburger {
+        height: 28.5rem;
+        width: 100%;
+        display: block;
+        position: relative;
+        overflow: hidden;
+        background-position: left;
+        background-image: url(../../../images/main__takeout.jpg);
+
+        @include breakpoint(tablet) {
+            background-size: cover;
+        }
+
+        @include breakpoint(pc) {
+            height: 23.9rem;
+        }
+
+        &-cover {
+            height: 28.5rem;
+            width: 100%;
+            display: block;
+            position: absolute;
+            background: rgba($color: $color--clearblack, $alpha: 0.5);
+        }
+    }
+
+    &__title-single {
+        height: 22.5rem;
+        width: 100%;
+        display: block;
+        position: relative;
+        overflow: hidden;
+        background-size: cover;
+        background-position: center;
+        background-image: url(../../../images/main__title-single.jpg);
+
+        @include breakpoint(tablet) {
+            height: 50.5rem;
+        }
+        
+        @include breakpoint(pc) {
+            height: 50rem;
+        }
+    }
+
+    &__blockquote {
+        height: auto;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        background-color: $color--clearcream;
+    }
+
+    &__code {
+        height: auto;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        background: $color--clearcream;
+
+        @include breakpoint(tablet) {
+            height: auto;
+        }
+    }
+
+    &__button {
+
+        &__area {
+            display: block;
+        }
+
+        &--parent {
+            height: 8.1rem;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            background: $color--offWhite;
+            border-radius: 20px;
+
+            @include breakpoint(tablet) {
+                height: 10.4rem;
+                width: 42.9rem;
+            }
+        }
+
+        &--child {
+            height: 8.1rem;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            background: $color--pinkishgray;
+            mix-blend-mode: normal;
+            justify-content: center;
+            align-items: center;
+            border-radius: 20px;
+            border: 1px solid;
+
+            @include breakpoint(tablet) {
+                height: 10.4rem;
+            }
+        }
+    }
+}

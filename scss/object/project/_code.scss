@@ -1,0 +1,8 @@
+@use "../../foundation/" as *;
+
+.p-code {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    color: $color--black;
+}

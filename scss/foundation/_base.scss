@@ -1,0 +1,44 @@
+@use "../foundation/color" as *;
+
+html {
+    font-size: 62.5%;   
+}
+
+* {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: middle;
+    border-style: none;
+}
+
+ul, ol {
+    list-style-type: none;
+}
+
+.l-body {
+    height: 100vh;
+    width: 100vw;
+    font-family: "Roboto", sans-serif,"M PLUS 1p";
+    box-sizing: border-box;
+
+    &.is-fix {
+        overflow: hidden;
+        
+        &::before {
+            content: '';
+            position: fixed;
+            display: block;
+            height: 100%;
+            width: 100%;
+            top: 0%;
+            transition: all 300ms 0.1s ease-out;
+            overflow-y: auto;
+            z-index: 50;
+            background: rgba($color: $color--clearblack, $alpha: 0.5);
+            left: 0%;
+        }
+    }
+}

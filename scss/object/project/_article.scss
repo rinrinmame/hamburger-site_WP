@@ -1,0 +1,24 @@
+@use "../../foundation/" as *;
+
+.p-article {
+
+    &--1 {
+        
+        img {
+            height: auto;
+            width: auto;
+            display: flex;
+            object-fit: cover;
+        }
+    }
+
+    &--2 {  
+
+        img {
+            height: auto;
+            width: auto;
+            display: flex;
+            object-fit: cover;
+        }
+    }
+}

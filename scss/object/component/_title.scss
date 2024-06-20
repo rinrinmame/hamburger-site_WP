@@ -1,0 +1,120 @@
+@use "../../foundation/" as *;
+
+.c-title {
+
+    &__header {
+        font-family: "Roboto";
+        color: $color--gray;
+        font-weight: bold;
+        font-size: 4rem;
+        height: 4.7rem;
+        width: 20.3rem;
+        margin: 4.3rem auto 0 auto;
+
+        @include breakpoint(tablet) {
+            height: 5.3rem;
+            margin: 4rem auto 0 auto;
+        }
+
+        @include breakpoint(pc) {
+            font-size: 6.4rem;
+            height: 7.5rem;
+            width: 32.5rem;
+            margin: 6.6rem 6.5rem 6.7rem 6.5rem;
+        }
+    }
+
+   &__front {
+        font-family: "M PLUS 1p";
+        font-weight: bold;
+        color: $color--white;
+        height: auto;
+        width: auto;
+        font-size: 3.6rem;
+        margin: 12.2rem auto 11.1rem 2.5rem;
+
+        @include breakpoint(pc) {
+            font-size: 4rem;   
+            margin: 23.4rem auto 23.7rem 8.6rem;
+        }
+    }
+
+    &__menu {
+        font-family: "M PLUS 1p";
+        font-weight: bold;
+        font-size: 2.4rem;
+        color: $color--gray;
+        height: auto;
+        width: auto;
+        position: relative;
+        margin-bottom: 4rem;
+
+        @include breakpoint(tablet) {
+            margin-bottom: 3.2rem;
+
+        }
+    }
+
+    &__archive {
+        font-family: "Roboto";
+        font-weight: bold;
+        color: $color--white;
+        height: auto;
+        width: auto;
+        font-size: 3.6rem;
+
+        @include breakpoint(tablet) {
+            font-size: 6rem;
+        }
+
+        &-sub {
+            font-family: "M PLUS 1p";
+            font-weight: bold;
+            color: $color--white;
+            height: auto;
+            width: auto;
+            font-size: 1.6rem;
+
+            @include breakpoint(tablet) {
+                margin-top: 4.8rem;
+                margin-left: 1.9rem;
+            }
+        }
+    }
+
+    &__single {
+        font-family: "M PLUS 1p";
+        font-weight: bold;
+        color: $color--white;
+        height: auto;
+        width: auto;
+        font-size: 3.6rem;
+        margin: 9.3rem auto 8.9rem 2.6rem;
+
+        @include breakpoint(tablet) {
+            margin: 21.5rem auto 20.1rem 8.6rem;
+            font-size: 6rem;
+        }
+
+        @include breakpoint(pc) {
+            margin: 21.3rem auto 19.8rem 8.6rem;
+        }
+    }
+
+    &__discription {
+        font-family: "M PLUS 1p";
+        font-weight: bold;
+        height: auto;
+        width: auto;
+        color: $color--black;
+        display: inline-block;
+        position: relative;
+        font-size: 2.8rem;
+        margin-bottom: 2.5rem;
+
+        @include breakpoint(tablet) {
+            font-size: 3.6rem;
+            margin-bottom: 2rem;
+        }
+    }
+}

@@ -1,0 +1,109 @@
+@use "../../foundation/" as *;
+
+.c-flexbox {
+
+    &__header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        @include breakpoint(pc) {
+            flex-direction: row;
+        }
+    }
+
+    &__search-form {
+        display: flex;
+    }
+    
+    &__branch-menu {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        gap: 2rem;
+        
+        @include breakpoint(tablet) {
+            flex-direction: row;
+            justify-content: space-between;
+            gap: 4.1rem;
+        }
+
+        @include breakpoint(pc) {     
+            gap: 8rem;
+        }
+    }
+
+    &__footer {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0.6rem;
+        margin-inline: auto;
+        margin-bottom: 7rem;
+
+        @include breakpoint(tablet) {
+            margin-bottom: 4.4rem;
+        }
+
+        @include breakpoint(pc) {
+            margin-bottom: 3.1rem;
+        }
+    }
+
+    &__title {
+        height: 100%;
+        width: auto;
+        margin: 10.6rem auto 10.1rem 3.7rem;
+    
+        @include breakpoint(tablet) {
+            display: flex;
+            margin: 10.7rem auto 10.8rem 8.6rem;
+        }
+    
+        @include breakpoint(pc) {
+            margin: 8.3rem auto 8.6rem 8.6rem;
+        }
+    }
+
+    &__discription {
+        height: auto;
+        width: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__container {
+        height: auto;
+        width: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__page {
+        display: flex;
+
+        &-count {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        &-arrow {
+            display: flex;
+        }
+    }
+
+    &__blockquote {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+}

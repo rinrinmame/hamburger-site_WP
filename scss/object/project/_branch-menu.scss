@@ -1,0 +1,37 @@
+@use "../../foundation/" as *;
+
+.p-branch-menu {
+
+    h3 {
+        margin-top: 2.8rem;
+        margin-left: 2.2rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    h3:before {
+        content: '';
+        position: absolute;
+        bottom: -43px;
+        display: inline-block;
+        width: 6.3rem;
+        height: 0.4rem;
+        justify-content: left;
+        background-color: $color--white;
+    }
+
+    &__takeout {  
+        background-image: url(../../../images/main__takeout.jpg);
+        height: auto;
+        width: 100%;
+        object-fit: cover;
+    }
+
+
+    &__eatin {        
+        background-image: url(../../../images/main__eatin.jpg);
+        height: auto;
+        width: 100%;
+        object-fit: cover;
+    }
+}

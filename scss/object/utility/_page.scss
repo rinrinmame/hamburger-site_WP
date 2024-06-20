@@ -1,0 +1,10 @@
+@use "../../foundation/" as *;
+
+.u-page {
+
+    &__box {
+        background-color: $color--darkbrown;
+        color: $color--white;
+        margin-left: 15px;
+    }
+}

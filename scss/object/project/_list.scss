@@ -1,0 +1,11 @@
+@use "../../foundation/" as *;
+
+.p-list {
+
+    &__area {
+
+        &--A {
+            margin-bottom: 5.7rem;
+        }
+    }
+}

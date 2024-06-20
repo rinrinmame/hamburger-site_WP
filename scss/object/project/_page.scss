@@ -1,0 +1,15 @@
+@use "../../foundation/" as *;
+
+.p-page {
+    justify-content: space-between;
+    align-items: center;
+    font-family: Roboto;
+    font-weight: bold;
+    font-size: 1.6rem;
+    color: $color--gray;
+    margin: 15rem 2rem 6.4rem 2rem;
+
+    @include breakpoint(tablet) {
+        justify-content: center;
+    }
+}

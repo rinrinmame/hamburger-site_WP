@@ -1,0 +1,14 @@
+@use "../../foundation/" as *;
+
+.p-menu {
+    color: $color--gray;
+    font-weight: 400;
+    line-height: normal;
+    display: block;
+    position: relative;
+    margin-bottom: 6rem;
+
+    @include breakpoint(tablet) {
+        margin-bottom: 4.8rem;
+    }
+}

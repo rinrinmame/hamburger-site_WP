@@ -1,0 +1,62 @@
+@use "../../foundation/" as *;
+
+.c-category {
+    height: auto;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    font-family: "M PLUS 1p";
+    color: $color--black;
+    background-color: $color--white;
+    background-size: cover;
+    position: relative;
+
+    h3 {
+        font-family: Roboto;
+        font-weight: bold;
+        height: auto;
+        width: auto;
+        color: $color--cream;
+        display: inline-block;
+        position: relative;
+        margin-bottom: 58%;
+        font-size: 4.1rem;
+
+        @include breakpoint(tablet) {
+            font-size: 4.4rem;
+        }
+
+        @include breakpoint(pc) { 
+            font-size: 8rem;    
+        }
+    }    
+
+    dt {
+        font-weight: bold;
+        height: auto;
+        width: auto;
+        font-size: 2.2rem;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+
+        @include breakpoint(tablet) {
+            font-size: 2.4rem;
+            margin-bottom: 1.6rem;
+        }
+
+        @include breakpoint(pc) {        
+            margin-bottom: 1.8rem;   
+        }
+    }
+
+    dd {
+        font-weight: 400;
+        font-size: 1.6rem;
+        height: auto;
+        width: auto;
+        line-height: 1.7;
+        flex-direction: column;
+        position: relative;
+    }
+}

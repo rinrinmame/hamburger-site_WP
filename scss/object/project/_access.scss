@@ -1,0 +1,80 @@
+@use "../../foundation/" as *;
+
+.p-access {
+    position: relative;
+    font-family: "M PLUS 1p";
+    font-weight: bold;
+    height: auto;
+    width: auto;
+    display: block;
+
+    &__comment {
+        width: 100%;
+        height: auto;
+        display: block;
+        position: relative;
+
+        @include breakpoint(pc) {
+            width: 61%;    
+        }
+
+        &:before {
+            content: '';
+            position: absolute;
+            bottom: -5.05rem;
+            display: inline-block;
+            height: 61%;
+            width: 100%;
+            left: 0%;
+            top: 0%;
+            background: rgba($color: $color--clearblack, $alpha: 0.2);
+
+            @include breakpoint(tablet) {
+                height: auto;
+            }
+        }
+
+        h2 {
+            height: auto;
+            width: auto;
+            position: relative;
+            color: $color--white;
+            font-size: 3rem;
+            margin-bottom: 2.9rem;
+
+            @include breakpoint(pc) {
+                font-size: 3.6rem;
+                margin-bottom: 10.9rem;
+            }
+        }
+
+        h2:before {
+            content: '';
+            position: absolute;
+            bottom: -15px;
+            display: inline-block;
+            width: 7.5rem;
+            height: 0.2rem;
+            justify-content: left;
+            background-color: $color--white;
+  
+            @include breakpoint(pc) {
+                bottom: -50.5px;
+            }
+        }
+
+        p {
+            height: auto;
+            width: auto;
+            display: inline-block;
+            position: relative;
+            color: $color--white;
+            font-size: 1.4rem;
+            line-height: 2;
+
+            @include breakpoint(pc) {
+                font-size: 1.6rem;
+            }
+        }
+    }
+}

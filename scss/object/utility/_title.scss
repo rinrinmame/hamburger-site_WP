@@ -1,0 +1,10 @@
+@use "../../foundation/" as *;
+
+.u-title {
+
+    &__page {
+        background-image: url(../../../images/main__title-page.jpg);
+        background-color: rgba( 217, 217, 217, 1 );
+        background-blend-mode: normal;
+    }
+}

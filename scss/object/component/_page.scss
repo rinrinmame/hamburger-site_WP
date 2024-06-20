@@ -1,0 +1,65 @@
+@use "../../foundation/" as *;
+
+.c-page {
+
+    img {
+        height: 1.7rem;
+        width: 0.8rem; 
+    }
+
+    &__box {
+        display: none;
+
+        @include breakpoint(tablet) {
+            height: 3.5rem;
+            width: 3.5rem;
+            display: flex;
+            border: 1px, solid, $color--gray;
+            justify-content: center;
+            align-items: center;
+            margin-right: 15px;
+        }
+    }
+
+    &__count {
+        display: none;
+
+        @include breakpoint(tablet) {
+            height: 3.3rem;
+            width: 7.3rem;
+            display: flex;
+            margin-right: 1.93rem;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    &__move {
+
+        &-back {
+            font-family: "M PLUS 1p";
+            display: flex;
+            height: 2.4rem;
+            width: 3.2rem;
+            font-weight: 400;
+            margin-left: 2rem;
+
+            @include breakpoint(tablet) {
+                display: none;
+            }        
+        }
+
+        &-next {
+            font-family: "M PLUS 1p";
+            display: flex;
+            height: 2.4rem;
+            width: 3.2rem;
+            font-weight: 400;
+            margin-right: 2rem;
+
+            @include breakpoint(tablet) {
+                display: none;
+            }
+        }
+    }
+}

@@ -1,0 +1,13 @@
+@use "../../foundation/" as *;
+
+.c-text {
+    font-family: "M PLUS 1p";
+    font-weight: 400;
+    height: auto;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    font-size: 1.6rem;
+    line-height: 1.5;
+}

@@ -1,0 +1,88 @@
+@use "../../foundation/" as *;
+@use "sass:math";
+
+.c-button {
+    
+    &__menu {
+        font-family: Roboto;
+        color: $color--gray;
+        font-weight: bold;
+        position: relative;
+    }
+
+    &__hamburger {
+        width: 32px;
+        height: 36px;
+        display: block;
+        position: relative;
+        margin: 0.8rem 1.1rem 13.4rem auto;
+
+        @include breakpoint(tablet) {
+            height: 37px;
+            margin: 2rem 2.5rem 12.1rem auto;
+        }
+
+        @include breakpoint(pc) {
+            display: none;
+        }
+
+        &::before,
+        &::after {
+            content: "";
+            width: $btnWidth;
+            height: $btnHeight;
+            background-color: $color--gray;
+            display: block;
+            position: absolute;
+            left: calc( 50% - math.div(#{$btnWidth},2) );
+            transition: transform 0.1s;
+        }
+
+        >span {
+            width: $btnWidth;
+            height: $btnHeight;
+            display: block;
+            font-size: 0;
+            background-size: auto $btnHeight;
+            left: calc( 50% - math.div(#{$btnWidth},2) );
+            top: 50%;
+            transition: transform 0.1s;
+        }
+
+        &.is-open {
+
+            &::before {
+                transform: rotate(-135deg);
+                top: 20px;
+            }
+
+            &::after {
+                transform: rotate(-45deg);
+                top: 20px;
+            }
+        }
+    }
+
+    &__area {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__link {
+        font-family: "M PLUS 1p";
+        font-weight: bold;
+        height: auto;
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        font-size: 1.6rem;
+        text-decoration: none;
+        color: $color--black;
+    }
+}

@@ -1,0 +1,26 @@
+@use "../foundation/" as *;
+
+.l-header {
+    grid-row: 1;
+    grid-column: 1;
+    background-color: $color--ivory;
+
+    &__button {
+        display: block;
+        position: relative;
+
+        h2 {
+            position: absolute;
+            top: 8px;
+            right: 8px;
+        }
+    }
+
+    &__title {
+        display: block;
+
+        h1 {
+            text-align: center;
+        }
+    }
+}
