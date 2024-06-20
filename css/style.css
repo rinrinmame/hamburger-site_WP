@@ -544,16 +544,16 @@ ul, ol {
   overflow: hidden;
   background-size: cover;
   background-position: center;
-  background-image: url(../../../images/main__title--sp.jpg);
+  background-image: url(http://hamburger-sitewp.local/wp-content/uploads/2024/06/main__title-sp.jpg);
 }
 @media (min-width: 768px) {
   .c-background__title {
-    background-image: url(../../../images/main__title--tablet.jpg);
+    background-image: url(http://hamburger-sitewp.local/wp-content/uploads/2024/06/main__title-tablet.jpg);
   }
 }
 @media (min-width: 1024px) {
   .c-background__title {
-    background-image: url(../../../images/main__title--pc.jpg);
+    background-image: url(http://hamburger-sitewp.local/wp-content/uploads/2024/06/main__title-pc.jpg);
     height: 53rem;
   }
 }
@@ -575,16 +575,16 @@ ul, ol {
   overflow: hidden;
   background-size: cover;
   background-position: center;
-  background-image: url(../../../images/main__map-sp.jpg);
+  background-image: url(http://hamburger-sitewp.local/wp-content/uploads/2024/06/main__map-sp.jpg);
 }
 @media (min-width: 768px) {
   .c-background__access {
-    background-image: url(../../../images/main__map-tablet.jpg);
+    background-image: url(http://hamburger-sitewp.local/wp-content/uploads/2024/06/main__map-tablet.jpg);
   }
 }
 @media (min-width: 1024px) {
   .c-background__access {
-    background-image: url(../../../images/main__map-pc.jpg);
+    background-image: url(http://hamburger-sitewp.local/wp-content/uploads/2024/06/main__map-pc.jpg);
   }
 }
 .c-background__map {
@@ -604,7 +604,7 @@ ul, ol {
   position: relative;
   overflow: hidden;
   background-position: left;
-  background-image: url(../../../images/main__takeout.jpg);
+  background-image: url(http://hamburger-sitewp.local/wp-content/uploads/2024/06/main__takeout.jpg);
 }
 @media (min-width: 768px) {
   .c-background__cheeseburger {
@@ -631,7 +631,7 @@ ul, ol {
   overflow: hidden;
   background-size: cover;
   background-position: center;
-  background-image: url(../../../images/main__title-single.jpg);
+  background-image: url(http://hamburger-sitewp.local/wp-content/uploads/2024/06/main__title-single.jpg);
 }
 @media (min-width: 768px) {
   .c-background__title-single {

@@ -7,3 +7,6 @@
             <small class="c-text u-text__small">Copyright:RaiseTech</small>
         </div>
 </footer>
+<?php wp_footer(); ?>
+</body>
+</html>

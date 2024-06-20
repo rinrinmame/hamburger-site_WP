@@ -5,10 +5,10 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="format-detection" content="telephone=no">
-        <link rel="icon" type="./images/png" href="<?php echo get_template_directory_uri(); ?> ./images/favicon.png">
+        <link rel="icon" href="<?php echo get_template_directory_uri(); ?>./images/favicon.png">
         <?php wp_head(); ?>
     </head>
-    <body <?php body_class(); ?>>
+    <body class="l-body c-grid__body"<?php body_class(); ?>>
         <header class="l-header">
             <div class="l-header__nav">
                 <div class="l-header__button">

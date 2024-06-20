@@ -18,14 +18,14 @@
         overflow: hidden;
         background-size: cover;
         background-position: center;
-        background-image: url(../../../images/main__title--sp.jpg);
+        background-image: url(http://hamburger-sitewp.local/wp-content/uploads/2024/06/main__title-sp.jpg);
 
         @include breakpoint(tablet) {
-            background-image: url(../../../images/main__title--tablet.jpg);
+            background-image: url(http://hamburger-sitewp.local/wp-content/uploads/2024/06/main__title-tablet.jpg);
         }
 
         @include breakpoint(pc) {
-            background-image: url(../../../images/main__title--pc.jpg);
+            background-image: url(http://hamburger-sitewp.local/wp-content/uploads/2024/06/main__title-pc.jpg);
             height: 53rem;
         }
     }
@@ -49,14 +49,14 @@
         overflow: hidden;
         background-size: cover;
         background-position: center;
-        background-image: url(../../../images/main__map-sp.jpg);
+        background-image: url(http://hamburger-sitewp.local/wp-content/uploads/2024/06/main__map-sp.jpg);
 
         @include breakpoint(tablet) {
-            background-image: url(../../../images/main__map-tablet.jpg);
+            background-image: url(http://hamburger-sitewp.local/wp-content/uploads/2024/06/main__map-tablet.jpg);
         }
 
         @include breakpoint(pc) {
-            background-image: url(../../../images/main__map-pc.jpg);
+            background-image: url(http://hamburger-sitewp.local/wp-content/uploads/2024/06/main__map-pc.jpg);
             
         }
     }
@@ -79,7 +79,7 @@
         position: relative;
         overflow: hidden;
         background-position: left;
-        background-image: url(../../../images/main__takeout.jpg);
+        background-image: url(http://hamburger-sitewp.local/wp-content/uploads/2024/06/main__takeout.jpg);
 
         @include breakpoint(tablet) {
             background-size: cover;
@@ -106,7 +106,7 @@
         overflow: hidden;
         background-size: cover;
         background-position: center;
-        background-image: url(../../../images/main__title-single.jpg);
+        background-image: url(http://hamburger-sitewp.local/wp-content/uploads/2024/06/main__title-single.jpg);
 
         @include breakpoint(tablet) {
             height: 50.5rem;
