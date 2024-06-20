@@ -1429,14 +1429,14 @@ ul, ol {
   background-color: #FFFFFF;
 }
 .p-branch-menu__takeout {
-  background-image: url(../../../images/main__takeout.jpg);
+  background-image: url(http://hamburger-sitewp.local/wp-content/uploads/2024/06/main__single-big.jpg);
   height: auto;
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
 .p-branch-menu__eatin {
-  background-image: url(../../../images/main__eatin.jpg);
+  background-image: url(http://hamburger-sitewp.local/wp-content/uploads/2024/06/main__eatin.jpg);
   height: auto;
   width: 100%;
   -o-object-fit: cover;
