@@ -1,9 +1,25 @@
 @use "../foundation/" as *;
 
 .l-header {
-    grid-row: 1;
-    grid-column: 1;
+    height: auto;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     background-color: $color--ivory;
+
+    @include breakpoint(pc) {
+        grid-row: 1;
+        grid-column: 1;
+    }
+
+    &__nav {
+        height: auto;
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
 
     &__button {
         display: block;
@@ -17,7 +33,10 @@
     }
 
     &__title {
-        display: block;
+        height: auto;
+        width: auto;
+        display: flex;
+        flex-direction: column;
 
         h1 {
             text-align: center;

@@ -2,16 +2,15 @@
 
 .c-search-form {
     display: flex;
+    justify-content: center;
+    align-items: center;
     position: relative;
     height: auto;
-    width: auto;
-    margin: 4rem auto 3.9rem auto;
-
-    @include breakpoint(tablet) {
-        margin: 4rem auto 3.8rem auto;
-    }
+    width: 100%;
+    margin: 4rem 0 3.8rem 0;
 
     @include breakpoint(pc) {
+        width: auto;
         margin: 8.6rem 3.1rem 8.5rem auto;
     }
 
@@ -19,25 +18,27 @@
         content: "";
         height: 2.4rem;
         width: 2.4rem;
-        background: url(../../../images/header__search-form.png) no-repeat center center;
+        background: url(http://hamburger-sitewp.local/wp-content/uploads/2024/06/header__search-form.png) no-repeat center center;
         display: inline-block;
         position: absolute;
         top: 55%;
         transform: translateY(-50%);
-        left: 0.9rem;
+        left: 5px;
 
         @include breakpoint(tablet) {
-            left: 1.2rem;
+            left: 12px;
         }
+
         @include breakpoint(pc) {
-            top: 50%;
+            left: 1.2rem;
         }
     }
     
     &__keyword {
         height: 4.6rem;
-        width: 21.6rem;
+        width: 67.9%;
         display: inline-block;
+        box-sizing: border-box;
         border-radius: 10px 10px 10px 10px;
         background-color: $color--white;   
         border: 1px solid $color--gray;
@@ -48,20 +49,22 @@
         color: $color--gray;
         
         @include breakpoint(tablet) {
-            width: 39.6rem;
+            width: 72.5%;
             padding: 1rem 1rem 1rem 4.9rem;
         }
 
         @include breakpoint(pc) {
+            width: 39.6rem;
             padding: 1rem 1rem 1rem 6.1rem;
         }
     }
 
     &__submit {
         height: 4.6rem;
-        width: 9rem;
-        margin-left: 1.6rem;
+        width: 28.3%;
+        margin-left: 3.8%;
         display: inline-block;
+        box-sizing: border-box;
         background-color: $color--offWhite;
         border-radius: 10px 10px 10px 10px;
         border: 1px solid $color--gray;
@@ -69,10 +72,15 @@
         font-weight: bold;
         font-size: 1.6rem;
         color: $color--gray;
+        min-width: 60px;
 
         @include breakpoint(tablet) {
+            margin-left: 2.6%;
+            width: 24.9%;
+        }
+
+        @include breakpoint(pc) {
             width: 13.6rem;
-            margin-left: 1.4rem;
         }
     }
 }

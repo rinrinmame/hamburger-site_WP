@@ -40,9 +40,25 @@ ul, ol {
 }
 
 .l-header {
-  grid-row: 1;
-  grid-column: 1;
+  height: auto;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   background-color: #FFF7EF;
+}
+@media (min-width: 1024px) {
+  .l-header {
+    grid-row: 1;
+    grid-column: 1;
+  }
+}
+.l-header__nav {
+  height: auto;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 .l-header__button {
   display: block;
@@ -54,7 +70,10 @@ ul, ol {
   right: 8px;
 }
 .l-header__title {
-  display: block;
+  height: auto;
+  width: auto;
+  display: flex;
+  flex-direction: column;
 }
 .l-header__title h1 {
   text-align: center;
@@ -390,18 +409,16 @@ ul, ol {
 
 .c-search-form {
   display: flex;
+  justify-content: center;
+  align-items: center;
   position: relative;
   height: auto;
-  width: auto;
-  margin: 4rem auto 3.9rem auto;
-}
-@media (min-width: 768px) {
-  .c-search-form {
-    margin: 4rem auto 3.8rem auto;
-  }
+  width: 100%;
+  margin: 4rem 0 3.8rem 0;
 }
 @media (min-width: 1024px) {
   .c-search-form {
+    width: auto;
     margin: 8.6rem 3.1rem 8.5rem auto;
   }
 }
@@ -409,27 +426,28 @@ ul, ol {
   content: "";
   height: 2.4rem;
   width: 2.4rem;
-  background: url(../../../images/header__search-form.png) no-repeat center center;
+  background: url(http://hamburger-sitewp.local/wp-content/uploads/2024/06/header__search-form.png) no-repeat center center;
   display: inline-block;
   position: absolute;
   top: 55%;
   transform: translateY(-50%);
-  left: 0.9rem;
+  left: 5px;
 }
 @media (min-width: 768px) {
   .c-search-form::before {
-    left: 1.2rem;
+    left: 12px;
   }
 }
 @media (min-width: 1024px) {
   .c-search-form::before {
-    top: 50%;
+    left: 1.2rem;
   }
 }
 .c-search-form__keyword {
   height: 4.6rem;
-  width: 21.6rem;
+  width: 67.9%;
   display: inline-block;
+  box-sizing: border-box;
   border-radius: 10px 10px 10px 10px;
   background-color: #FFFFFF;
   border: 1px solid #707070;
@@ -441,20 +459,22 @@ ul, ol {
 }
 @media (min-width: 768px) {
   .c-search-form__keyword {
-    width: 39.6rem;
+    width: 72.5%;
     padding: 1rem 1rem 1rem 4.9rem;
   }
 }
 @media (min-width: 1024px) {
   .c-search-form__keyword {
+    width: 39.6rem;
     padding: 1rem 1rem 1rem 6.1rem;
   }
 }
 .c-search-form__submit {
   height: 4.6rem;
-  width: 9rem;
-  margin-left: 1.6rem;
+  width: 28.3%;
+  margin-left: 3.8%;
   display: inline-block;
+  box-sizing: border-box;
   background-color: #F2EDE9;
   border-radius: 10px 10px 10px 10px;
   border: 1px solid #707070;
@@ -462,11 +482,17 @@ ul, ol {
   font-weight: bold;
   font-size: 1.6rem;
   color: #707070;
+  min-width: 60px;
 }
 @media (min-width: 768px) {
   .c-search-form__submit {
+    margin-left: 2.6%;
+    width: 24.9%;
+  }
+}
+@media (min-width: 1024px) {
+  .c-search-form__submit {
     width: 13.6rem;
-    margin-left: 1.4rem;
   }
 }
 
@@ -704,18 +730,11 @@ ul, ol {
 .c-grid__body {
   height: 100vh;
   width: 100%;
-  display: grid;
-  grid-template-rows: 215px 1fr 150px;
-  grid-template-columns: 1fr 0%;
-}
-@media (min-width: 768px) {
-  .c-grid__body {
-    grid-template-rows: 217px 1fr 150px;
-    grid-template-columns: 1fr 0%;
-  }
+  display: block;
 }
 @media (min-width: 1024px) {
   .c-grid__body {
+    display: grid;
     grid-template-rows: 217px 1fr 150px;
     grid-template-columns: 1fr 20%;
   }
@@ -980,16 +999,42 @@ ul, ol {
 
 .c-flexbox__header {
   display: flex;
+  height: auto;
+  width: auto;
   flex-direction: column;
-  justify-content: center;
+  padding-left: 8.2%;
+  padding-right: 6.9%;
+}
+@media (min-width: 768px) {
+  .c-flexbox__header {
+    padding-left: 17.2%;
+    padding-right: 17.2%;
+  }
 }
 @media (min-width: 1024px) {
   .c-flexbox__header {
     flex-direction: row;
+    gap: 55rem;
+    padding: inherit;
   }
 }
 .c-flexbox__search-form {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  height: auto;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .c-flexbox__search-form {
+    width: 100%;
+  }
+}
+@media (min-width: 1024px) {
+  .c-flexbox__search-form {
+    width: auto;
+  }
 }
 .c-flexbox__branch-menu {
   display: flex;

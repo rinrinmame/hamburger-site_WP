@@ -4,16 +4,39 @@
 
     &__header {
         display: flex;
+        height: auto;
+        width: auto;
         flex-direction: column;
-        justify-content: center;
+        padding-left: 8.2%;
+        padding-right: 6.9%;
+
+        @include breakpoint(tablet) {
+            padding-left: 17.2%;
+            padding-right: 17.2%;
+        }
 
         @include breakpoint(pc) {
             flex-direction: row;
+            gap: 55rem;
+            padding: inherit;
         }
     }
 
     &__search-form {
         display: flex;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+        height: auto;
+        width: 100%;
+
+        @include breakpoint(tablet) {
+            width: 100%;
+        }
+
+        @include breakpoint(pc) {
+            width: auto;
+        }
     }
     
     &__branch-menu {
