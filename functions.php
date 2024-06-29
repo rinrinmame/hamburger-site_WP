@@ -15,6 +15,21 @@
     }
     add_filter( 'pre_get_document_title', 'Hamburger_title' );
 
+    function Hamburger_widgets_init() {
+        register_sidebar (
+            array(
+                'name'          => 'メニュー',
+                'id'            => 'menu_widget',
+                'description'   => 'メニュー用ウィジェットです',
+                'before_widget' => '<ul><div class="c-inner__menu">',
+                'after_widget'  => '</div></ul>',
+                'before_title'  => '<li class="c-title__menu"><h3>',
+                'after_title'   => "</h3></li>\n",
+            )
+        );
+    }
+    add_action( 'widgets_init', 'Hamburger_widgets_init' );
+
     function Hamburger_script() {
         wp_enqueue_style( 'google-fonts', '//fonts.googleapis.com/css2?family=M+PLUS+1p:wght@100;300;400;500;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap', array(), null );
         wp_enqueue_style( 'ress', get_template_directory_uri() . '/css/ress.css', array(), '5.0.2' );

@@ -1,5 +1,5 @@
-        <!--header.phpを読み込むテンプレートタグ（インクルードタグ）-->
-        <?php get_header(); ?> 
+<!--header.phpを読み込むテンプレートタグ（インクルードタグ）-->
+<?php get_header(); ?> 
         <main class="l-main">
             <article class="l-main__contents">
                 <div class="c-background__title">
