@@ -1,11 +1,22 @@
 <footer class="l-footer">
-        <div class="c-inner__footer">
-            <ul class="l-footer__menu c-flexbox__footer">
-                <li class="c-footer-menu"><a class="c-footer-menu__information">ショップ情報</a></li>
-                <li class="c-footer-menu"><a class="c-footer-menu__history">ヒストリー</a></li>
-            </ul>
-            <small class="c-text u-text__small">Copyright:RaiseTech</small>
-        </div>
+    <?php wp_nav_menu( array( 
+            'theme_location' => 'global-nav',
+            'menu_class' => 'l-footer__menu c-flexbox__footer',
+            'container' => 'div',
+            'container_class' => 'c-inner__footer',
+            'fallback_cb' => 'wp_page_menu',
+            'before' => '<li class="c-footer-menu">',
+            'after' => '</li>',
+            'link_before' => '',
+            'link_after' => '',
+            'echo' => true,
+            'depth' => 0,
+            'walker' => '',
+            'theme_location' => '',
+            'items_wrap' => '<ul id="%1$s" class="%2$s">%3$s</ul>',
+            'item_spacing' => 'preserve'
+        ) );
+    ?>
 </footer>
 <?php wp_footer(); ?>
 </body>

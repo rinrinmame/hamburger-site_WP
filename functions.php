@@ -4,6 +4,17 @@
     add_theme_support( 'title-tag' );
     add_theme_support( 'post-thumbnails' );
 
+    //グローバルメニューのチェックボックス表示
+    add_action( 'after_setup_theme', function(){
+        register_nav_menus( array(
+        // 例 'メニューの位置を示す固有名称' => 'このメニューの位置の名称'
+        'sidebar1' => 'サイドバー1',
+        'sidebar2' => 'サイドバー2',
+        'sidebar3' => 'サイドバー3',
+        'global-nav' => 'グローバルナビ',
+        ) );
+    } );
+
     //タイトル出力
     function Hamburger_title( $title ) {
         if ( is_front_page() && is_home() ) { //トップページなら
@@ -15,20 +26,20 @@
     }
     add_filter( 'pre_get_document_title', 'Hamburger_title' );
 
+    //サイドバーヴィジェット出力
     function Hamburger_widgets_init() {
         register_sidebar (
             array(
                 'name'          => 'メニュー',
                 'id'            => 'menu_widget',
                 'description'   => 'メニュー用ウィジェットです',
-                'before_widget' => '<ul><div class="c-inner__menu">',
+                'before_widget' => '<ul id="%1$s" class="%2$s"><div class="c-inner__menu">',
                 'after_widget'  => '</div></ul>',
                 'before_title'  => '<li class="c-title__menu"><h3>',
                 'after_title'   => "</h3></li>\n",
             )
         );
     }
-    add_action( 'widgets_init', 'Hamburger_widgets_init' );
 
     function Hamburger_script() {
         wp_enqueue_style( 'google-fonts', '//fonts.googleapis.com/css2?family=M+PLUS+1p:wght@100;300;400;500;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap', array(), null );
