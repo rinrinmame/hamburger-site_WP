@@ -1,5 +1,4 @@
-        <!--header.phpを読み込むテンプレートタグ（インクルードタグ）-->
-        <?php get_header(); ?>
+        <?php get_header(); //header.phpを読み込むテンプレートタグ（インクルードタグ）?>
         <main class="l-main">
             <article class="l-main__title p-title">
                 <div class="c-background__cheeseburger">
@@ -105,9 +104,7 @@
                 <?php endif; ?>
             </section>
         </main>
-        <!--siderbar.phpを読み込むテンプレートタグ（インクルードタグ）-->
-        <?php get_sidebar(); ?>
-        <!--footer.phpを読み込むテンプレートタグ（インクルードタグ）-->
-        <?php get_footer(); ?>
+        <?php get_sidebar(); //siderbar.phpを読み込むテンプレートタグ（インクルードタグ）?>
+        <?php get_footer(); //footer.phpを読み込むテンプレートタグ（インクルードタグ）?>
     </body>
 </html>

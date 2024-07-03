@@ -13,8 +13,7 @@
     <script src="./js/jquery-3.7.1.min.js"></script>
 </head>
 <body class="l-body c-grid__body">
-    <!--header.phpを読み込むテンプレートタグ（インクルードタグ）-->
-    <?php get_header(); ?>
+    <?php get_header(); //header.phpを読み込むテンプレートタグ（インクルードタグ）?>
     <main class="l-main">
         <article class="l-main__title p-title">
             <div class="c-background__title-single u-title__page">
@@ -193,10 +192,7 @@
             </div>
         </article>
     </main>
-    <!--siderbar.phpを読み込むテンプレートタグ（インクルードタグ）-->
-    <?php get_sidebar(); ?>
-    <!--footer.phpを読み込むテンプレートタグ（インクルードタグ）-->
-    <?php get_footer(); ?>
-    <script src="./js/main.js"></script>
+    <?php get_sidebar(); //siderbar.phpを読み込むテンプレートタグ（インクルードタグ）?>
+    <?php get_footer(); //footer.phpを読み込むテンプレートタグ（インクルードタグ）?>
 </body>
 </html>
