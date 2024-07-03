@@ -17,7 +17,7 @@
     <main class="l-main">
         <article class="l-main__title p-title">
             <div class="c-background__title-single">
-                <h1 class="c-title__single">h1 チーズバーガー</h1>
+                <h1 class="c-title__single">h1 <?php the_title() ?></h1>
             </div>
         </article>
         <article class="l-main__contents">

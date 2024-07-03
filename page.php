@@ -17,7 +17,7 @@
     <main class="l-main">
         <article class="l-main__title p-title">
             <div class="c-background__title-single u-title__page">
-                <h1 class="c-title__single">ショップについて</h1>
+                <h1 class="c-title__single"><?php the_title() ?></h1>
             </div>
         </article>
         <article class="l-main__contents">

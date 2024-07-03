@@ -22,7 +22,7 @@
                     </div>
                     <div class="p-card c-flexbox__container">
                         <figure class="p-card__cheeseburger c-grid__card">
-                            <img src="./images/main__archive.jpg" alt="チーズバーガーの写真">
+                            <img src="<?php echo get_template_directory_uri(); ?>./images/main__archive.jpg" alt="チーズバーガーの写真">
                             <figcaption class="c-card">
                                 <div class="c-inner__figcaption">
                                     <div class="c-inner__card">
@@ -39,7 +39,7 @@
                             </figcaption>
                         </figure>
                         <figure class="p-card__double-cheeseburger c-grid__card">
-                            <img src="./images/main__archive.jpg" alt="チーズバーガーの写真">
+                            <img src="<?php echo get_template_directory_uri(); ?>./images/main__archive.jpg" alt="チーズバーガーの写真">
                             <figcaption class="c-card">
                                 <div class="c-inner__figcaption">
                                     <div class="c-inner__card">
@@ -56,7 +56,7 @@
                             </figcaption>
                         </figure>
                         <figure class="p-card__special-cheeseburger c-grid__card">
-                            <img src="./images/main__archive.jpg" alt="チーズバーガーの写真">
+                            <img src="<?php echo get_template_directory_uri(); ?>./images/main__archive.jpg" alt="チーズバーガーの写真">
                             <figcaption class="c-card">
                                 <div class="c-inner__figcaption">
                                     <div class="c-inner__card">

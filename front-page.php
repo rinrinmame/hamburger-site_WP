@@ -2,7 +2,7 @@
         <main class="l-main">
             <article class="l-main__contents">
                 <div class="c-background__title">
-                    <h2 class="c-title__front">ダミーサイト</h2>
+                    <h2 class="c-title__front"><?php the_title() ?></h2>
                 </div>
                 <div class="p-branch-menu c-background__branch-menu">
                     <div class="c-inner__branch-menu">

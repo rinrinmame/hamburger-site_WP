@@ -20,7 +20,7 @@
                 <div class="c-background__cheeseburger-cover">
                     <ul class="c-flexbox__title">
                         <li class="c-title__archive"><h1>Search:</h1></li>
-                        <li class="c-title__archive-sub"><p>チーズバーガー</p></li>
+                        <li class="c-title__archive-sub"><p><?php the_title() ?></p></li>
                     </ul>
                 </div>
             </div>
@@ -37,7 +37,7 @@
                 </div>
                 <div class="p-card c-flexbox__container">
                     <figure class="p-card__archive-search-1 c-grid__card">
-                        <img src="./images/main__archive.jpg" alt="チーズバーガーの写真">
+                        <img src="<?php echo get_template_directory_uri(); ?>./images/main__archive.jpg" alt="チーズバーガーの写真">
                         <figcaption class="c-card">
                             <div class="c-inner__figcaption">
                                 <div class="c-inner__card">
@@ -54,7 +54,7 @@
                         </figcaption>
                     </figure>
                     <figure class="p-card__archive-search-2 c-grid__card">
-                        <img src="./images/main__archive.jpg" alt="チーズバーガーの写真">
+                        <img src="<?php echo get_template_directory_uri(); ?>./images/main__archive.jpg" alt="チーズバーガーの写真">
                         <figcaption class="c-card">
                             <div class="c-inner__figcaption">
                                 <div class="c-inner__card">
@@ -71,7 +71,7 @@
                         </figcaption>
                     </figure>
                     <figure class="p-card__archive-search-3 c-grid__card">
-                        <img src="./images/main__archive.jpg" alt="チーズバーガーの写真">
+                        <img src="<?php echo get_template_directory_uri(); ?>./images/main__archive.jpg" alt="チーズバーガーの写真">
                         <figcaption class="c-card">
                             <div class="c-inner__figcaption">
                                 <div class="c-inner__card">
@@ -88,7 +88,7 @@
                         </figcaption>
                     </figure>
                     <figure class="p-card__archive-search-4 c-grid__card">
-                        <img src="./images/main__archive.jpg" alt="チーズバーガーの写真">
+                        <img src="<?php echo get_template_directory_uri(); ?>./images/main__archive.jpg" alt="チーズバーガーの写真">
                         <figcaption class="c-card">
                             <div class="c-inner__figcaption">
                                 <div class="c-inner__card">
@@ -105,7 +105,7 @@
                         </figcaption>
                     </figure>
                     <figure class="p-card__archive-search-5 c-grid__card">
-                        <img src="./images/main__archive.jpg" alt="チーズバーガーの写真">
+                        <img src="<?php echo get_template_directory_uri(); ?>./images/main__archive.jpg" alt="チーズバーガーの写真">
                         <figcaption class="c-card">
                             <div class="c-inner__figcaption">
                                 <div class="c-inner__card">
