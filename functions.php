@@ -1,19 +1,29 @@
 <?php
-    //テーマサポート
-    add_theme_support( 'menus' );
-    add_theme_support( 'title-tag' );
-    add_theme_support( 'post-thumbnails' );
 
-    //グローバルメニューのチェックボックス表示
-    add_action( 'after_setup_theme', function(){
+    //テーマサポート
+    function custom_theme_support() {
+        add_theme_support( 'html5', array(  //XHTML → HTML5に
+            'search-form',
+            'comment-form',
+            'comment-list',
+            'gallery',
+            'caption',
+        ));
+
+        add_theme_support( 'menus' );  //カスタムメニューの有効化
+        add_theme_support( 'title-tag' );   //管理画面からタイトルタグ登録可能に
+        add_theme_support( 'post-thumbnails' ); //アイキャッチ機能の有効化
+
         register_nav_menus( array(
         // 例 'メニューの位置を示す固有名称' => 'このメニューの位置の名称'
-        'sidebar1' => 'サイドバー1',
-        'sidebar2' => 'サイドバー2',
-        'sidebar3' => 'サイドバー3',
-        'global-nav' => 'グローバルナビ',
-        ) );
-    } );
+        'footer_nav' => esc_html__( 'footer navigation', 'Hamburger' ),
+        'category_nav' => esc_html__( 'category navigation', 'Hamburger' ),
+        ));
+        add_theme_support( 'editor-styles'); //エディタスタイルの有効化
+        add_editor_style();
+    }
+    add_action( 'after_setup_theme', 'custom_theme_support'); //必要な機能を設定しafter_setup_themeのアクションフックにて実行
+
 
     //タイトル出力
     function Hamburger_title( $title ) {
