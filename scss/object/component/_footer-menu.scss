@@ -9,12 +9,35 @@
     font-size: 2rem;
     list-style: none;
     inline-size:fit-content;
-    
 
-    &__information { 
+        &:first-child {
         display: block;
         position: relative;
+        padding-right: 10px;
 
+            &:before {
+                content: '';
+                position: absolute;
+                right: 1px;
+                display: inline-block;
+                width: 2px;
+                height: 20px;
+                background-color: $color--white;
+                top: 53%;
+                transform: translateY(-50%);
+            }
+        }
+
+        &:last-child {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+    /*&__information { 
+        display: block;
+        position: relative;
         padding-right: 10px;
         
         &:before {
@@ -35,7 +58,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-    }
+    }*/
 
     &__small {
         display: block;

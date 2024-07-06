@@ -9,16 +9,23 @@
             </button>
         </div>
         <nav class="l-sidebar__nav p-menu">                                    
-            <?php
-            if ( is_active_sidebar( 'menu_widget' ) ) :
-                dynamic_sidebar( 'menu_widget' );
-            else:
-            ?>
-            <div class="widget">
-                <h2>No Widget</h2>
-                <p>ウィジットは設定されていません。</p>
-            </div>
-            <?php endif; ?>
+            <?php wp_nav_menu( array( 
+                'theme_location' => 'category_nav',
+                /*'menu_class' => 'l-footer__menu c-flexbox__footer',
+                'container' => 'div',
+                'container_class' => 'c-inner__footer',
+                'fallback_cb' => 'wp_page_menu',
+                'before' => '<li class="c-footer-menu">',
+                'after' => '</li>',
+                'link_before' => '',
+                'link_after' => '',
+                'echo' => true,
+                'depth' => 0,
+                'walker' => '',
+                'items_wrap' => '<ul id="%1$s" class="%2$s">%3$s</ul>',
+                'item_spacing' => 'preserve'*/
+            ) );
+        ?>
         </nav>
     </div>
 </aside>
