@@ -514,7 +514,7 @@ a:hover, a:visited {
 
 .c-item__sidebar {
   font-family: "M PLUS 1p";
-  font-weight: regular;
+  font-weight: 400;
   color: #707070;
   height: auto;
   width: auto;
@@ -826,6 +826,23 @@ a:hover, a:visited {
   }
 }
 
+.c-title {
+  /*&__menu {
+      font-family: "M PLUS 1p";
+      font-weight: bold;
+      font-size: 2.4rem;
+      color: $color--gray;
+      height: auto;
+      width: auto;
+      position: relative;
+      margin-bottom: 4rem;
+
+      @include breakpoint(tablet) {
+          margin-bottom: 3.2rem;
+
+      }
+  }*/
+}
 .c-title__header {
   font-family: "Roboto";
   color: #707070;
@@ -862,21 +879,6 @@ a:hover, a:visited {
   .c-title__front {
     font-size: 4rem;
     margin: 23.4rem auto 23.7rem 8.6rem;
-  }
-}
-.c-title__menu {
-  font-family: "M PLUS 1p";
-  font-weight: bold;
-  font-size: 2.4rem;
-  color: #707070;
-  height: auto;
-  width: auto;
-  position: relative;
-  margin-bottom: 4rem;
-}
-@media (min-width: 768px) {
-  .c-title__menu {
-    margin-bottom: 3.2rem;
   }
 }
 .c-title__archive {
@@ -1527,10 +1529,29 @@ a:hover, a:visited {
   line-height: normal;
   display: block;
   position: relative;
+  /*margin-bottom: 6rem;
+
+  @include breakpoint(tablet) {
+      margin-bottom: 4.8rem;
+  }*/
+}
+.p-menu__parent {
+  display: block;
+  position: relative;
+}
+.p-menu__parent > li {
+  font-family: "M PLUS 1p";
+  font-weight: bold;
+  font-size: 2.4rem;
+  color: #707070;
+  height: auto;
+  width: auto;
+  position: relative;
   margin-bottom: 6rem;
+  margin-left: 0;
 }
 @media (min-width: 768px) {
-  .p-menu {
+  .p-menu__parent > li {
     margin-bottom: 4.8rem;
   }
 }
