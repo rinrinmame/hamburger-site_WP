@@ -15,7 +15,7 @@
         add_theme_support( 'post-thumbnails' ); //アイキャッチ機能の有効化
 
         register_nav_menus( array(
-        // 例 'メニューの位置を示す固有名称' => 'このメニューの位置の名称'
+        //メニューの位置
         'footer_nav' => esc_html__( 'footer navigation', 'Hamburger' ),
         'category_nav' => esc_html__( 'category navigation', 'Hamburger' ),
         ));

@@ -8,24 +8,19 @@
                 <span>hamburger</span>
             </button>
         </div>
-        <nav class="l-sidebar__nav p-menu">                                    
+        <nav class="l-sidebar__nav p-menu">                       
             <?php wp_nav_menu( array( 
-                'theme_location' => 'category_nav',
-                /*'menu_class' => 'l-footer__menu c-flexbox__footer',
-                'container' => 'div',
-                'container_class' => 'c-inner__footer',
-                'fallback_cb' => 'wp_page_menu',
-                'before' => '<li class="c-footer-menu">',
-                'after' => '</li>',
-                'link_before' => '',
-                'link_after' => '',
-                'echo' => true,
-                'depth' => 0,
-                'walker' => '',
-                'items_wrap' => '<ul id="%1$s" class="%2$s">%3$s</ul>',
-                'item_spacing' => 'preserve'*/
-            ) );
-        ?>
+                    'theme_location' => 'category_nav',
+                    'menu_class' => 'p-menu__parent c-inner__menu',
+                    'menu_id' => '',
+                    'container' => 'ul',
+                    'add_li_class' => 'c-item__sidebar',
+                    'echo' => true,
+                    'depth' => 0,
+                    'walker' => '',
+                    'item_spacing' => 'preserve',
+                ) );
+            ?>
         </nav>
     </div>
 </aside>
