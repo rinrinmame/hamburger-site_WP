@@ -106,7 +106,7 @@
         overflow: hidden;
         background-size: cover;
         background-position: center;
-        background-image: url(http://hamburger-sitewp.local/wp-content/uploads/2024/06/main__title-single.jpg);
+        //background-image: url(http://hamburger-sitewp.local/wp-content/uploads/2024/06/main__title-single.jpg);
 
         @include breakpoint(tablet) {
             height: 50.5rem;
@@ -146,36 +146,50 @@
         }
 
         &--parent {
-            height: 8.1rem;
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-            position: relative;
-            background: $color--offWhite;
+            //height: 8.1rem;
+            //width: 100%;
+            //display: flex;
+            //flex-direction: column;
+            //position: relative;
+            //background: $color--offWhite;
+            height: auto;
+            width: auto;
             border-radius: 20px;
 
-            @include breakpoint(tablet) {
-                height: 10.4rem;
-                width: 42.9rem;
-            }
+            //@include breakpoint(tablet) {
+                //height: 10.4rem;
+                //width: 42.9rem;
+            //}
         }
 
         &--child {
-            height: 8.1rem;
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-            position: relative;
-            background: $color--pinkishgray;
-            mix-blend-mode: normal;
-            justify-content: center;
-            align-items: center;
+            //height: 8.1rem;
+            //width: 100%;
+            //display: flex;
+            //flex-direction: column;
+            //position: relative;
+            //background: $color--pinkishgray;
+            //mix-blend-mode: normal;
+            //justify-content: center;
+            //align-items: center;
             border-radius: 20px;
+            height: auto;
+            width: auto;
             border: 1px solid;
 
-            @include breakpoint(tablet) {
-                height: 10.4rem;
-            }
+            //@include breakpoint(tablet) {
+                //height: 10.4rem;
+            //}
         }
+    }
+
+    &__footer {
+        height: auto;
+        width: auto;
+        display: block;
+        position: relative;
+        overflow: hidden;
+        background-image: url(http://hamburger-sitewp.local/wp-content/uploads/2024/07/pc_footer.png);
+        background-repeat: repeat;
     }
 }

@@ -4,8 +4,8 @@
                 <div class="c-background__cheeseburger">
                     <div class="c-background__cheeseburger-cover">
                         <ul class="c-flexbox__title">
-                            <li class="c-title__archive"><h1><?php the_archive_title(); ?></h1></li>
-                            <li class="c-title__archive-sub"><p>チーズバーガー</p></li>
+                            <li class="c-title__archive"><h1></h1></li>
+                            <li class="c-title__archive-sub"><p><?php the_archive_title(); ?></p></li>
                         </ul>
                     </div>
                 </div>

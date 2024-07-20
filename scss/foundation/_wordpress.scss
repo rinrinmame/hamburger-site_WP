@@ -1,0 +1,185 @@
+@use "../foundation/color" as *;
+@use "../foundation/breakpoint" as *;
+
+
+.single, .page {
+    main {
+        font-family: "Roboto", sans-serif,"M PLUS 1p";
+        line-height: 1.5;
+
+        ol {
+            list-style: decimal inside;
+        }
+
+        ol, ul {
+            padding-bottom: 1.7rem;
+            padding-left: 5rem;
+
+            li:nth-child(2) {
+                ol, ul {
+                    padding-top: 1.7rem;
+                    padding-left: 1.8rem;
+                }
+            }
+        }
+        p .has-text-align-left {
+            font-weight: 400;
+        }
+
+        .wp-block-group.has-background {
+            & > :first-child {
+                padding: 0 3%;
+            }
+
+            a {
+                color: revert;
+                text-decoration: revert;
+            
+                &:hover,  &:visited {
+                    color: revert;
+                    text-decoration: revert;
+                }
+            }
+        }
+
+        .wp-block-columns {
+            .wp-block-column {
+                :nth-child(2) {
+                    margin-top: 2rem;
+                    margin-bottom: 2rem;
+                }
+
+                @include breakpoint(tablet) {
+                    width: 50%;
+                }
+
+                @include breakpoint(pc) {
+                    width: 33%;
+                }
+        
+            }
+        }
+
+        .wp-block-gallery {
+            &.wp-block-gallery-1 {
+                height: auto;
+                width: auto;
+                display: grid;
+                margin-inline: auto;
+                grid-template-rows: 1fr;
+                grid-template-columns: 1fr;
+                gap: 2rem;
+
+                @include breakpoint(tablet) {
+                    grid-template-rows: 1fr 1fr;
+                    grid-template-columns: 1fr 1fr;
+                    row-gap: 2rem;
+                    column-gap: 1.6rem;
+                }
+
+                @include breakpoint(pc) {
+                    grid-template-rows: 1fr 1fr 1fr;
+                    grid-template-columns: 1fr 1fr 1fr;
+                    gap: 2rem;
+                }
+            }
+        }
+
+        .wp-block-code {
+            height: auto;
+            width: auto;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            padding: 5rem;
+            @include breakpoint(tablet) {
+                padding: 5rem;
+            }
+
+            @include breakpoint(pc) {
+                padding: 5rem;
+            }
+        }
+
+        .wp-block-table {
+            tr {
+                font-family: "M PLUS 1p";
+                font-weight: 400;
+                height: 7.7rem;
+                width: 100%;
+                position: relative;
+                table-layout: fixed;
+                font-size: 1.6rem;
+                border: solid 1px $color--gray;
+            }
+
+            td {
+                &:first-child {
+                    height: auto;
+                    width: 42%;
+                    font-weight: 400;
+                    position: relative;
+                    border: solid 1px $color--gray;
+                    text-align: left;
+                    padding-left: 6%;
+
+                    @include breakpoint(tablet) {
+                        padding-left: 3%;
+                    }
+                }
+
+                &:last-child {
+                    height: auto;
+                    width: 58%;
+                    position: relative;
+                    border: solid 1px $color--gray;
+                    padding-left: 6%;
+            
+                    @include breakpoint(tablet) {
+                        padding-left: 3%;
+                    }
+                }
+            }
+        }
+
+        .wp-block-buttons {
+            height: 100%;
+            width: 100%;
+            display: inline-block;
+            justify-content: center;
+            align-items: center;
+
+            .wp-block-button {
+                height: 8.1rem;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                position: relative;
+                border-radius: 20px;
+                border: 1px solid;
+
+                @include breakpoint(tablet) {
+                    height: 10.4rem;
+                    width: 60%;
+                }
+
+                @include breakpoint(pc) {
+                    height: 10.4rem;
+                    width: 42%;
+                }
+
+
+            }
+
+            a,a * {
+                height: 100%;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                position: relative;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
+}

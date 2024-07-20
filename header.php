@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="<?php language_attributes(); ?>">
+<html <?php language_attributes(); ?>>
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,7 +8,7 @@
         <link rel="icon" href="<?php echo get_template_directory_uri(); ?>./images/favicon.png">
         <?php wp_head(); ?>
     </head>
-    <body class="l-body c-grid__body"<?php body_class(); ?>>
+    <body <?php body_class( 'l-body c-grid__body' ); ?>>
         <header class="l-header c-inner__header">
             <div class="l-header__nav">
                 <div class="l-header__button">
