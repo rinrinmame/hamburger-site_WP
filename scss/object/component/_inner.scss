@@ -35,10 +35,12 @@
     }
 
     &__sidebar {
-        padding-left: 12.5%;
-        padding-right: 1%;
+        height: 100%;
+        width: 100%;
         display: block;
         position: relative;
+        padding-left: 12.5%;
+        padding-right: auto;
     }
 
     &__menu {

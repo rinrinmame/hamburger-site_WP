@@ -441,10 +441,12 @@ a:hover, a:visited {
   }
 }
 .c-inner__sidebar {
-  padding-left: 12.5%;
-  padding-right: 1%;
+  height: 100%;
+  width: 100%;
   display: block;
   position: relative;
+  padding-left: 12.5%;
+  padding-right: auto;
 }
 .c-inner__menu {
   padding-bottom: 2.8rem;
@@ -693,13 +695,12 @@ a:hover, a:visited {
   height: auto;
   width: auto;
   position: relative;
-  font-size: 0.83em;
-  margin: 4rem auto 2rem 2rem;
+  font-size: 2.2vmin;
+  margin-top: 2rem;
+  margin-left: 2rem;
 }
-@media (min-width: 768px) {
-  .c-item__sidebar {
-    margin: 3.2rem auto 2rem 2rem;
-  }
+.c-item__sidebar:first-of-type {
+  margin-top: 3.2rem;
 }
 .c-item__group {
   font-family: "M PLUS 1p";
@@ -900,7 +901,7 @@ a:hover, a:visited {
 
 .c-grid__body {
   height: 100vh;
-  width: 100%;
+  width: 100vw;
   display: block;
 }
 @media (min-width: 1024px) {
@@ -1685,6 +1686,8 @@ a:hover, a:visited {
 }
 
 .p-menu {
+  height: auto;
+  width: 100%;
   color: #707070;
   font-weight: 400;
   line-height: normal;
@@ -1697,13 +1700,15 @@ a:hover, a:visited {
   }*/
 }
 .p-menu__parent {
+  height: auto;
+  width: auto;
   display: block;
   position: relative;
 }
 .p-menu__parent > li {
   font-family: "M PLUS 1p";
   font-weight: bold;
-  font-size: 2.4rem;
+  font-size: 2.8vmin;
   color: #707070;
   height: auto;
   width: auto;

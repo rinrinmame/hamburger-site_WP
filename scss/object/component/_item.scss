@@ -9,11 +9,12 @@
         height: auto;
         width: auto;
         position: relative;
-        font-size: 0.83em;
-        margin: 4rem auto 2rem 2rem;
+        font-size: 2.2vmin;
+        margin-top: 2rem;
+        margin-left: 2rem;
 
-        @include breakpoint(tablet) {
-            margin: 3.2rem auto 2rem 2rem;
+        &:first-of-type {
+            margin-top: 3.2rem;
         }
     }
 
