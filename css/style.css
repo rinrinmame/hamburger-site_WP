@@ -445,8 +445,7 @@ a:hover, a:visited {
   width: 100%;
   display: block;
   position: relative;
-  padding-left: 12.5%;
-  padding-right: auto;
+  padding: 0 8% 0 12.5%;
 }
 .c-inner__menu {
   padding-bottom: 2.8rem;
@@ -695,7 +694,7 @@ a:hover, a:visited {
   height: auto;
   width: auto;
   position: relative;
-  font-size: 2.2vmin;
+  font-size: 3vmin;
   margin-top: 2rem;
   margin-left: 2rem;
 }
@@ -908,7 +907,7 @@ a:hover, a:visited {
   .c-grid__body {
     display: grid;
     grid-template-rows: 217px 1fr 150px;
-    grid-template-columns: 1fr 20%;
+    grid-template-columns: 1fr 20vw;
   }
 }
 .c-grid__card {
@@ -1704,11 +1703,12 @@ a:hover, a:visited {
   width: auto;
   display: block;
   position: relative;
+  flex-shrink: 0;
 }
 .p-menu__parent > li {
   font-family: "M PLUS 1p";
   font-weight: bold;
-  font-size: 2.8vmin;
+  font-size: 3.65vmin;
   color: #707070;
   height: auto;
   width: auto;
