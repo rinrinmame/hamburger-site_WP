@@ -25,19 +25,44 @@
             font-weight: 400;
         }
 
-        .wp-block-group.has-background {
-            & > :first-child {
-                padding: 0 3%;
-            }
+        .wp-block-group {
+            height: auto;
+            width: auto;
+            display: block;
 
-            a {
-                color: revert;
-                text-decoration: revert;
-            
-                &:hover,  &:visited {
+            &.has-background {
+                & > :first-child {
+                    padding: 0 3%;
+                }
+
+                a {
                     color: revert;
                     text-decoration: revert;
+                
+                    &:hover,  &:visited {
+                        color: revert;
+                        text-decoration: revert;
+                    }
                 }
+            }
+
+            &__inner-container {
+                height: auto;
+                width: auto;
+                display: block;
+            }
+        }
+
+        .wp-block-image {
+            height: auto;
+            width: auto;
+            display: block;
+
+            img {
+                height: auto;
+                width: auto;
+                display: block;
+                min-width: 100%;
             }
         }
 

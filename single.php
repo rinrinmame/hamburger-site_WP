@@ -5,9 +5,19 @@
             while( have_posts() ) :
                 the_post(); ?>
     <article class="l-main__title p-title">
-        <div class="c-background__title-single u-title__page">
-            <h1 class="c-title__single">h1 <?php the_title() ?></h1>
-        </div>
+        <?php 
+            $url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
+            $noimage = get_template_directory_uri() . './images/noimage.jpg';
+        ?>
+        <?php if ($url) : ?>
+            <div class="c-background__title-single" style="background-image: url( '<?php echo $url; ?>' );">
+                <h1 class="c-title__single">h1 <a href="<?php the_permalink(); ?>"><?php the_title() ?></a></h1>
+            </div>
+        <?php else : ?>
+            <div class="c-background__title-single" style="background-image: url( '<?php echo $noimage; ?>' );">
+                <h1 class="c-title__single">No image</h1>
+            </div>
+        <?php endif; ?>
     </article>
     <article class="l-main__contents">
         <div id="post-<?php the_ID(); ?>" class="c-inner__single">

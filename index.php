@@ -1,9 +1,19 @@
-        <?php get_header(); //header.phpを読み込むテンプレートタグ（インクルードタグ）?>
+<?php get_header(); //header.phpを読み込むテンプレートタグ（インクルードタグ）?>
         <main class="l-main">
-            <article class="l-main__contents">
-                <div class="c-background__title">
-                    <h2 class="c-title__front">ダミーサイト</h2>
-                </div>
+            <article class="l-main__contents p-title">
+                <?php 
+                    $url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
+                    $noimage = get_template_directory_uri() . './images/noimage.jpg';
+                ?>
+                <?php if ($url) : ?>
+                    <div class="c-background__title" style="background-image: url( '<?php echo $url; ?>' );">
+                        <h2 class="c-title__front"><?php the_title() ?></h2>
+                    </div>
+                <?php else : ?>
+                    <div class="c-background__title" style="background-image: url( '<?php echo $noimage; ?>' );">
+                        <h2 class="c-title__front">No image</h2>
+                    </div>
+                <?php endif; ?>
                 <div class="p-branch-menu c-background__branch-menu">
                     <div class="c-inner__branch-menu">
                         <ul class="c-flexbox__branch-menu">
@@ -14,7 +24,7 @@
                                         <div class="c-background__category">
                                             <div class="c-inner__list">
                                                 <dt>Take OUT</dt>
-                                                <dd>ああああああああああああああああああああああああああああああああああああああああああああああああ当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで</dd>
+                                                <dd>当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで</dd>
                                             </div>
                                         </div>
                                         <div class="c-background__category">

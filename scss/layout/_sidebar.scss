@@ -35,4 +35,11 @@
             left: 56%;
         }
     }
+
+    &__button {
+        height: auto;
+        width: auto;
+        position: relative;
+        display: block;
+    }
 }

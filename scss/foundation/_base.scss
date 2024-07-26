@@ -1,7 +1,9 @@
 @use "../foundation/color" as *;
 
 html {
-    font-size: 62.5%;   
+    font-size: 62.5%;
+    min-height: 100vh;
+    position: relative;
 }
 
 * {
@@ -31,8 +33,10 @@ a {
 
 
 .l-body {
-    height: 100vh;
+    height: 100%;
     width: 100vw;
+    position: relative;
+    min-height: 100%;
     font-family: "Roboto", sans-serif,"M PLUS 1p";
     box-sizing: border-box;
 

@@ -18,14 +18,14 @@
         overflow: hidden;
         background-size: cover;
         background-position: center;
-        background-image: url(http://hamburger-sitewp.local/wp-content/uploads/2024/06/main__title-sp.jpg);
+        //background-image: url(http://hamburger-sitewp.local/wp-content/uploads/2024/06/main__title-sp.jpg);
 
-        @include breakpoint(tablet) {
-            background-image: url(http://hamburger-sitewp.local/wp-content/uploads/2024/06/main__title-tablet.jpg);
-        }
+        //@include breakpoint(tablet) {
+            //background-image: url(http://hamburger-sitewp.local/wp-content/uploads/2024/06/main__title-tablet.jpg);
+        //}
 
         @include breakpoint(pc) {
-            background-image: url(http://hamburger-sitewp.local/wp-content/uploads/2024/06/main__title-pc.jpg);
+            //background-image: url(http://hamburger-sitewp.local/wp-content/uploads/2024/06/main__title-pc.jpg);
             height: 53rem;
         }
     }
@@ -74,16 +74,14 @@
 
     &__cheeseburger {
         height: 28.5rem;
+        //height: auto;
         width: 100%;
         display: block;
         position: relative;
         overflow: hidden;
-        background-position: left;
-        background-image: url(http://hamburger-sitewp.local/wp-content/uploads/2024/06/main__takeout.jpg);
-
-        @include breakpoint(tablet) {
-            background-size: cover;
-        }
+        background-size: cover;
+        //background-position: left;
+        //background-image: url(http://hamburger-sitewp.local/wp-content/uploads/2024/06/main__takeout.jpg);
 
         @include breakpoint(pc) {
             height: 23.9rem;
@@ -91,21 +89,22 @@
 
         &-cover {
             height: 28.5rem;
-            width: 100%;
-            display: block;
-            position: absolute;
+            //width: 100%;
+            //display: block;
+            //position: absolute;
             background: rgba($color: $color--clearblack, $alpha: 0.5);
         }
     }
 
     &__title-single {
-        height: 22.5rem;
-        width: 100%;
+        height: 28.5rem;
+        width: auto;
         display: block;
         position: relative;
         overflow: hidden;
         background-size: cover;
-        background-position: center;
+        background-color: $color--lightgray;
+        //background-position: center;
         //background-image: url(http://hamburger-sitewp.local/wp-content/uploads/2024/06/main__title-single.jpg);
 
         @include breakpoint(tablet) {
