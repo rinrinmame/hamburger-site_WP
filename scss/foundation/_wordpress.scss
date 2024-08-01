@@ -139,12 +139,12 @@ main {
 
             li {
 
-                &:last-of-type {
-                    margin-bottom: 1.7rem;
+                &:first-child {
+                    margin-top: 1.7rem;
                 }
 
                 &:last-child {
-                    margin-bottom: 0;
+                    margin-bottom: 1.7rem;
                 }
             }
         }

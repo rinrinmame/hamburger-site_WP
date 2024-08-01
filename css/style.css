@@ -170,11 +170,11 @@ main .wp-block-list ol, main .wp-block-list ul {
   padding-left: 1.8rem;
   margin-top: 1.7rem;
 }
-main .wp-block-list ol li:last-of-type, main .wp-block-list ul li:last-of-type {
-  margin-bottom: 1.7rem;
+main .wp-block-list ol li:first-child, main .wp-block-list ul li:first-child {
+  margin-top: 1.7rem;
 }
 main .wp-block-list ol li:last-child, main .wp-block-list ul li:last-child {
-  margin-bottom: 0;
+  margin-bottom: 1.7rem;
 }
 main .wp-block-code {
   height: auto;
