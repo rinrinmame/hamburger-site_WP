@@ -187,14 +187,29 @@ main .wp-block-code {
   padding: 5rem;
   font-size: 2rem;
 }
+main .wp-block-quote {
+  height: auto;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 3rem 5.9% 3rem 5.9%;
+}
 @media (min-width: 768px) {
-  main .wp-block-code {
-    padding: 5rem;
+  main .wp-block-quote {
+    padding: 5rem 7% 5rem 7%;
   }
 }
 @media (min-width: 1024px) {
-  main .wp-block-code {
-    padding: 5rem;
+  main .wp-block-quote {
+    padding: 5rem 6.4% 5rem 6.4%;
+  }
+}
+main .wp-block-quote cite {
+  margin-top: 1rem;
+}
+@media (min-width: 768px) {
+  main .wp-block-quote cite {
+    margin-top: 5rem;
   }
 }
 main .wp-block-table tr {
@@ -237,9 +252,21 @@ main .wp-block-buttons {
   justify-content: center;
   align-items: center;
 }
+@media (min-width: 768px) {
+  main .wp-block-buttons {
+    height: 10.4rem;
+    width: 60%;
+  }
+}
+@media (min-width: 1024px) {
+  main .wp-block-buttons {
+    height: 10.4rem;
+    width: 42%;
+  }
+}
 main .wp-block-buttons .wp-block-button {
   height: 8.1rem;
-  width: 100%;
+  width: auto;
   display: flex;
   flex-direction: column;
   position: relative;

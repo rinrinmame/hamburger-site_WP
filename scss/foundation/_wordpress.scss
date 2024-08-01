@@ -161,14 +161,30 @@ main {
         position: relative;
         padding: 5rem;
         font-size: 2rem;
+    }
+
+    .wp-block-quote {
+        height: auto;
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        padding: 3rem 5.9% 3rem 5.9%;
 
         @include breakpoint(tablet) {
-            padding: 5rem;
+            padding: 5rem 7% 5rem 7%;
         }
 
         @include breakpoint(pc) {
-            padding: 5rem;
+            padding: 5rem 6.4% 5rem 6.4%;
         }
+
+        cite {
+            margin-top: 1rem;
+
+            @include breakpoint(tablet) {
+                margin-top: 5rem;
+            }
+        }    
     }
 
     .wp-block-table {
@@ -216,9 +232,19 @@ main {
         justify-content: center;
         align-items: center;
 
+        @include breakpoint(tablet) {
+            height: 10.4rem;
+            width: 60%;
+        }
+
+        @include breakpoint(pc) {
+            height: 10.4rem;
+            width: 42%;
+        }
+
         .wp-block-button {
             height: 8.1rem;
-            width: 100%;
+            width: auto;
             display: flex;
             flex-direction: column;
             position: relative;
@@ -234,8 +260,6 @@ main {
                 height: 10.4rem;
                 width: 42%;
             }
-
-
         }
 
         a,a * {
