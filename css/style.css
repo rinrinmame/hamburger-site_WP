@@ -166,9 +166,11 @@ main .wp-block-list {
 main .wp-block-list:not(:last-of-type) {
   margin-bottom: 1.7rem;
 }
+main .wp-block-list:not(:last-of-type) :last-child {
+  margin-bottom: 0;
+}
 main .wp-block-list ol, main .wp-block-list ul {
   padding-left: 1.8rem;
-  margin-top: 1.7rem;
 }
 main .wp-block-list ol li:first-child, main .wp-block-list ul li:first-child {
   margin-top: 1.7rem;
@@ -898,7 +900,7 @@ main .wp-block-buttons a, main .wp-block-buttons a * {
   }
 }
 .c-background__cheeseburger-cover {
-  height: 28.5rem;
+  height: 100%;
   width: 100%;
   display: block;
   position: absolute;
@@ -1969,5 +1971,9 @@ main .wp-block-buttons a, main .wp-block-buttons a * {
 .u-title__page {
   background-color: rgb(217, 217, 217);
   background-blend-mode: normal;
+}
+
+.u-cover__single {
+  background: rgba(0, 0, 0, 0.2);
 }
 /*# sourceMappingURL=style.css.map */

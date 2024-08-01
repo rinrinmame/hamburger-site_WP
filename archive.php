@@ -7,10 +7,12 @@
                 ?>
                 <?php if ($url) : ?>
                     <div class="c-background__cheeseburger" style="background-image: url( '<?php echo $url; ?>' );">
-                        <ul class="c-flexbox__title">
-                            <li class="c-title__archive"><h2></h2></li>
-                            <li class="c-title__archive-sub"><p><?php the_archive_title(); ?></p></li>
-                        </ul>
+                        <div class="c-background__cheeseburger-cover">
+                            <ul class="c-flexbox__title">
+                                <li class="c-title__archive"><h2></h2></li>
+                                <li class="c-title__archive-sub"><p><?php the_archive_title(); ?></p></li>
+                            </ul>
+                        </div>
                     </div>
                 <?php else : ?>
                     <div class="c-background__cheeseburger" style="background-image: url( '<?php echo $noimage; ?>' );">

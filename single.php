@@ -11,11 +11,15 @@
         ?>
         <?php if ($url) : ?>
             <div class="c-background__title-single" style="background-image: url( '<?php echo $url; ?>' );">
-                <h1 class="c-title__single">h1 <a href="<?php the_permalink(); ?>"><?php the_title() ?></a></h1>
+                <div class="c-background__cheeseburger-cover u-cover__single">
+                    <h1 class="c-title__single"><a href="<?php the_permalink(); ?>"><?php the_title() ?></a></h1>
+                </div>
             </div>
         <?php else : ?>
             <div class="c-background__title-single" style="background-image: url( '<?php echo $noimage; ?>' );">
-                <h1 class="c-title__single">No image</h1>
+                <div class="c-background__cheeseburger-cover u-cover__single">
+                    <h1 class="c-title__single"><a href="<?php the_permalink(); ?>"><?php the_title() ?></a></h1>
+                </div>
             </div>
         <?php endif; ?>
     </article>
