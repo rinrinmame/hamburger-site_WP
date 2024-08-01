@@ -132,6 +132,17 @@
         @include breakpoint(pc) {
             padding: 6.3rem 6.4% 27.4rem 6.4%;
         }
+
+        > * {
+            margin-bottom: 5.5rem;
+        }
+
+        > ol, ul {
+
+            &:first-child {
+                margin-bottom: 0;
+            }
+        }
     }
 
     &__blockquote {

@@ -74,13 +74,12 @@
 
     &__cheeseburger {
         height: 28.5rem;
-        //height: auto;
         width: 100%;
         display: block;
         position: relative;
         overflow: hidden;
         background-size: cover;
-        //background-position: left;
+        background-position: center;
         //background-image: url(http://hamburger-sitewp.local/wp-content/uploads/2024/06/main__takeout.jpg);
 
         @include breakpoint(pc) {
@@ -89,9 +88,9 @@
 
         &-cover {
             height: 28.5rem;
-            //width: 100%;
-            //display: block;
-            //position: absolute;
+            width: 100%;
+            display: block;
+            position: absolute;
             background: rgba($color: $color--clearblack, $alpha: 0.5);
         }
     }
@@ -104,7 +103,7 @@
         overflow: hidden;
         background-size: cover;
         background-color: $color--lightgray;
-        //background-position: center;
+        background-position: center;
         //background-image: url(http://hamburger-sitewp.local/wp-content/uploads/2024/06/main__title-single.jpg);
 
         @include breakpoint(tablet) {
