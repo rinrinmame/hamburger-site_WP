@@ -104,14 +104,6 @@ main .wp-block-image img {
   width: auto;
   display: block;
 }
-main .wp-block-quote {
-  height: auto;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  background-color: #F5F5F5;
-}
 main .wp-block-columns .wp-block-column :nth-child(2) {
   margin-top: 2rem;
   margin-bottom: 2rem;
@@ -192,6 +184,8 @@ main .wp-block-quote {
   width: auto;
   display: flex;
   flex-direction: column;
+  position: relative;
+  background-color: #F5F5F5;
   padding: 3rem 5.9% 3rem 5.9%;
 }
 @media (min-width: 768px) {
@@ -211,6 +205,16 @@ main .wp-block-quote cite {
   main .wp-block-quote cite {
     margin-top: 5rem;
   }
+}
+main .wp-block-quote a {
+  color: revert;
+  -webkit-text-decoration: revert;
+          text-decoration: revert;
+}
+main .wp-block-quote a:hover, main .wp-block-quote a:visited {
+  color: revert;
+  -webkit-text-decoration: revert;
+          text-decoration: revert;
 }
 main .wp-block-table tr {
   font-family: "M PLUS 1p";

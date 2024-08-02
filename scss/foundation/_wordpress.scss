@@ -63,15 +63,6 @@ main {
         }
     }
 
-    .wp-block-quote {
-        height: auto;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        position: relative;
-        background-color: $color--clearcream;
-    }
-
     .wp-block-columns {
         .wp-block-column {
             :nth-child(2) {
@@ -168,6 +159,8 @@ main {
         width: auto;
         display: flex;
         flex-direction: column;
+        position: relative;
+        background-color: $color--clearcream;
         padding: 3rem 5.9% 3rem 5.9%;
 
         @include breakpoint(tablet) {
@@ -184,7 +177,18 @@ main {
             @include breakpoint(tablet) {
                 margin-top: 5rem;
             }
-        }    
+        }
+
+        a {
+            color: revert;
+            text-decoration: revert;
+
+            &:hover, &:visited {
+                color: revert;
+                text-decoration: revert;
+            }
+        }
+    
     }
 
     .wp-block-table {
