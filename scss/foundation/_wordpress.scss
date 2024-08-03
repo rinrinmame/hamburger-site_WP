@@ -276,4 +276,65 @@ main {
             align-items: center;
         }
     }
+
+    .wp-pagenavi {
+        display: none;
+        padding: inherit;
+
+        @include breakpoint(tablet) {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .pages {
+            display: flex;
+            border: 1px, solid, $color--gray;
+
+            &:first-child {
+                padding-right: 15px;
+                border: none;
+            }
+        }
+
+        .previouspostslink, .nextpostslink {
+            height: 3.5rem;
+            width: 3.5rem;
+            font-size: 0;
+            display: flex;
+            border: none;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .previouspostslink {
+            background: url(http://hamburger-sitewp.local/wp-content/uploads/2024/08/pagearrow__left.png) no-repeat center center;
+            
+        }
+
+        .nextpostslink {
+            background: url(http://hamburger-sitewp.local/wp-content/uploads/2024/08/pagearrow__right.png) no-repeat center center;
+        }
+        
+        .page, .current {
+            height: 3.5rem;
+            width: 3.5rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 15px;
+        }
+
+        .page {
+            &.larger {
+                margin-right: 0;
+            }
+        }
+
+        .current {
+            background-color: $color--darkbrown;
+            color: $color--white;  
+        }
+
+    }
 }
