@@ -1,24 +1,14 @@
         <?php get_header(); //header.phpを読み込むテンプレートタグ（インクルードタグ）?>
         <main class="l-main">
             <article class="l-main__title p-title">
-                <?php 
-                    $url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
-                    $noimage = get_template_directory_uri() . './images/noimage.jpg';
-                ?>
-                <?php if ($url) : ?>
-                    <div class="c-background__cheeseburger" style="background-image: url( '<?php echo $url; ?>' );">
-                        <div class="c-background__cheeseburger-cover">
-                            <ul class="c-flexbox__title">
-                                <li class="c-title__archive"><h2></h2></li>
-                                <li class="c-title__archive-sub"><p><?php the_archive_title(); ?></p></li>
-                            </ul>
-                        </div>
+                <div class="c-background__cheeseburger">
+                    <div class="c-background__cheeseburger-cover">
+                        <ul class="c-flexbox__title">
+                            <li class="c-title__archive"><h2></h2></li>
+                            <li class="c-title__archive-sub"><p><?php the_archive_title(); ?></p></li>
+                        </ul>
                     </div>
-                <?php else : ?>
-                    <div class="c-background__cheeseburger" style="background-image: url( '<?php echo $noimage; ?>' );">
-                        <h2 class="c-title__front">No image</h2>
-                    </div>
-                <?php endif; ?>
+                </div>
             </article>
             <section class="l-main__discription p-discription">
                 <div class="c-inner__archive">

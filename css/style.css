@@ -973,6 +973,7 @@ main .wp-pagenavi .current {
   overflow: hidden;
   background-size: cover;
   background-position: center;
+  background-image: url(http://hamburger-sitewp.local/wp-content/uploads/2024/06/main__takeout.jpg);
 }
 @media (min-width: 1024px) {
   .c-background__cheeseburger {
@@ -1990,6 +1991,7 @@ main .wp-pagenavi .current {
     height: 4rem;
     width: 8.7rem;
     margin: 8.4rem auto 9rem 0;
+    cursor: inherit;
   }
 }
 
