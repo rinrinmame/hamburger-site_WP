@@ -20,29 +20,11 @@
                             </div>
                         </div>
                     </div>
-                    <div class="p-card c-flexbox__container">
-                        <figure class="p-card__cheeseburger c-grid__card">
-                            <img src="<?php echo get_template_directory_uri(); ?>./images/main__archive.jpg" alt="チーズバーガーの写真">
-                            <figcaption class="c-card">
-                                <div class="c-inner__figcaption">
-                                    <div class="c-inner__card">
-                                        <h2 class="c-card__title">チーズバーガー</h2>
-                                        <h3 class="c-card__title-sub">小見出しが入ります</h3>
-                                        <p class="c-card__text">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
-                                    </div>
-                                    <div class="c-card__button-area">
-                                        <div class="c-inner__button-area">
-                                            <button class="c-card__button"><a <?php the_content( '詳しく見る' ); ?>></a></button>
-                                        </div>
-                                    </div>
-                                </div>                    
-                            </figcaption>
-                        </figure>
-                    </div>
+                    <?php get_template_part( 'card' ); //card.phpを読み込み?>
                 </div>
             </section>
             <section class="p-page c-flexbox__page">
-                <?php wp_pagenavi(); ?>
+                <?php wp_pagenavi(); //ページネーション?>
             </section>
         </main>
         <?php get_sidebar(); //siderbar.phpを読み込むテンプレートタグ（インクルードタグ）?>
