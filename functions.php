@@ -54,7 +54,7 @@
 
     // the_archive_title() - 別の文字列にする 
     add_filter( 'get_the_archive_title', function( $title ) {
-        return single_cat_title('Menu:', false);
+        return single_cat_title('<li class="c-title__archive"><h1>Menu:</h1></li><li class="c-title__archive-sub"><p>', '</p></li>', false);
     });
 
     function Hamburger_script() {
@@ -66,4 +66,3 @@
         wp_enqueue_script( 'main.js', get_theme_file_uri(). './js/main.js', array( 'jquery' ), '1.0.0', true);
     }
     add_action( 'wp_enqueue_scripts', 'Hamburger_script' );
-?>

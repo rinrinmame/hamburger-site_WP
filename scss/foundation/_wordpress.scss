@@ -338,3 +338,36 @@ main {
 
     }
 }
+
+.archive {
+    .p-card {
+        p {
+            font-weight: 400;
+            font-size: 1.6rem;
+            margin-bottom: 0.7rem;
+
+            @include breakpoint(pc) {
+                margin-bottom: 1.3rem;
+            }
+        }
+
+        h2 {
+            font-weight: 700;
+            font-size: 1.6rem;
+            margin-bottom: 0.7rem;
+
+            @include breakpoint(pc) {
+                font-size: 2.4rem;
+                margin-bottom: 1.3rem;
+            }
+        }
+
+        .c-card__title {
+            font-size: 2rem;
+    
+            @include breakpoint(pc) {
+                font-size: 3.6rem;
+            }
+        }
+    }
+}

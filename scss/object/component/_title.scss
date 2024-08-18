@@ -62,6 +62,9 @@
         color: $color--white;
         height: auto;
         width: auto;
+        display: flex;
+        position: relative;
+        align-items: center;
         font-size: 3.6rem;
 
         @include breakpoint(tablet) {
@@ -74,10 +77,12 @@
             color: $color--white;
             height: auto;
             width: auto;
+            display: flex;
+            position: relative;
+            align-items: center;
             font-size: 1.6rem;
 
             @include breakpoint(tablet) {
-                margin-top: 4.8rem;
                 margin-left: 1.9rem;
             }
         }

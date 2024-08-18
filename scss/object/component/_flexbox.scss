@@ -76,17 +76,20 @@
     }
 
     &__title {
-        height: 100%;
+        height: auto;
         width: auto;
-        margin: 10.6rem auto 10.1rem 3.7rem;
+        display: flex;
+        position: relative;
+        margin-left: 3.7rem;
+        align-items: center;
+        top: 25%;
     
         @include breakpoint(tablet) {
-            display: flex;
-            margin: 10.7rem auto 10.8rem 8.6rem;
+            margin-left: 8.6rem;
         }
     
         @include breakpoint(pc) {
-            margin: 8.3rem auto 8.6rem 8.6rem;
+            margin-left: 8.6rem;
         }
     }
 

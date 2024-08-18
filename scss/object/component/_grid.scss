@@ -20,16 +20,16 @@
         width: auto;
         display: grid;
         grid-template-rows: 1fr 1fr;
-        margin-bottom: 2rem;
+        //margin-bottom: 2rem;
 
         @include breakpoint(tablet) {
             grid-template-rows: 1fr;
             grid-template-columns: 50% 50%;
         }
 
-        @include breakpoint(pc) {
-            margin-bottom: 3rem;
-        }
+        //@include breakpoint(pc) {
+            //margin-bottom: 3rem;
+        //}
     }
 
     &__article {

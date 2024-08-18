@@ -348,6 +348,36 @@ main .wp-pagenavi .current {
   color: #FFFFFF;
 }
 
+.archive .p-card p {
+  font-weight: 400;
+  font-size: 1.6rem;
+  margin-bottom: 0.7rem;
+}
+@media (min-width: 1024px) {
+  .archive .p-card p {
+    margin-bottom: 1.3rem;
+  }
+}
+.archive .p-card h2 {
+  font-weight: 700;
+  font-size: 1.6rem;
+  margin-bottom: 0.7rem;
+}
+@media (min-width: 1024px) {
+  .archive .p-card h2 {
+    font-size: 2.4rem;
+    margin-bottom: 1.3rem;
+  }
+}
+.archive .p-card .c-card__title {
+  font-size: 2rem;
+}
+@media (min-width: 1024px) {
+  .archive .p-card .c-card__title {
+    font-size: 3.6rem;
+  }
+}
+
 .l-header {
   height: auto;
   width: auto;
@@ -1070,17 +1100,11 @@ main .wp-pagenavi .current {
   width: auto;
   display: grid;
   grid-template-rows: 1fr 1fr;
-  margin-bottom: 2rem;
 }
 @media (min-width: 768px) {
   .c-grid__card {
     grid-template-rows: 1fr;
     grid-template-columns: 50% 50%;
-  }
-}
-@media (min-width: 1024px) {
-  .c-grid__card {
-    margin-bottom: 3rem;
   }
 }
 .c-grid__article--1 {
@@ -1205,6 +1229,9 @@ main .wp-pagenavi .current {
   color: #FFFFFF;
   height: auto;
   width: auto;
+  display: flex;
+  position: relative;
+  align-items: center;
   font-size: 3.6rem;
 }
 @media (min-width: 768px) {
@@ -1218,11 +1245,13 @@ main .wp-pagenavi .current {
   color: #FFFFFF;
   height: auto;
   width: auto;
+  display: flex;
+  position: relative;
+  align-items: center;
   font-size: 1.6rem;
 }
 @media (min-width: 768px) {
   .c-title__archive-sub {
-    margin-top: 4.8rem;
     margin-left: 1.9rem;
   }
 }
@@ -1405,19 +1434,22 @@ main .wp-pagenavi .current {
   }
 }
 .c-flexbox__title {
-  height: 100%;
+  height: auto;
   width: auto;
-  margin: 10.6rem auto 10.1rem 3.7rem;
+  display: flex;
+  position: relative;
+  margin-left: 3.7rem;
+  align-items: center;
+  top: 25%;
 }
 @media (min-width: 768px) {
   .c-flexbox__title {
-    display: flex;
-    margin: 10.7rem auto 10.8rem 8.6rem;
+    margin-left: 8.6rem;
   }
 }
 @media (min-width: 1024px) {
   .c-flexbox__title {
-    margin: 8.3rem auto 8.6rem 8.6rem;
+    margin-left: 8.6rem;
   }
 }
 .c-flexbox__discription {
@@ -1883,13 +1915,34 @@ main .wp-pagenavi .current {
   color: #3C2A10;
 }
 
+.p-card {
+  font-family: "M PLUS 1p";
+  font-weight: bold;
+  height: auto;
+  width: auto;
+  background-color: #3C2B1C;
+  color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2.08rem;
+}
+@media (min-width: 768px) {
+  .p-card {
+    margin-bottom: 2.05rem;
+  }
+}
+@media (min-width: 1024px) {
+  .p-card {
+    margin-bottom: 3rem;
+  }
+}
 .p-card img {
   height: 100%;
-  width: auto;
+  width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  -o-object-position: left;
-     object-position: left;
+  -o-object-position: center;
+     object-position: center;
   display: flex;
   flex-direction: column;
 }
