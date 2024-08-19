@@ -3,8 +3,9 @@
     <?php
         if( have_posts() ) :
             while( have_posts() ) :
-                the_post(); ?>
-    <article class="l-main__title p-title">
+                the_post();
+    ?>
+    <article id="post-<?php the_ID(); ?>" class="l-main__title p-title"<?php post_class(); ?>>
         <?php 
             $url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
             $noimage = get_template_directory_uri() . './images/noimage.jpg';
@@ -26,6 +27,9 @@
     <article class="l-main__contents">
         <div id="post-<?php the_ID(); ?>" class="c-inner__single">
             <?php the_content(); ?>
+            <section class="p-page c-flexbox__page">
+                <?php wp_pagenavi(); //ページネーション?>
+            </section>
             <?php endwhile;
                 else :
             ?>
