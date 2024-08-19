@@ -19,11 +19,11 @@
                             //$content = strip_tags($content); // タグ除去
                             $mb_content = mb_strlen($content,"UTF-8"); // 文字量取得
 
-                            if ($mb_content > 200) {
-                                // 200文字より多い場合（「...」をつけて出力）
-                                $content = mb_substr($content, 0, 200) . '…';
+                            if ($mb_content > 250) {
+                                // 250文字より多い場合（「...」をつけて出力）
+                                $content = mb_substr($content, 0, 250) . '...';
                             } else {
-                                // 200文字以下の場合（そのまま出力）
+                                // 250文字以下の場合（そのまま出力）
                                 $content = $content;
                             }
                                 echo $content;

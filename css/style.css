@@ -328,6 +328,7 @@ main .wp-pagenavi .previouspostslink, main .wp-pagenavi .nextpostslink {
 }
 main .wp-pagenavi .previouspostslink {
   background: url(http://hamburger-sitewp.local/wp-content/uploads/2024/08/pagearrow__left.png) no-repeat center center;
+  margin-right: 15px;
 }
 main .wp-pagenavi .nextpostslink {
   background: url(http://hamburger-sitewp.local/wp-content/uploads/2024/08/pagearrow__right.png) no-repeat center center;
@@ -340,8 +341,17 @@ main .wp-pagenavi .page, main .wp-pagenavi .current {
   align-items: center;
   margin-right: 15px;
 }
-main .wp-pagenavi .page.larger {
-  margin-right: 0;
+main .wp-pagenavi .page {
+  /*&.larger {
+      margin-right: 7.5px;
+      margin-left: 7.5px;
+  }
+
+  &.smaller {
+      margin-right: 7.5px;
+      margin-left: 7.5px;
+  }*/
+  gap: 15px;
 }
 main .wp-pagenavi .current {
   background-color: #3C2B1C;

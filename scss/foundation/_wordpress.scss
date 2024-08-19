@@ -309,7 +309,7 @@ main {
 
         .previouspostslink {
             background: url(http://hamburger-sitewp.local/wp-content/uploads/2024/08/pagearrow__left.png) no-repeat center center;
-            
+            margin-right: 15px;
         }
 
         .nextpostslink {
@@ -326,9 +326,17 @@ main {
         }
 
         .page {
-            &.larger {
-                margin-right: 0;
+            /*&.larger {
+                margin-right: 7.5px;
+                margin-left: 7.5px;
             }
+
+            &.smaller {
+                margin-right: 7.5px;
+                margin-left: 7.5px;
+            }*/
+
+            gap: 15px;
         }
 
         .current {
