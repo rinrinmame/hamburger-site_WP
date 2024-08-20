@@ -299,39 +299,72 @@ main .wp-block-buttons a, main .wp-block-buttons a * {
   align-items: center;
 }
 main .wp-pagenavi {
-  display: none;
-  padding: inherit;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 @media (min-width: 768px) {
   main .wp-pagenavi {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    height: auto;
+    width: auto;
   }
 }
-main .wp-pagenavi .pages {
-  display: flex;
-  border: 1px, solid, #707070;
+main .wp-pagenavi span.pages {
+  display: none;
 }
-main .wp-pagenavi .pages:first-child {
+@media (min-width: 768px) {
+  main .wp-pagenavi span.pages {
+    height: auto;
+    width: auto;
+    display: flex;
+    font-size: 1.6rem;
+    border: none;
+    justify-content: center;
+  }
+}
+main .wp-pagenavi span.pages:first-child {
   padding-right: 15px;
-  border: none;
+}
+@media (min-width: 768px) {
+  main .wp-pagenavi span.pages:first-child {
+    color: inherit;
+  }
 }
 main .wp-pagenavi .previouspostslink, main .wp-pagenavi .nextpostslink {
+  width: 10rem;
   height: 3.5rem;
-  width: 3.5rem;
-  font-size: 0;
   display: flex;
   border: none;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
-main .wp-pagenavi .previouspostslink {
+@media (min-width: 768px) {
+  main .wp-pagenavi .previouspostslink, main .wp-pagenavi .nextpostslink {
+    width: 3.5rem;
+    font-size: 0;
+  }
+}
+main .wp-pagenavi .previouspostslink::before {
+  content: "";
+  height: 1.8rem;
+  width: 1.8rem;
   background: url(http://hamburger-sitewp.local/wp-content/uploads/2024/08/pagearrow__left.png) no-repeat center center;
   margin-right: 15px;
+  display: inline-block;
+  position: absolute;
+  left: 7px;
 }
-main .wp-pagenavi .nextpostslink {
+main .wp-pagenavi .nextpostslink::after {
+  content: "";
+  height: 1.8rem;
+  width: 1.8rem;
   background: url(http://hamburger-sitewp.local/wp-content/uploads/2024/08/pagearrow__right.png) no-repeat center center;
+  display: inline-block;
+  position: absolute;
+  right: 7px;
 }
 main .wp-pagenavi .page, main .wp-pagenavi .current {
   height: 3.5rem;
@@ -340,22 +373,37 @@ main .wp-pagenavi .page, main .wp-pagenavi .current {
   justify-content: center;
   align-items: center;
   margin-right: 15px;
+  color: #FFFFFF;
+  background: #FFFFFF;
+  border: none;
 }
-main .wp-pagenavi .page {
-  /*&.larger {
-      margin-right: 7.5px;
-      margin-left: 7.5px;
+@media (min-width: 768px) {
+  main .wp-pagenavi .page, main .wp-pagenavi .current {
+    color: inherit;
+    background: inherit;
+    border: inherit;
   }
-
-  &.smaller {
-      margin-right: 7.5px;
-      margin-left: 7.5px;
-  }*/
-  gap: 15px;
+}
+@media (min-width: 768px) {
+  main .wp-pagenavi .page {
+    gap: 15px;
+    border: 1px, solid, #707070;
+  }
 }
 main .wp-pagenavi .current {
-  background-color: #3C2B1C;
+  background-color: #FFFFFF;
   color: #FFFFFF;
+  border: none;
+}
+@media (min-width: 768px) {
+  main .wp-pagenavi .current {
+    background-color: #3C2B1C;
+    border: inherit;
+  }
+}
+
+.single main {
+  padding-bottom: 367px;
 }
 
 .archive .p-card p {
@@ -435,7 +483,6 @@ main .wp-pagenavi .current {
   height: auto;
   width: auto;
   display: block;
-  padding-bottom: 367px;
   /*&__section {
       margin-bottom: 3rem;
 
@@ -448,16 +495,19 @@ main .wp-pagenavi .current {
   height: auto;
   width: auto;
   display: block;
+  position: relative;
 }
 .l-main__contents {
   height: auto;
   width: auto;
   display: block;
+  position: relative;
 }
 .l-main__access {
   height: auto;
   width: auto;
   display: block;
+  position: relative;
 }
 
 .l-sidebar {
@@ -609,7 +659,7 @@ main .wp-pagenavi .current {
 }
 
 .c-inner__branch-menu {
-  padding: 7.6% 7.6% 7.6% 7.6%;
+  padding: 7.6%;
   display: flex;
   flex-direction: column;
   flex-grow: 1;
@@ -1852,6 +1902,11 @@ main .wp-pagenavi .current {
   }
 }
 
+.p-branch-menu {
+  height: auto;
+  width: auto;
+  display: block;
+}
 .p-branch-menu h3 {
   margin-top: 2.8rem;
   margin-left: 2.2rem;

@@ -4,7 +4,7 @@
         <div class="c-background__cheeseburger">
             <div class="c-background__cheeseburger-cover">
                 <ul class="c-flexbox__title">
-                    <?php the_archive_title(); ?>
+                    <?php esc_html(the_archive_title()); ?>
                 </ul>
             </div>
         </div>
@@ -30,7 +30,8 @@
         </div>
     </section>
     <section class="p-page c-flexbox__page">
-        <?php wp_pagenavi(); //ページネーション?>
+        <?php if ( $wp_query -> max_num_pages > 1 ); ?>
+            <?php wp_pagenavi(); //ページネーション?>
     </section>
 </main>
 <?php get_sidebar(); //siderbar.phpを読み込むテンプレートタグ（インクルードタグ）?>

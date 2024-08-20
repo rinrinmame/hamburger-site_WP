@@ -278,72 +278,116 @@ main {
     }
 
     .wp-pagenavi {
-        display: none;
-        padding: inherit;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
 
         @include breakpoint(tablet) {
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            height: auto;
+            width: auto;
         }
 
-        .pages {
-            display: flex;
-            border: 1px, solid, $color--gray;
+        span.pages {
+            display: none;
+
+            @include breakpoint(tablet) {
+                height: auto;
+                width: auto;
+                display: flex;
+                font-size: 1.6rem;
+                border: none; 
+                justify-content: center;
+            }
 
             &:first-child {
                 padding-right: 15px;
-                border: none;
+
+                @include breakpoint(tablet) {
+                    color: inherit;
+                }
             }
         }
 
         .previouspostslink, .nextpostslink {
+            width: 10rem;
             height: 3.5rem;
-            width: 3.5rem;
-            font-size: 0;
             display: flex;
             border: none;
             justify-content: center;
             align-items: center;
+            position: relative;
+
+            @include breakpoint (tablet) {
+                width: 3.5rem;
+                font-size: 0;
+            }
         }
 
-        .previouspostslink {
+        .previouspostslink::before {
+            content: "";
+            height: 1.8rem;
+            width: 1.8rem; 
             background: url(http://hamburger-sitewp.local/wp-content/uploads/2024/08/pagearrow__left.png) no-repeat center center;
             margin-right: 15px;
+            display: inline-block;
+            position: absolute;
+            left: 7px;
         }
 
-        .nextpostslink {
+        .nextpostslink::after {
+            content: "";
+            height: 1.8rem;
+            width: 1.8rem; 
             background: url(http://hamburger-sitewp.local/wp-content/uploads/2024/08/pagearrow__right.png) no-repeat center center;
+            display: inline-block;
+            position: absolute;
+            right: 7px;
         }
         
-        .page, .current {
+        .page, .current { 
             height: 3.5rem;
             width: 3.5rem;
             display: flex;
             justify-content: center;
             align-items: center;
             margin-right: 15px;
+            color: $color--white;
+            background: $color--white;;
+            border: none;
+
+            @include breakpoint(tablet) {
+                color: inherit;
+                background: inherit;
+                border: inherit;
+            }
         }
 
         .page {
-            /*&.larger {
-                margin-right: 7.5px;
-                margin-left: 7.5px;
+            @include breakpoint(tablet) {
+                gap: 15px;
+                border: 1px, solid, $color--gray;
             }
-
-            &.smaller {
-                margin-right: 7.5px;
-                margin-left: 7.5px;
-            }*/
-
-            gap: 15px;
         }
 
         .current {
-            background-color: $color--darkbrown;
-            color: $color--white;  
+            background-color: $color--white;
+            color: $color--white;
+            border: none;
+
+            @include breakpoint(tablet) {
+                background-color: $color--darkbrown;
+                border: inherit;
+            }
         }
 
+    }
+}
+
+.single {
+    main {
+        padding-bottom: 367px;
     }
 }
 

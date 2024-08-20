@@ -1,6 +1,9 @@
 @use "../../foundation/" as *;
 
 .p-branch-menu {
+    height: auto;
+    width: auto;
+    display: block;
 
     h3 {
         margin-top: 2.8rem;
