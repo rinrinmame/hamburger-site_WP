@@ -2014,6 +2014,7 @@ main .wp-pagenavi .current {
      object-position: center;
   display: flex;
   flex-direction: column;
+  aspect-ratio: 677/471;
 }
 
 .p-page {
