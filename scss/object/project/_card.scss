@@ -26,6 +26,14 @@
         object-position: center;
         display: flex;
         flex-direction: column;
-        aspect-ratio: 677 / 471;
+        aspect-ratio: 336.11 / 230.53;
+
+        @include breakpoint(tablet) {
+            aspect-ratio: 378.28 / 354.5;
+        }
+
+        @include breakpoint(pc) {
+            aspect-ratio: 677 / 471;
+        }
     } 
 }

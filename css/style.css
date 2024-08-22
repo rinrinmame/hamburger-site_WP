@@ -2017,7 +2017,17 @@ main .wp-pagenavi .current {
      object-position: center;
   display: flex;
   flex-direction: column;
-  aspect-ratio: 677/471;
+  aspect-ratio: 336.11/230.53;
+}
+@media (min-width: 768px) {
+  .p-card img {
+    aspect-ratio: 378.28/354.5;
+  }
+}
+@media (min-width: 1024px) {
+  .p-card img {
+    aspect-ratio: 677/471;
+  }
 }
 
 .p-page {
