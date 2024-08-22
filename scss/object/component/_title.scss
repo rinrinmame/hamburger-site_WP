@@ -57,33 +57,37 @@
     }*/
 
     &__archive {
-        font-family: "Roboto";
-        font-weight: bold;
-        color: $color--white;
-        height: auto;
-        width: auto;
-        display: flex;
-        position: relative;
-        align-items: center;
-        font-size: 3.6rem;
-
-        @include breakpoint(tablet) {
-            font-size: 6rem;
-        }
-
-        &-sub {
-            font-family: "M PLUS 1p";
+        h2 {
+            font-family: "Roboto";
             font-weight: bold;
             color: $color--white;
-            height: auto;
-            width: auto;
+            height: 100%;
+            width: 100%;
             display: flex;
             position: relative;
             align-items: center;
-            font-size: 1.6rem;
+            font-size: 3.6rem;
 
             @include breakpoint(tablet) {
-                margin-left: 1.9rem;
+                font-size: 6rem;
+            }
+        }
+
+        &-sub {
+            p {
+                font-family: "M PLUS 1p";
+                font-weight: bold;
+                color: $color--white;
+                height: 100%;
+                width: 100%;
+                display: flex;
+                position: relative;
+                align-items: center;
+                font-size: 1.6rem;
+
+                @include breakpoint(tablet) {
+                    margin-left: 1.9rem;
+                }
             }
         }
     }

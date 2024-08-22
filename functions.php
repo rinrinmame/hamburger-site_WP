@@ -54,9 +54,9 @@
 
     // the_archive_title() - 別の文字列にする 
     add_filter( 'get_the_archive_title', function( $title ) {
-        return single_cat_title('<li class="c-title__archive"><h1>Menu:</h1></li><li class="c-title__archive-sub"><p>', '</p></li>', false);
+        return single_cat_title('', false);
     });
-
+    
     function Hamburger_script() {
         wp_enqueue_style( 'google-fonts', '//fonts.googleapis.com/css2?family=M+PLUS+1p:wght@100;300;400;500;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap', array(), null );
         wp_enqueue_style( 'ress', get_template_directory_uri() . '/css/ress.css', array(), '5.0.2' );

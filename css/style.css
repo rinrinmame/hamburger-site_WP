@@ -406,32 +406,32 @@ main .wp-pagenavi .current {
   padding-bottom: 367px;
 }
 
-.archive .p-card p {
+.archive .p-card p, .search .p-card p {
   font-weight: 400;
   font-size: 1.6rem;
   margin-bottom: 0.7rem;
 }
 @media (min-width: 1024px) {
-  .archive .p-card p {
+  .archive .p-card p, .search .p-card p {
     margin-bottom: 1.3rem;
   }
 }
-.archive .p-card h2 {
+.archive .p-card h2, .search .p-card h2 {
   font-weight: 700;
   font-size: 1.6rem;
   margin-bottom: 0.7rem;
 }
 @media (min-width: 1024px) {
-  .archive .p-card h2 {
+  .archive .p-card h2, .search .p-card h2 {
     font-size: 2.4rem;
     margin-bottom: 1.3rem;
   }
 }
-.archive .p-card .c-card__title {
+.archive .p-card .c-card__title, .search .p-card .c-card__title {
   font-size: 2rem;
 }
 @media (min-width: 1024px) {
-  .archive .p-card .c-card__title {
+  .archive .p-card .c-card__title, .search .p-card .c-card__title {
     font-size: 3.6rem;
   }
 }
@@ -1283,35 +1283,35 @@ main .wp-pagenavi .current {
     margin: 23.4rem auto 23.7rem 8.6rem;
   }
 }
-.c-title__archive {
+.c-title__archive h2 {
   font-family: "Roboto";
   font-weight: bold;
   color: #FFFFFF;
-  height: auto;
-  width: auto;
+  height: 100%;
+  width: 100%;
   display: flex;
   position: relative;
   align-items: center;
   font-size: 3.6rem;
 }
 @media (min-width: 768px) {
-  .c-title__archive {
+  .c-title__archive h2 {
     font-size: 6rem;
   }
 }
-.c-title__archive-sub {
+.c-title__archive-sub p {
   font-family: "M PLUS 1p";
   font-weight: bold;
   color: #FFFFFF;
-  height: auto;
-  width: auto;
+  height: 100%;
+  width: 100%;
   display: flex;
   position: relative;
   align-items: center;
   font-size: 1.6rem;
 }
 @media (min-width: 768px) {
-  .c-title__archive-sub {
+  .c-title__archive-sub p {
     margin-left: 1.9rem;
   }
 }
@@ -1494,16 +1494,19 @@ main .wp-pagenavi .current {
   }
 }
 .c-flexbox__title {
-  height: auto;
-  width: auto;
+  height: 100%;
+  width: 100%;
   display: flex;
+  flex-direction: column;
   position: relative;
   margin-left: 3.7rem;
-  align-items: center;
-  top: 25%;
+  justify-content: center;
 }
 @media (min-width: 768px) {
   .c-flexbox__title {
+    flex-direction: inherit;
+    justify-content: inherit;
+    align-items: center;
     margin-left: 8.6rem;
   }
 }

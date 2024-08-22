@@ -76,15 +76,19 @@
     }
 
     &__title {
-        height: auto;
-        width: auto;
+        height: 100%;
+        width: 100%;
         display: flex;
+        flex-direction: column;
         position: relative;
         margin-left: 3.7rem;
-        align-items: center;
-        top: 25%;
+        justify-content: center;
+        //top: 25%;
     
         @include breakpoint(tablet) {
+            flex-direction: inherit;
+            justify-content: inherit;
+            align-items: center;
             margin-left: 8.6rem;
         }
     
