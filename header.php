@@ -19,7 +19,7 @@
                 <div class="c-flexbox__header">
                     <div class="l-header__title">
                         <h1 class="c-title__header">
-                            <a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo( 'name' ); ?></a>
+                            <button class="c-button__home"><a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo( 'name' ); ?></a></button>
                         </h1>
                     </div>
                     <div class="c-search-form">
