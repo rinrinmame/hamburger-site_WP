@@ -393,6 +393,7 @@ main {
 
 .archive, .search {
     .p-card {
+        
         p {
             font-weight: 400;
             font-size: 1.6rem;
@@ -416,9 +417,11 @@ main {
 
         .c-card__title {
             font-size: 2rem;
+            margin-bottom: 2.1rem;
     
             @include breakpoint(pc) {
                 font-size: 3.6rem;
+                margin-bottom: 4.4rem;
             }
         }
     }

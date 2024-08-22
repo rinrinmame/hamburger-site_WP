@@ -430,10 +430,12 @@ main .wp-pagenavi .current {
 }
 .archive .p-card .c-card__title, .search .p-card .c-card__title {
   font-size: 2rem;
+  margin-bottom: 2.1rem;
 }
 @media (min-width: 1024px) {
   .archive .p-card .c-card__title, .search .p-card .c-card__title {
     font-size: 3.6rem;
+    margin-bottom: 4.4rem;
   }
 }
 
