@@ -10,8 +10,17 @@
                     </div>
                 </div>
             </article>
-
-            <p>お探しのページは見つかりませんでした</p>
+            <section class="l-main__discription p-discription">
+                <div class="c-inner__archive">
+                    <div class="c-background__discription">
+                        <div class="c-inner__discription">
+                            <div class="c-flexbox__discription">
+                                <h2 class="c-title__discription">お探しのページは見つかりませんでした</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
             <section class="p-page c-flexbox__page">
                 <?php wp_pagenavi(); //ページネーション?>
             </section>
