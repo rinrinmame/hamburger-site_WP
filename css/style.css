@@ -1149,7 +1149,7 @@ main .wp-pagenavi .current {
 }
 
 .c-grid__body {
-  height: 100vh;
+  height: 100%;
   width: 100%;
   display: block;
   min-height: 100%;
