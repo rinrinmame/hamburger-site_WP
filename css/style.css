@@ -352,7 +352,7 @@ main .wp-pagenavi .previouspostslink::before {
   content: "";
   height: 1.8rem;
   width: 1.8rem;
-  background: url(http://hamburger-sitewp.local/wp-content/uploads/2024/08/pagearrow__left.png) no-repeat center center;
+  background: url(../images/pagearrow__left.png) no-repeat center center;
   margin-right: 15px;
   display: inline-block;
   position: absolute;
@@ -362,7 +362,7 @@ main .wp-pagenavi .nextpostslink::after {
   content: "";
   height: 1.8rem;
   width: 1.8rem;
-  background: url(http://hamburger-sitewp.local/wp-content/uploads/2024/08/pagearrow__right.png) no-repeat center center;
+  background: url(../images/pagearrow__right.png) no-repeat center center;
   display: inline-block;
   position: absolute;
   right: 7px;
@@ -870,7 +870,7 @@ main .wp-pagenavi .current {
   content: "";
   height: 2.4rem;
   width: 2.4rem;
-  background: url(http://hamburger-sitewp.local/wp-content/uploads/2024/06/header__search-form.png) no-repeat center center;
+  background: url(../images/header__search-form.png) no-repeat center center;
   display: inline-block;
   position: absolute;
   top: 55%;
@@ -1039,17 +1039,6 @@ main .wp-pagenavi .current {
   overflow: hidden;
   background-size: cover;
   background-position: center;
-  background-image: url(http://hamburger-sitewp.local/wp-content/uploads/2024/06/main__map-sp.jpg);
-}
-@media (min-width: 768px) {
-  .c-background__access {
-    background-image: url(http://hamburger-sitewp.local/wp-content/uploads/2024/06/main__map-tablet.jpg);
-  }
-}
-@media (min-width: 1024px) {
-  .c-background__access {
-    background-image: url(http://hamburger-sitewp.local/wp-content/uploads/2024/06/main__map-pc.jpg);
-  }
 }
 .c-background__map {
   height: auto;
@@ -1069,7 +1058,7 @@ main .wp-pagenavi .current {
   overflow: hidden;
   background-size: cover;
   background-position: center;
-  background-image: url(http://hamburger-sitewp.local/wp-content/uploads/2024/06/main__takeout.jpg);
+  background-image: url(../images/main__takeout.jpg);
 }
 @media (min-width: 1024px) {
   .c-background__cheeseburger {
@@ -1144,7 +1133,7 @@ main .wp-pagenavi .current {
   display: block;
   position: relative;
   overflow: hidden;
-  background-image: url(http://hamburger-sitewp.local/wp-content/uploads/2024/07/pc_footer.png);
+  background-image: url(../images/footer.png);
   background-repeat: repeat;
 }
 
@@ -1836,7 +1825,7 @@ main .wp-pagenavi .current {
   position: relative;
   font-family: "M PLUS 1p";
   font-weight: bold;
-  height: auto;
+  height: 100%;
   width: auto;
   display: block;
 }
@@ -1933,14 +1922,14 @@ main .wp-pagenavi .current {
   background-color: #FFFFFF;
 }
 .p-branch-menu__takeout {
-  background-image: url(http://hamburger-sitewp.local/wp-content/uploads/2024/06/main__takeout.jpg);
+  background-image: url(../images/main__takeout.jpg);
   height: auto;
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
 .p-branch-menu__eatin {
-  background-image: url(http://hamburger-sitewp.local/wp-content/uploads/2024/06/main__eatin.jpg);
+  background-image: url(../images/main__eatin.jpg);
   height: auto;
   width: 100%;
   -o-object-fit: cover;

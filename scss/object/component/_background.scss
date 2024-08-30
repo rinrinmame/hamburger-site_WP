@@ -18,14 +18,8 @@
         overflow: hidden;
         background-size: cover;
         background-position: center;
-        //background-image: url(http://hamburger-sitewp.local/wp-content/uploads/2024/06/main__title-sp.jpg);
-
-        //@include breakpoint(tablet) {
-            //background-image: url(http://hamburger-sitewp.local/wp-content/uploads/2024/06/main__title-tablet.jpg);
-        //}
 
         @include breakpoint(pc) {
-            //background-image: url(http://hamburger-sitewp.local/wp-content/uploads/2024/06/main__title-pc.jpg);
             height: 53rem;
         }
     }
@@ -49,16 +43,6 @@
         overflow: hidden;
         background-size: cover;
         background-position: center;
-        background-image: url(http://hamburger-sitewp.local/wp-content/uploads/2024/06/main__map-sp.jpg);
-
-        @include breakpoint(tablet) {
-            background-image: url(http://hamburger-sitewp.local/wp-content/uploads/2024/06/main__map-tablet.jpg);
-        }
-
-        @include breakpoint(pc) {
-            background-image: url(http://hamburger-sitewp.local/wp-content/uploads/2024/06/main__map-pc.jpg);
-            
-        }
     }
 
     &__map {
@@ -80,7 +64,7 @@
         overflow: hidden;
         background-size: cover;
         background-position: center;
-        background-image: url(http://hamburger-sitewp.local/wp-content/uploads/2024/06/main__takeout.jpg);
+        background-image: url(../images/main__takeout.jpg);
 
         @include breakpoint(pc) {
             height: 23.9rem;
@@ -104,7 +88,6 @@
         background-size: cover;
         background-color: $color--lightgray;
         background-position: center;
-        //background-image: url(http://hamburger-sitewp.local/wp-content/uploads/2024/06/main__title-single.jpg);
 
         @include breakpoint(tablet) {
             height: 50.5rem;
@@ -187,7 +170,7 @@
         display: block;
         position: relative;
         overflow: hidden;
-        background-image: url(http://hamburger-sitewp.local/wp-content/uploads/2024/07/pc_footer.png);
+        background-image: url(../images/footer.png);
         background-repeat: repeat;
     }
 }
