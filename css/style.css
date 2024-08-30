@@ -1008,8 +1008,8 @@ main .wp-pagenavi .current {
   flex-grow: 1;
 }
 .c-background__title {
-  height: 28.5rem;
   width: 100%;
+  height: 28.5rem;
   display: block;
   position: relative;
   overflow: hidden;
@@ -1022,8 +1022,8 @@ main .wp-pagenavi .current {
   }
 }
 .c-background__category {
-  height: auto;
   width: 100%;
+  height: auto;
   overflow: hidden;
   background-size: cover;
   background: rgba(255, 255, 255, 0.79);
@@ -1031,24 +1031,45 @@ main .wp-pagenavi .current {
   display: flex;
   flex-direction: column;
 }
-.c-background__access {
-  height: auto;
-  width: 100%;
-  display: block;
-  position: relative;
-  overflow: hidden;
-  background-size: cover;
-  background-position: center;
-}
-.c-background__map {
-  height: auto;
+.c-background__map-all {
   width: auto;
+  height: auto;
   display: block;
   position: relative;
-  overflow: hidden;
-  background-size: cover;
-  background-position: bottom;
-  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+  margin-bottom: 0;
+  left: 0%;
+  top: 0%;
+  background: rgba(0, 0, 0, 0.4);
+}
+.c-background__map-comment {
+  width: 100%;
+  height: auto;
+  display: block;
+  position: relative;
+  z-index: 2;
+  margin-bottom: 0;
+}
+@media (min-width: 1024px) {
+  .c-background__map-comment {
+    width: 61%;
+  }
+}
+.c-background__map-comment::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  display: inline-block;
+  width: 100%;
+  height: 61%;
+  left: 0%;
+  top: 0%;
+  background: rgba(0, 0, 0, 0.3);
+}
+@media (min-width: 768px) {
+  .c-background__map-comment::before {
+    height: auto;
+  }
 }
 .c-background__cheeseburger {
   height: 28.5rem;
@@ -1821,40 +1842,28 @@ main .wp-pagenavi .current {
         }
     }
 }*/
+.c-map {
+  height: 100%;
+  width: 100%;
+  display: block;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+}
+
 .p-access {
   position: relative;
   font-family: "M PLUS 1p";
   font-weight: bold;
-  height: 100%;
+  height: auto;
   width: auto;
   display: block;
 }
-.p-access__comment {
-  width: 100%;
-  height: auto;
-  display: block;
+.p-access__map {
   position: relative;
-}
-@media (min-width: 1024px) {
-  .p-access__comment {
-    width: 61%;
-  }
-}
-.p-access__comment:before {
-  content: "";
-  position: absolute;
-  bottom: -5.05rem;
-  display: inline-block;
-  height: 61%;
-  width: 100%;
-  left: 0%;
-  top: 0%;
-  background: rgba(0, 0, 0, 0.2);
-}
-@media (min-width: 768px) {
-  .p-access__comment:before {
-    height: auto;
-  }
+  height: auto;
+  width: auto;
 }
 .p-access__comment h2 {
   height: auto;
@@ -1863,6 +1872,7 @@ main .wp-pagenavi .current {
   color: #FFFFFF;
   font-size: 3rem;
   margin-bottom: 2.9rem;
+  z-index: 3;
 }
 @media (min-width: 1024px) {
   .p-access__comment h2 {
@@ -1870,7 +1880,7 @@ main .wp-pagenavi .current {
     margin-bottom: 10.9rem;
   }
 }
-.p-access__comment h2:before {
+.p-access__comment h2::before {
   content: "";
   position: absolute;
   bottom: -15px;
@@ -1879,9 +1889,10 @@ main .wp-pagenavi .current {
   height: 0.2rem;
   justify-content: left;
   background-color: #FFFFFF;
+  z-index: 3;
 }
 @media (min-width: 1024px) {
-  .p-access__comment h2:before {
+  .p-access__comment h2::before {
     bottom: -50.5px;
   }
 }
@@ -1893,6 +1904,7 @@ main .wp-pagenavi .current {
   color: #FFFFFF;
   font-size: 1.4rem;
   line-height: 2;
+  z-index: 3;
 }
 @media (min-width: 1024px) {
   .p-access__comment p {
