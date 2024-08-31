@@ -64,8 +64,22 @@
                     <div class="c-background__map-all">
                         <div class="p-access__comment c-background__map-comment">
                             <div class="c-inner__text">
-                                <h2><?php echo get_post( 929 )->post_title; ?></h2>
-                                <p><?php echo get_post( 929 )->post_content; ?></p>   
+                            <?php
+                                $args = array (
+                                    'post_type' => 'page', // 投稿タイプ
+                                    'pagename' => 'access', //固定ページのスラッグ指定 
+                                    'page_id' => 929,// 固定ページの ID 指定
+                                );
+                                $myposts = get_posts( $args );
+                                foreach( $myposts as $post ):
+                                setup_postdata( $post ); // グローバル変数$postを書き換え
+                            ?>
+                                <h2><?php the_title(); ?></h2>
+                                <p><?php the_content(); ?></p>
+                            <?php
+                                endforeach;
+                                wp_reset_postdata();
+                            ?>
                             </div>
                         </div>
                     </div>

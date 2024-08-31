@@ -13,13 +13,13 @@
         <?php if ($url) : ?>
             <div class="c-background__title-single" style="background-image: url( '<?php echo $url; ?>' );">
                 <div class="c-background__cheeseburger-cover u-cover__single">
-                    <h1 class="c-title__single"><a href="<?php the_permalink(); ?>"><?php the_title() ?></a></h1>
+                    <h1 class="c-title__single"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
                 </div>
             </div>
         <?php else : ?>
             <div class="c-background__title-single" style="background-image: url( '<?php echo $noimage; ?>' );">
                 <div class="c-background__cheeseburger-cover u-cover__single">
-                    <h1 class="c-title__single"><a href="<?php the_permalink(); ?>"><?php the_title() ?></a></h1>
+                    <h1 class="c-title__single"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
                 </div>
             </div>
         <?php endif; ?>
