@@ -744,6 +744,10 @@ main .wp-pagenavi .current {
   }
 }
 .c-inner__figcaption {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
   padding-bottom: 12.3%;
 }
 @media (min-width: 768px) {
@@ -757,6 +761,8 @@ main .wp-pagenavi .current {
   }
 }
 .c-inner__card {
+  height: 100%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   padding: 9.1% 4.79% 11.2% 4.79%;
@@ -778,6 +784,7 @@ main .wp-pagenavi .current {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  border-radius: 35px 35px 35px 35px;
 }
 .c-inner__single {
   height: auto;
@@ -1637,8 +1644,8 @@ main .wp-pagenavi .current {
 .c-card {
   font-family: "M PLUS 1p";
   font-weight: bold;
-  height: auto;
-  width: auto;
+  height: 100%;
+  width: 100%;
   background-color: #3C2B1C;
   display: flex;
   flex-direction: column;
@@ -1712,19 +1719,18 @@ main .wp-pagenavi .current {
   }
 }
 .c-card__button a {
-  height: 1.7rem;
-  width: 8rem;
+  height: 100%;
+  width: 100%;
   font-size: 1.6rem;
   display: flex;
   flex-direction: column;
   position: absolute;
-  margin: 1.1rem 4.2rem 1.4rem 4.1rem;
+  justify-content: center;
+  align-items: center;
+  border-radius: 35px 35px 35px 35px;
 }
-@media (min-width: 1024px) {
-  .c-card__button a {
-    height: 3.3rem;
-    margin: 2.3rem 10.6rem 2rem 10.6rem;
-  }
+.c-card__button a:hover, .c-card__button a:visited {
+  border-radius: 35px 35px 35px 35px;
 }
 
 .c-text {

@@ -3,8 +3,8 @@
 .c-card {
     font-family: "M PLUS 1p";
     font-weight: bold;
-    height: auto;
-    width: auto;
+    height: 100%;
+    width: 100%;
     background-color: $color--darkbrown;
     display: flex;
     flex-direction: column;
@@ -78,17 +78,24 @@
         }
 
         a {
-            height: 1.7rem;
-            width: 8rem;
+            height: 100%;
+            width: 100%;
             font-size: 1.6rem;
             display: flex;
             flex-direction: column;
             position: absolute;
-            margin: 1.1rem 4.2rem 1.4rem 4.1rem;
+            //margin: 1.1rem 4.2rem 1.4rem 4.1rem;
+            justify-content: center;
+            align-items: center;
+            border-radius: 35px 35px 35px 35px;
 
             @include breakpoint(pc) {
-                height: 3.3rem;
-                margin: 2.3rem 10.6rem 2rem 10.6rem;
+                //height: 3.3rem;
+                //margin: 2.3rem 10.6rem 2rem 10.6rem;
+            }
+
+            &:hover, &:visited {
+                border-radius: 35px 35px 35px 35px; 
             }
         }
     }
