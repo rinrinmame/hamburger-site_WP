@@ -18,7 +18,14 @@
                     <div class="c-inner__branch-menu">
                         <ul class="c-flexbox__branch-menu">
                             <li class="p-branch-menu__takeout c-category">
-                                <h3>Take Out</h3>
+                            <?php
+                                $cat = get_category_by_slug( 'takeout' );
+                            ?>
+                                <h3>
+                                    <a href="<?php echo get_category_link( $cat->cat_ID ); ?>">
+                                        <?php echo get_cat_name($cat->cat_ID);?>
+                                    </a>
+                                </h3>
                                 <dl class="c-list">
                                     <div class="c-inner__category">
                                         <div class="c-background__category">
@@ -37,7 +44,14 @@
                                 </dl>
                             </li>
                             <li class="p-branch-menu__eatin c-category">                                  
-                                <h3>Eat In</h3>
+                            <?php
+                                $cat = get_category_by_slug( 'eatin' );
+                            ?>
+                                <h3>
+                                    <a href="<?php echo get_category_link( $cat->cat_ID ); ?>">
+                                        <?php echo get_cat_name($cat->cat_ID);?>
+                                    </a>
+                                </h3>
                                 <dl class="c-list">                                                           
                                     <div class="c-inner__category">
                                         <div class="c-background__category">
