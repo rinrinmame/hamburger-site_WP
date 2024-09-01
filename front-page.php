@@ -49,11 +49,7 @@
                             ?>
                                 <h3>
                                     <a href="<?php echo get_category_link( $cat->cat_ID ); ?>">
-<<<<<<< HEAD
                                         <?php echo get_cat_name( $cat->cat_ID );?>
-=======
-                                        <?php echo get_cat_name($cat->cat_ID);?>
->>>>>>> cb7ea20863b9170c246cbfaf2fc7652f30af2998
                                     </a>
                                 </h3>
                                 <dl class="c-list">                                                           
