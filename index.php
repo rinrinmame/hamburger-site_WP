@@ -7,7 +7,7 @@
                 ?>
                 <?php if ($url) : ?>
                     <div class="c-background__title" style="background-image: url( '<?php echo $url; ?>' );">
-                        <h2 class="c-title__front"><?php the_title() ?></h2>
+                        <h2 class="c-title__front"><?php the_title(); ?></h2>
                     </div>
                 <?php else : ?>
                     <div class="c-background__title" style="background-image: url( '<?php echo $noimage; ?>' );">
