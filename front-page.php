@@ -68,7 +68,6 @@
                                 $args = array (
                                     'post_type' => 'page', // 投稿タイプ
                                     'pagename' => 'access', //固定ページのスラッグ指定 
-                                    'page_id' => 929,// 固定ページの ID 指定
                                 );
                                 $myposts = get_posts( $args );
                                 foreach( $myposts as $post ):
