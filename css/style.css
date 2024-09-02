@@ -1543,6 +1543,12 @@ main .wp-pagenavi .current {
   width: auto;
   display: flex;
   flex-direction: column;
+  gap: 2.5rem;
+}
+@media (min-width: 768px) {
+  .c-flexbox__discription {
+    gap: 2rem;
+  }
 }
 .c-flexbox__container {
   height: auto;
