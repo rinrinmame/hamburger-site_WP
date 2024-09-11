@@ -17,58 +17,86 @@
                 <div class="p-branch-menu c-background__branch-menu">
                     <div class="c-inner__branch-menu">
                         <ul class="c-flexbox__branch-menu">
+                            <?php
+                                $cat = get_category_by_slug( 'takeout' );
+                            ?>
                             <li class="p-branch-menu__takeout c-category">
-                                <h3>Take Out</h3>
-                                <dl class="c-list">
-                                    <div class="c-inner__category">
-                                        <div class="c-background__category">
-                                            <div class="c-inner__list">
-                                                <dt>Take OUT</dt>
-                                                <dd>当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで</dd>
+                                <a href="<?php echo get_category_link( $cat->cat_ID ); ?>">
+                                    <h3>
+                                        <?php echo get_cat_name( $cat->cat_ID );?>
+                                    </h3>
+                                    <dl class="c-list">
+                                        <div class="c-inner__category">
+                                            <div class="c-background__category">
+                                                <div class="c-inner__list">
+                                                    <dt>Take OUT</dt>
+                                                    <dd>当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで</dd>
+                                                </div>
+                                            </div>
+                                            <div class="c-background__category">
+                                                <div class="c-inner__list">
+                                                    <dt>Take OUT</dt>
+                                                    <dd>当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで</dd>
+                                                </div>
                                             </div>
                                         </div>
-                                        <div class="c-background__category">
-                                            <div class="c-inner__list">
-                                                <dt>Take OUT</dt>
-                                                <dd>当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで</dd>
+                                    </dl>
+                                </a>
+                            </li>                              
+                            <?php
+                                $cat = get_category_by_slug( 'eatin' );
+                            ?>
+                            <li class="p-branch-menu__eatin c-category"> 
+                                <a href="<?php echo get_category_link( $cat->cat_ID ); ?>">
+                                    <h3>
+                                        <?php echo get_cat_name( $cat->cat_ID );?>
+                                    </h3>
+                                    <dl class="c-list">                                                           
+                                        <div class="c-inner__category">
+                                            <div class="c-background__category">
+                                                <div class="c-inner__list">
+                                                    <dt>Eat In</dt>
+                                                    <dd>店内でお食事いただけるメニューです店内でお食事いただけるメニューです店内でお食事いただけるメニューです店内でお食事いただけるメニューです店内でお食事いただけるメニューです店内でお食事いただけるメニューです店内でお食事いただけるメニューです店内でお食事いただけるメニューです</dd>
+                                                </div>
+                                            </div>
+                                            <div class="c-background__category">
+                                                <div class="c-inner__list">
+                                                    <dt>Eat In</dt>
+                                                    <dd>店内でお食事いただけるメニューです店内でお食事いただけるメニューです店内でお食事いただけるメニューです店内でお食事いただけるメニューです店内でお食事いただけるメニューです店内でお食事いただけるメニューです店内でお食事いただけるメニューです店内でお食事いただけるメニューです</dd>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                </dl>
-                            </li>
-                            <li class="p-branch-menu__eatin c-category">                                  
-                                <h3>Eat In</h3>
-                                <dl class="c-list">                                                           
-                                    <div class="c-inner__category">
-                                        <div class="c-background__category">
-                                            <div class="c-inner__list">
-                                                <dt>Eat In</dt>
-                                                <dd>店内でお食事いただけるメニューです店内でお食事いただけるメニューです店内でお食事いただけるメニューです店内でお食事いただけるメニューです店内でお食事いただけるメニューです店内でお食事いただけるメニューです店内でお食事いただけるメニューです店内でお食事いただけるメニューです</dd>
-                                            </div>
-                                        </div>
-                                        <div class="c-background__category">
-                                            <div class="c-inner__list">
-                                                <dt>Eat In</dt>
-                                                <dd>店内でお食事いただけるメニューです店内でお食事いただけるメニューです店内でお食事いただけるメニューです店内でお食事いただけるメニューです店内でお食事いただけるメニューです店内でお食事いただけるメニューです店内でお食事いただけるメニューです店内でお食事いただけるメニューです</dd>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </dl>
+                                    </dl>
+                                </a>
                             </li>
                         </ul>
                     </div>
                 </div>
             </article>
-            <section class="1-main__access p-access">
-                <div class="c-background__access">
-                    <div class="p-access__map c-background__map">
-                        <div class="p-access__comment">
+            <section class="l-main__access p-access">
+                <div class="p-access__map">
+                    <div class="c-background__map-all">
+                        <div class="p-access__comment c-background__map-comment">
                             <div class="c-inner__text">
-                                <h2>見出しが入ります</h2>
-                                <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>   
+                            <?php
+                                $args = array (
+                                    'post_type' => 'page', // 投稿タイプ
+                                    'pagename' => 'access', //固定ページのスラッグ指定 
+                                );
+                                $myposts = get_posts( $args );
+                                foreach( $myposts as $post ):
+                                setup_postdata( $post ); // グローバル変数$postを書き換え
+                            ?>
+                                <h2><?php the_title(); ?></h2>
+                                <p><?php the_content(); ?></p>
+                            <?php
+                                endforeach;
+                                wp_reset_postdata();
+                            ?>
                             </div>
                         </div>
                     </div>
+                    <iframe class="c-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.7477988418323!2d139.74285797413486!3d35.65858483122038!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188bbd9009ec09%3A0x481a93f0d2a409dd!2z5p2x5Lqs44K_44Ov44O8!5e0!3m2!1sja!2sjp!4v1724943929863!5m2!1sja!2sjp" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </section>
         </main>

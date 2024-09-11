@@ -19,7 +19,7 @@
                     </div>
                 </div>
             </div>
-            <?php  if (have_posts() && get_search_query()) :
+            <?php  if ( have_posts() && get_search_query()) :
                 while ( have_posts() ) :
                 the_post();
             ?>
