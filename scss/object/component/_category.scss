@@ -11,6 +11,10 @@
     background-size: cover;
     position: relative;
 
+    &:hover {
+        opacity: 0.6;
+    }
+
     h3 {
         font-family: Roboto;
         font-weight: bold;
@@ -55,6 +59,7 @@
         font-size: 1.6rem;
         height: auto;
         width: auto;
+        display: flex;
         line-height: 1.7;
         flex-direction: column;
         position: relative;

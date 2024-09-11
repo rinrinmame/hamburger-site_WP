@@ -1388,6 +1388,9 @@ main .wp-pagenavi .current {
   background-size: cover;
   position: relative;
 }
+.c-category:hover {
+  opacity: 0.6;
+}
 .c-category h3 {
   font-family: Roboto;
   font-weight: bold;
@@ -1434,6 +1437,7 @@ main .wp-pagenavi .current {
   font-size: 1.6rem;
   height: auto;
   width: auto;
+  display: flex;
   line-height: 1.7;
   flex-direction: column;
   position: relative;
@@ -1718,6 +1722,10 @@ main .wp-pagenavi .current {
   background-color: #FFFFFF;
   border-radius: 35px 35px 35px 35px;
 }
+.c-card__button:hover {
+  background: rgba(222, 216, 211, 0.9);
+  color: #3C2A10;
+}
 @media (min-width: 1024px) {
   .c-card__button {
     height: 7.6rem;
@@ -1735,10 +1743,6 @@ main .wp-pagenavi .current {
   align-items: center;
   border-radius: 35px 35px 35px 35px;
 }
-.c-card__button a:hover, .c-card__button a:visited {
-  border-radius: 35px 35px 35px 35px;
-}
-
 .c-text {
   font-family: "M PLUS 1p";
   font-weight: 400;

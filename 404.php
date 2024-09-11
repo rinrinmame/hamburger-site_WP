@@ -4,8 +4,7 @@
                 <div class="c-background__cheeseburger">
                     <div class="c-background__cheeseburger-cover">
                         <ul class="c-flexbox__title">
-                            <li class="c-title__archive"><h2>Search:</h2></li>
-                            <li class="c-title__archive-sub"><p><?php the_archive_title(); ?></p></li>
+                            <li class="c-title__archive"><h2>404 Not Found</h2></li>
                         </ul>
                     </div>
                 </div>
@@ -16,13 +15,11 @@
                         <div class="c-inner__discription">
                             <div class="c-flexbox__discription">
                                 <h2 class="c-title__discription">お探しのページは見つかりませんでした</h2>
+                                <p>このページは削除されたかURLが変更されたため、表示することができません。</p>
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
-            <section class="p-page c-flexbox__page">
-                <?php wp_pagenavi(); //ページネーション?>
             </section>
         </main>
         <?php get_sidebar(); //siderbar.phpを読み込むテンプレートタグ（インクルードタグ）?>

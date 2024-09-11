@@ -62,6 +62,7 @@
         justify-content: center;
         align-items: center;
     }
+
     &__button {
         height: 4.2rem;
         width: 16.3rem;
@@ -71,6 +72,11 @@
         color: $color--gray;
         background-color: $color--white;
         border-radius: 35px 35px 35px 35px;
+
+        &:hover {
+            background: rgba($color: $color--pinkishgray, $alpha: 0.9);
+            color: $color--black;
+        }
 
         @include breakpoint(pc) {
             height: 7.6rem;
@@ -92,10 +98,6 @@
             @include breakpoint(pc) {
                 //height: 3.3rem;
                 //margin: 2.3rem 10.6rem 2rem 10.6rem;
-            }
-
-            &:hover, &:visited {
-                border-radius: 35px 35px 35px 35px; 
             }
         }
     }

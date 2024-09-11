@@ -17,57 +17,57 @@
                 <div class="p-branch-menu c-background__branch-menu">
                     <div class="c-inner__branch-menu">
                         <ul class="c-flexbox__branch-menu">
-                            <li class="p-branch-menu__takeout c-category">
                             <?php
                                 $cat = get_category_by_slug( 'takeout' );
                             ?>
-                                <h3>
-                                    <a href="<?php echo get_category_link( $cat->cat_ID ); ?>">
+                            <li class="p-branch-menu__takeout c-category">
+                                <a href="<?php echo get_category_link( $cat->cat_ID ); ?>">
+                                    <h3>
                                         <?php echo get_cat_name( $cat->cat_ID );?>
-                                    </a>
-                                </h3>
-                                <dl class="c-list">
-                                    <div class="c-inner__category">
-                                        <div class="c-background__category">
-                                            <div class="c-inner__list">
-                                                <dt>Take OUT</dt>
-                                                <dd>当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで</dd>
+                                    </h3>
+                                    <dl class="c-list">
+                                        <div class="c-inner__category">
+                                            <div class="c-background__category">
+                                                <div class="c-inner__list">
+                                                    <dt>Take OUT</dt>
+                                                    <dd>当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで</dd>
+                                                </div>
+                                            </div>
+                                            <div class="c-background__category">
+                                                <div class="c-inner__list">
+                                                    <dt>Take OUT</dt>
+                                                    <dd>当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで</dd>
+                                                </div>
                                             </div>
                                         </div>
-                                        <div class="c-background__category">
-                                            <div class="c-inner__list">
-                                                <dt>Take OUT</dt>
-                                                <dd>当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで</dd>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </dl>
-                            </li>
-                            <li class="p-branch-menu__eatin c-category">                                  
+                                    </dl>
+                                </a>
+                            </li>                              
                             <?php
                                 $cat = get_category_by_slug( 'eatin' );
                             ?>
-                                <h3>
-                                    <a href="<?php echo get_category_link( $cat->cat_ID ); ?>">
+                            <li class="p-branch-menu__eatin c-category"> 
+                                <a href="<?php echo get_category_link( $cat->cat_ID ); ?>">
+                                    <h3>
                                         <?php echo get_cat_name( $cat->cat_ID );?>
-                                    </a>
-                                </h3>
-                                <dl class="c-list">                                                           
-                                    <div class="c-inner__category">
-                                        <div class="c-background__category">
-                                            <div class="c-inner__list">
-                                                <dt>Eat In</dt>
-                                                <dd>店内でお食事いただけるメニューです店内でお食事いただけるメニューです店内でお食事いただけるメニューです店内でお食事いただけるメニューです店内でお食事いただけるメニューです店内でお食事いただけるメニューです店内でお食事いただけるメニューです店内でお食事いただけるメニューです</dd>
+                                    </h3>
+                                    <dl class="c-list">                                                           
+                                        <div class="c-inner__category">
+                                            <div class="c-background__category">
+                                                <div class="c-inner__list">
+                                                    <dt>Eat In</dt>
+                                                    <dd>店内でお食事いただけるメニューです店内でお食事いただけるメニューです店内でお食事いただけるメニューです店内でお食事いただけるメニューです店内でお食事いただけるメニューです店内でお食事いただけるメニューです店内でお食事いただけるメニューです店内でお食事いただけるメニューです</dd>
+                                                </div>
+                                            </div>
+                                            <div class="c-background__category">
+                                                <div class="c-inner__list">
+                                                    <dt>Eat In</dt>
+                                                    <dd>店内でお食事いただけるメニューです店内でお食事いただけるメニューです店内でお食事いただけるメニューです店内でお食事いただけるメニューです店内でお食事いただけるメニューです店内でお食事いただけるメニューです店内でお食事いただけるメニューです店内でお食事いただけるメニューです</dd>
+                                                </div>
                                             </div>
                                         </div>
-                                        <div class="c-background__category">
-                                            <div class="c-inner__list">
-                                                <dt>Eat In</dt>
-                                                <dd>店内でお食事いただけるメニューです店内でお食事いただけるメニューです店内でお食事いただけるメニューです店内でお食事いただけるメニューです店内でお食事いただけるメニューです店内でお食事いただけるメニューです店内でお食事いただけるメニューです店内でお食事いただけるメニューです</dd>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </dl>
+                                    </dl>
+                                </a>
                             </li>
                         </ul>
                     </div>
