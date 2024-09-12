@@ -23,7 +23,7 @@
                 while ( have_posts() ) :
                 the_post();
             ?>
-            <?php get_template_part( 'card' ); //card.phpを読み込み?>
+            <?php get_template_part( 'template/card' ); //card.phpを読み込み?>
             <?php endwhile; else : ?>
                 <p>記事はありません</p>
             <?php endif; ?>
