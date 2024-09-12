@@ -17,7 +17,7 @@
 
         @include breakpoint(pc) {
             flex-direction: row;
-            gap: 55rem;
+            //gap: auto;
             padding: inherit;
         }
     }

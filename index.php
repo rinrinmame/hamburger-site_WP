@@ -1,9 +1,9 @@
-<?php get_header(); //header.phpを読み込むテンプレートタグ（インクルードタグ）?>
+        <?php get_header(); //header.phpを読み込むテンプレートタグ（インクルードタグ）?>
         <main class="l-main">
             <article class="l-main__contents p-title">
                 <?php 
                     $url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
-                    $noimage = get_template_directory_uri() . '../images/noimage.jpg';
+                    $noimage = get_template_directory_uri() . './images/noimage.jpg';
                 ?>
                 <?php if ($url) : ?>
                     <div class="c-background__title" style="background-image: url( '<?php echo $url; ?>' );">
@@ -11,7 +11,7 @@
                     </div>
                 <?php else : ?>
                     <div class="c-background__title" style="background-image: url( '<?php echo $noimage; ?>' );">
-                        <h2 class="c-title__front">No image</h2>
+                        <h2 class="c-title__front"><?php the_title(); ?></h2>
                     </div>
                 <?php endif; ?>
                 <div class="p-branch-menu c-background__branch-menu">

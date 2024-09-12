@@ -11,7 +11,7 @@
                     </div>
                 <?php else : ?>
                     <div class="c-background__title" style="background-image: url( '<?php echo $noimage; ?>' );">
-                        <h2 class="c-title__front">No image</h2>
+                        <h2 class="c-title__front"><?php the_title(); ?></h2>
                     </div>
                 <?php endif; ?>
                 <div class="p-branch-menu c-background__branch-menu">

@@ -1346,17 +1346,17 @@ main .wp-pagenavi .current {
   width: auto;
   position: absolute;
   font-size: 3.6rem;
-  margin: 9.3rem auto 8.9rem 2.6rem;
+  margin: 9.3rem auto 8.9rem 6.93%;
 }
 @media (min-width: 768px) {
   .c-title__single {
-    margin: 21.5rem auto 20.1rem 8.6rem;
+    margin: 21.5rem auto 20.1rem 10.3%;
     font-size: 6rem;
   }
 }
 @media (min-width: 1024px) {
   .c-title__single {
-    margin: 21.3rem auto 19.8rem 8.6rem;
+    margin: 21.3rem auto 19.8rem 5.53%;
   }
 }
 .c-title__discription {
@@ -1460,7 +1460,6 @@ main .wp-pagenavi .current {
 @media (min-width: 1024px) {
   .c-flexbox__header {
     flex-direction: row;
-    gap: 55rem;
     padding: inherit;
   }
 }

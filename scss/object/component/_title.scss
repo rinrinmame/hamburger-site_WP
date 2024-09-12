@@ -100,15 +100,15 @@
         width: auto;
         position: absolute;
         font-size: 3.6rem;
-        margin: 9.3rem auto 8.9rem 2.6rem;
+        margin: 9.3rem auto 8.9rem 6.93%;
 
         @include breakpoint(tablet) {
-            margin: 21.5rem auto 20.1rem 8.6rem;
+            margin: 21.5rem auto 20.1rem 10.3%;
             font-size: 6rem;
         }
 
         @include breakpoint(pc) {
-            margin: 21.3rem auto 19.8rem 8.6rem;
+            margin: 21.3rem auto 19.8rem 5.53%;
         }
     }
 
