@@ -1,6 +1,10 @@
 @use "../foundation/color" as *;
 @use "../foundation/breakpoint" as *;
 
+#wpadminbar {
+	position: fixed;
+}
+
 main {
     font-family: "Roboto", sans-serif,"M PLUS 1p";
     line-height: 1.5;

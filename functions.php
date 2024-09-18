@@ -13,7 +13,6 @@
         add_theme_support( 'menus' );  //カスタムメニューの有効化
         add_theme_support( 'title-tag' );   //管理画面からタイトルタグ登録可能に
         add_theme_support( 'post-thumbnails' ); //アイキャッチ機能の有効化
-        add_filter( 'show_admin_bar', '__return_false' ); //アドミンバー非表示
 
         register_nav_menus( array(
         //メニューの位置
