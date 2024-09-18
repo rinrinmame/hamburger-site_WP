@@ -1,0 +1,9 @@
+@use "../../foundation/" as *;
+
+.u-login {
+    margin-top: 6.6rem;
+
+    @include breakpoint(pc) {
+        margin-top: 2rem;
+    }
+}

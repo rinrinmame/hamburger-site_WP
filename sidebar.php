@@ -1,5 +1,9 @@
 <aside class="l-sidebar">
+<?php if(is_user_logged_in()): ?>
+    <div class="c-inner__sidebar u-login">
+<?php else : ?>
     <div class="c-inner__sidebar">
+<?php endif; ?>
         <div class="l-sidebar__button">
             <h2>
                 <button class="c-button__menu u-button__sidebar">Menu</button>
