@@ -10,9 +10,15 @@
             'caption',
         ));
 
-        add_theme_support( 'menus' );  //カスタムメニューの有効化
+        //add_theme_support( 'menus' );  //カスタムメニューの有効化
         add_theme_support( 'title-tag' );   //管理画面からタイトルタグ登録可能に
         add_theme_support( 'post-thumbnails' ); //アイキャッチ機能の有効化
+        add_theme_support( "wp-block-styles" );
+        add_theme_support( "sensitive-embeds" );
+        //add_theme_support( "custom-logo", $args );
+        //add_theme_support( "custom-background", $args );
+        add_theme_support( "align-wide" );
+        //add_theme_support( "custom-header", $args );
 
         register_nav_menus( array(
         //メニューの位置
