@@ -10,13 +10,13 @@
             $noimage = get_template_directory_uri() . './images/noimage.jpg';
         ?>
         <?php if ($url) : ?>
-            <div class="c-background__title-single" style="background-image: url( '<?php echo $url; ?>' );">
+            <div class="c-background__title-single" style="background-image: url( '<?php echo esc_url($url); ?>' );">
                 <div class="c-background__cheeseburger-cover u-cover__single">
                     <h2 class="c-title__single"><?php the_title(); ?></h2>
                 </div>
             </div>
         <?php else : ?>
-            <div class="c-background__title-single" style="background-image: url( '<?php echo $noimage; ?>' );">
+            <div class="c-background__title-single" style="background-image: url( '<?php echo esc_url($noimage); ?>' );">
                 <div class="c-background__cheeseburger-cover u-cover__single">
                     <h2 class="c-title__single"><?php the_title() ?></h2>
                 </div>

@@ -5,9 +5,9 @@
             $noimage = get_template_directory_uri() . '/images/noimage.jpg';
         ?>
         <?php if ($url) : ?>
-            <img src=<?php echo $url; ?>>
+            <img src=<?php echo esc_url($url); ?>>
         <?php else : ?>
-            <img src=<?php echo $noimage; ?>>
+            <img src=<?php echo esc_url($noimage); ?>>
         <?php endif; ?>
         <figcaption class="c-card">
             <div class="c-inner__figcaption">

@@ -1,4 +1,4 @@
-        <?php get_header(); //header.phpを読み込むテンプレートタグ（インクルードタグ）?>
+<?php get_header(); //header.phpを読み込むテンプレートタグ（インクルードタグ）?>
         <main class="l-main">
             <article class="l-main__contents p-title">
                 <?php 
@@ -6,11 +6,11 @@
                     $noimage = get_template_directory_uri() . './images/noimage.jpg';
                 ?>
                 <?php if ($url) : ?>
-                    <div class="c-background__title" style="background-image: url( '<?php echo $url; ?>' );">
+                    <div class="c-background__title" style="background-image: url( '<?php echo esc_url($url); ?>' );">
                         <h2 class="c-title__front"><?php the_title(); ?></h2>
                     </div>
                 <?php else : ?>
-                    <div class="c-background__title" style="background-image: url( '<?php echo $noimage; ?>' );">
+                    <div class="c-background__title" style="background-image: url( '<?php echo esc_url($noimage); ?>' );">
                         <h2 class="c-title__front"><?php the_title(); ?></h2>
                     </div>
                 <?php endif; ?>
@@ -21,9 +21,9 @@
                                 $cat = get_category_by_slug( 'takeout' );
                             ?>
                             <li class="p-branch-menu__takeout c-category">
-                                <a href="<?php echo get_category_link( $cat->cat_ID ); ?>">
+                                <a href="<?php echo esc_html((get_category_link( $cat->cat_ID ))); ?>">
                                     <h3>
-                                        <?php echo get_cat_name( $cat->cat_ID );?>
+                                        <?php echo esc_html((get_cat_name( $cat->cat_ID )));?>
                                     </h3>
                                     <dl class="c-list">
                                         <div class="c-inner__category">
@@ -47,9 +47,9 @@
                                 $cat = get_category_by_slug( 'eatin' );
                             ?>
                             <li class="p-branch-menu__eatin c-category"> 
-                                <a href="<?php echo get_category_link( $cat->cat_ID ); ?>">
+                                <a href="<?php echo esc_html(get_category_link( $cat->cat_ID )); ?>">
                                     <h3>
-                                        <?php echo get_cat_name( $cat->cat_ID );?>
+                                        <?php echo esc_html(get_cat_name( $cat->cat_ID ));?>
                                     </h3>
                                     <dl class="c-list">                                                           
                                         <div class="c-inner__category">

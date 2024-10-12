@@ -17,13 +17,13 @@
                     <div class="c-flexbox__discription">
                         <?php
                             if( is_category() && category_description() ) {
-                                echo category_description();
+                                echo (category_description());
                             }
                         ?>
                     </div>
                 </div>
             </div>
-            <?php if (have_posts() ) :
+            <?php if ( have_posts() ) :
                 while ( have_posts() ) :
                 the_post();
             ?>
