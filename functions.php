@@ -72,3 +72,8 @@
         wp_enqueue_script( 'main.js', get_theme_file_uri(). '/js/main.js', array( 'jquery' ), '1.0.0', true);
     }
     add_action( 'wp_enqueue_scripts', 'Hamburger_script' );
+
+    function Hamburger_theme_add_editor_styles() {
+        add_editor_style( get_template_directory_uri() . "/css/editor-style.css" );
+    }
+    add_action( 'admin_init', 'Hamburger_theme_add_editor_styles' );
