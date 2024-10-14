@@ -54,10 +54,6 @@ a:hover, a:visited {
   left: 0%;
 }
 
-#wpadminbar {
-  position: fixed;
-}
-
 .wp-caption-text {
   margin-top: -20px;
 }
@@ -454,6 +450,12 @@ main .wp-pagenavi .current {
   flex-direction: column;
   justify-content: center;
   background-color: #FFF7EF;
+  margin-top: -46px;
+}
+@media (min-width: 601px) {
+  .l-header {
+    margin-top: inherit;
+  }
 }
 @media (min-width: 1024px) {
   .l-header {
@@ -471,6 +473,12 @@ main .wp-pagenavi .current {
 .l-header__button {
   display: block;
   position: relative;
+  margin-top: 46px;
+}
+@media (min-width: 601px) {
+  .l-header__button {
+    margin-top: inherit;
+  }
 }
 .l-header__button h2 {
   position: absolute;

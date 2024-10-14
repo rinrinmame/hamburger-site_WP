@@ -7,6 +7,11 @@
     flex-direction: column;
     justify-content: center;
     background-color: $color--ivory;
+    margin-top: -46px;
+
+    @include breakpoint(sp600) {
+        margin-top: inherit;
+    }
 
     @include breakpoint(pc) {
         grid-row: 1;
@@ -24,6 +29,11 @@
     &__button {
         display: block;
         position: relative;
+        margin-top: 46px;
+
+        @include breakpoint(sp600) {
+            margin-top: inherit;
+        }
 
         h2 {
             position: absolute;

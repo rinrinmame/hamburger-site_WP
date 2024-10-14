@@ -4,6 +4,11 @@
 			@content;
 		}
 	}
+	@if $point == sp600 {
+		@media (min-width: 601px) {
+			@content;
+		}
+	}
 	@if $point == tablet {
 		@media (min-width: 768px) {
 			@content;
