@@ -240,6 +240,7 @@ main .wp-block-quote {
 }
 main .wp-block-quote cite {
   margin-top: 1rem;
+  font-size: revert;
 }
 @media (min-width: 768px) {
   main .wp-block-quote cite {

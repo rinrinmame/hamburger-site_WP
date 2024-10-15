@@ -13,20 +13,23 @@
         //add_theme_support( 'menus' );  //カスタムメニューの有効化
         add_theme_support( 'title-tag' );   //管理画面からタイトルタグ登録可能に
         add_theme_support( 'post-thumbnails' ); //アイキャッチ機能の有効化
-        add_theme_support( 'wp-block-styles' );
-        add_theme_support( 'responsive-embeds' );
-        add_theme_support( 'custom-logo' );
-        add_theme_support( 'custom-background' );
-        add_theme_support( 'align-wide' );
-        add_theme_support( 'custom-header' );
-        add_theme_support( 'automatic-feed-links' );
+        add_theme_support( 'wp-block-styles' ); //ブロックデフォルトスタイルを拡張
+        add_theme_support( 'responsive-embeds' ); //YouTubeなどの埋め込みコンテンツをレスポンシブ対応する
+        add_theme_support( 'custom-logo' ); //カスタムロゴ機能有効化
+        add_theme_support( 'custom-background' ); //カスタム背景機能有効化
+        add_theme_support( 'align-wide' ); //ブロックエディターの画像投稿で、幅広/全幅が使えるようになる
+        add_theme_support( 'custom-header' ); //カスタムヘッダー機能有効化
+        //投稿とコメントのRSSフィードのリンク機能有効化。 automatic_feed_links() 関数を使っている場合、切り替えが必要
+        add_theme_support( 'automatic-feed-links' ); 
 
         register_nav_menus( array(
         //メニューの位置
         'footer_nav' => esc_html( 'footer navigation', 'Hamburger' ),
         'category_nav' => esc_html( 'category navigation', 'Hamburger' ),
         ));
+    }
 
+    //ウィジェット追加
     function Hamburger_widgets_init() {
         register_sidebar (
             array(
@@ -39,9 +42,8 @@
                 'after_title'   => '',
             )
         );
-    }
         add_action( 'widgets_init', 'Hamburger_widgets_init' );
-
+        
         add_theme_support( 'editor-styles'); //エディタスタイルの有効化
         add_editor_style();
     }
@@ -79,6 +81,7 @@
         return single_cat_title('', false);
     });
 
+    //カスタムでスタイル設定を追加する
     register_block_style( 'block',
         Array(
             'name'=>'',
@@ -88,14 +91,13 @@
         )
     );
 
+    //ブロックパターン
     add_action( 'init', function() {
         register_block_pattern_category(
             'my-cat',
             array( 'label' => __( 'My Category', 'hamburger-sitewp' ) )
         );
     });
-
-add_filter( 'wp_kses_allowed_html', 'custom_wpkses_post_tags', 10, 2 );
     
     function Hamburger_script() {
         wp_enqueue_style( 'google-fonts', '//fonts.googleapis.com/css2?family=M+PLUS+1p:wght@100;300;400;500;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap', array(), null );

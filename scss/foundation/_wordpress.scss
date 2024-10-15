@@ -212,6 +212,7 @@ main {
 
         cite {
             margin-top: 1rem;
+            font-size: revert;
 
             @include breakpoint(tablet) {
                 margin-top: 5rem;
