@@ -22,8 +22,8 @@
 
         register_nav_menus( array(
         //メニューの位置
-        'footer_nav' => esc_html__( 'footer navigation', 'Hamburger' ),
-        'category_nav' => esc_html__( 'category navigation', 'Hamburger' ),
+        'footer_nav' => esc_html( 'footer navigation', 'Hamburger' ),
+        'category_nav' => esc_html( 'category navigation', 'Hamburger' ),
         ));
         add_theme_support( 'editor-styles'); //エディタスタイルの有効化
         add_editor_style();
