@@ -26,6 +26,22 @@
         'footer_nav' => esc_html( 'footer navigation', 'Hamburger' ),
         'category_nav' => esc_html( 'category navigation', 'Hamburger' ),
         ));
+
+    function Hamburger_widgets_init() {
+        register_sidebar (
+            array(
+                'name'          => 'カテゴリーウィジェット',
+                'id'            => 'category_widget',
+                'description'   => 'カテゴリー用ウィジェットです',
+                'before_widget' => '',
+                'after_widget'  => '',
+                'before_title'  => '',
+                'after_title'   => '',
+            )
+        );
+    }
+        add_action( 'widgets_init', 'Hamburger_widgets_init' );
+
         add_theme_support( 'editor-styles'); //エディタスタイルの有効化
         add_editor_style();
     }
@@ -78,6 +94,8 @@
             array( 'label' => __( 'My Category', 'hamburger-sitewp' ) )
         );
     });
+
+add_filter( 'wp_kses_allowed_html', 'custom_wpkses_post_tags', 10, 2 );
     
     function Hamburger_script() {
         wp_enqueue_style( 'google-fonts', '//fonts.googleapis.com/css2?family=M+PLUS+1p:wght@100;300;400;500;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap', array(), null );
