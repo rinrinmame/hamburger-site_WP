@@ -119,11 +119,7 @@ main .wp-block-group {
 main .wp-block-group.has-background > :first-child {
   padding: 0 3%;
 }
-main .wp-block-group.has-background a {
-  color: revert;
-  -webkit-text-decoration: revert;
-          text-decoration: revert;
-}
+main .wp-block-group.has-background a,
 main .wp-block-group.has-background a:hover, main .wp-block-group.has-background a:visited {
   color: revert;
   -webkit-text-decoration: revert;
@@ -210,21 +206,19 @@ main .wp-block-list ol li:first-child, main .wp-block-list ul li:first-child {
 main .wp-block-list ol li:last-child, main .wp-block-list ul li:last-child {
   margin-bottom: 1.7rem;
 }
-main .wp-block-code {
-  height: auto;
-  width: auto;
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  padding: 5rem;
-  font-size: 2rem;
-}
+main .wp-block-code,
 main .wp-block-quote {
   height: auto;
   width: auto;
   display: flex;
   flex-direction: column;
   position: relative;
+}
+main .wp-block-code {
+  padding: 5rem;
+  font-size: 2rem;
+}
+main .wp-block-quote {
   background-color: #F5F5F5;
   padding: 3rem 5.9% 3rem 5.9%;
 }
@@ -247,48 +241,37 @@ main .wp-block-quote cite {
     margin-top: 5rem;
   }
 }
-main .wp-block-quote a {
-  color: revert;
-  -webkit-text-decoration: revert;
-          text-decoration: revert;
-}
+main .wp-block-quote a,
 main .wp-block-quote a:hover, main .wp-block-quote a:visited {
   color: revert;
   -webkit-text-decoration: revert;
           text-decoration: revert;
 }
+main .wp-block-table tr, main .wp-block-table td {
+  border: solid 1px #707070;
+}
 main .wp-block-table tr {
-  font-family: "M PLUS 1p";
   height: 7.7rem;
   width: 100%;
   position: relative;
   table-layout: fixed;
-  border: solid 1px #707070;
+}
+main .wp-block-table td:first-child, main .wp-block-table td:last-child {
+  height: auto;
+  position: relative;
+  padding-left: 6%;
+}
+@media (min-width: 768px) {
+  main .wp-block-table td:first-child, main .wp-block-table td:last-child {
+    padding-left: 3%;
+  }
 }
 main .wp-block-table td:first-child {
-  height: auto;
   width: 42%;
-  position: relative;
-  border: solid 1px #707070;
   text-align: left;
-  padding-left: 6%;
-}
-@media (min-width: 768px) {
-  main .wp-block-table td:first-child {
-    padding-left: 3%;
-  }
 }
 main .wp-block-table td:last-child {
-  height: auto;
   width: 58%;
-  position: relative;
-  border: solid 1px #707070;
-  padding-left: 6%;
-}
-@media (min-width: 768px) {
-  main .wp-block-table td:last-child {
-    padding-left: 3%;
-  }
 }
 main .wp-block-buttons {
   height: 100%;
@@ -305,7 +288,6 @@ main .wp-block-buttons {
 }
 @media (min-width: 1024px) {
   main .wp-block-buttons {
-    height: 10.4rem;
     width: 42%;
   }
 }
@@ -326,11 +308,11 @@ main .wp-block-buttons .wp-block-button {
 }
 @media (min-width: 1024px) {
   main .wp-block-buttons .wp-block-button {
-    height: 10.4rem;
     width: 42%;
   }
 }
-main .wp-block-buttons a, main .wp-block-buttons a * {
+main .wp-block-buttons a,
+main .wp-block-buttons a * {
   height: 100%;
   width: 100%;
   display: flex;
@@ -373,7 +355,8 @@ main .wp-pagenavi span.pages:first-child {
     color: inherit;
   }
 }
-main .wp-pagenavi .previouspostslink, main .wp-pagenavi .nextpostslink {
+main .wp-pagenavi .previouspostslink,
+main .wp-pagenavi .nextpostslink {
   width: 10rem;
   height: 3.5rem;
   display: flex;
@@ -383,31 +366,31 @@ main .wp-pagenavi .previouspostslink, main .wp-pagenavi .nextpostslink {
   position: relative;
 }
 @media (min-width: 768px) {
-  main .wp-pagenavi .previouspostslink, main .wp-pagenavi .nextpostslink {
+  main .wp-pagenavi .previouspostslink,
+main .wp-pagenavi .nextpostslink {
     width: 3.5rem;
     font-size: 0;
   }
 }
-main .wp-pagenavi .previouspostslink::before {
-  content: "";
-  height: 1.8rem;
-  width: 1.8rem;
-  background: url(../images/pagearrow__left.png) no-repeat center center;
-  margin-right: 15px;
-  display: inline-block;
-  position: absolute;
-  left: 7px;
-}
+main .wp-pagenavi .previouspostslink::before,
 main .wp-pagenavi .nextpostslink::after {
   content: "";
   height: 1.8rem;
   width: 1.8rem;
-  background: url(../images/pagearrow__right.png) no-repeat center center;
   display: inline-block;
   position: absolute;
+}
+main .wp-pagenavi .previouspostslink::before {
+  background: url(../images/pagearrow__left.png) no-repeat center center;
+  margin-right: 15px;
+  left: 7px;
+}
+main .wp-pagenavi .nextpostslink::after {
+  background: url(../images/pagearrow__right.png) no-repeat center center;
   right: 7px;
 }
-main .wp-pagenavi .page, main .wp-pagenavi .current {
+main .wp-pagenavi .page,
+main .wp-pagenavi .current {
   height: 3.5rem;
   width: 3.5rem;
   display: flex;
@@ -419,7 +402,8 @@ main .wp-pagenavi .page, main .wp-pagenavi .current {
   border: none;
 }
 @media (min-width: 768px) {
-  main .wp-pagenavi .page, main .wp-pagenavi .current {
+  main .wp-pagenavi .page,
+main .wp-pagenavi .current {
     color: inherit;
     background: inherit;
     border: inherit;

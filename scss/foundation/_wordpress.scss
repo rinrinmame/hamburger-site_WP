@@ -72,14 +72,10 @@ main {
                 padding: 0 3%;
             }
 
-            a {
+            a,
+            a:hover, a:visited  {
                 color: revert;
                 text-decoration: revert;
-            
-                &:hover,  &:visited {
-                    color: revert;
-                    text-decoration: revert;
-                }
             }
         }
 
@@ -116,7 +112,6 @@ main {
             @include breakpoint(pc) {
                 width: 33%;
             }
-    
         }
     }
 
@@ -183,22 +178,21 @@ main {
         }
     }
 
-    .wp-block-code {
-        height: auto;
-        width: auto;
-        display: flex;
-        flex-direction: column;
-        position: relative;
-        padding: 5rem;
-        font-size: 2rem;
-    }
-
+    .wp-block-code,
     .wp-block-quote {
         height: auto;
         width: auto;
         display: flex;
         flex-direction: column;
         position: relative;
+    }
+
+    .wp-block-code {
+        padding: 5rem;
+        font-size: 2rem;
+    }
+
+    .wp-block-quote {
         background-color: $color--clearcream;
         padding: 3rem 5.9% 3rem 5.9%;
 
@@ -219,35 +213,30 @@ main {
             }
         }
 
-        a {
+        a,
+        a:hover, a:visited {
             color: revert;
             text-decoration: revert;
-
-            &:hover, &:visited {
-                color: revert;
-                text-decoration: revert;
-            }
         }
-    
     }
 
     .wp-block-table {
+        tr, td {
+            border: solid 1px $color--gray;
+        }
+
         tr {
-            font-family: "M PLUS 1p";
             height: 7.7rem;
             width: 100%;
             position: relative;
             table-layout: fixed;
-            border: solid 1px $color--gray;
         }
 
         td {
-            &:first-child {
+            &:first-child,
+            &:last-child {
                 height: auto;
-                width: 42%;
                 position: relative;
-                border: solid 1px $color--gray;
-                text-align: left;
                 padding-left: 6%;
 
                 @include breakpoint(tablet) {
@@ -255,16 +244,13 @@ main {
                 }
             }
 
+            &:first-child {
+                width: 42%;
+                text-align: left;
+            }
+
             &:last-child {
-                height: auto;
                 width: 58%;
-                position: relative;
-                border: solid 1px $color--gray;
-                padding-left: 6%;
-        
-                @include breakpoint(tablet) {
-                    padding-left: 3%;
-                }
             }
         }
     }
@@ -282,7 +268,6 @@ main {
         }
 
         @include breakpoint(pc) {
-            height: 10.4rem;
             width: 42%;
         }
 
@@ -301,12 +286,12 @@ main {
             }
 
             @include breakpoint(pc) {
-                height: 10.4rem;
                 width: 42%;
             }
         }
 
-        a,a * {
+        a,
+        a * {
             height: 100%;
             width: 100%;
             display: flex;
@@ -350,7 +335,8 @@ main {
             }
         }
 
-        .previouspostslink, .nextpostslink {
+        .previouspostslink,
+        .nextpostslink {
             width: 10rem;
             height: 3.5rem;
             display: flex;
@@ -365,28 +351,28 @@ main {
             }
         }
 
-        .previouspostslink::before {
-            content: "";
-            height: 1.8rem;
-            width: 1.8rem; 
-            background: url(../images/pagearrow__left.png) no-repeat center center;
-            margin-right: 15px;
-            display: inline-block;
-            position: absolute;
-            left: 7px;
-        }
-
+        .previouspostslink::before,
         .nextpostslink::after {
             content: "";
             height: 1.8rem;
             width: 1.8rem; 
-            background: url(../images/pagearrow__right.png) no-repeat center center;
             display: inline-block;
             position: absolute;
+        }
+
+        .previouspostslink::before {
+            background: url(../images/pagearrow__left.png) no-repeat center center;
+            margin-right: 15px;
+            left: 7px;
+        }
+
+        .nextpostslink::after {
+            background: url(../images/pagearrow__right.png) no-repeat center center;
             right: 7px;
         }
         
-        .page, .current { 
+        .page,
+        .current { 
             height: 3.5rem;
             width: 3.5rem;
             display: flex;
