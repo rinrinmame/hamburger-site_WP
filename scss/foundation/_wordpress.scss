@@ -1,9 +1,40 @@
 @use "../foundation/color" as *;
 @use "../foundation/breakpoint" as *;
 
-//#wpadminbar {
-	//position: fixed;
-//}
+.sticky {
+    display: block;
+}
+
+.gallery-caption {
+    font-size: 87.5%;
+}
+
+.aligncenter {
+    display: block;
+    margin: 5px auto 5px auto;
+}
+
+.alignright {
+    float:right;
+    margin: 5px 0 20px 20px;
+}
+
+.alignleft {
+    float: left;
+    margin: 5px 20px 20px 0;
+}
+
+.bypostauthor {
+    color: $color--black;
+}
+
+.screen-reader-text {
+    clip: rect(1px, 1px, 1px, 1px);
+    position: absolute !important;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+}
 
 .wp-caption-text {
     margin-top: -20px;

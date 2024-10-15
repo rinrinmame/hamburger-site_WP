@@ -54,6 +54,41 @@ a:hover, a:visited {
   left: 0%;
 }
 
+.sticky {
+  display: block;
+}
+
+.gallery-caption {
+  font-size: 87.5%;
+}
+
+.aligncenter {
+  display: block;
+  margin: 5px auto 5px auto;
+}
+
+.alignright {
+  float: right;
+  margin: 5px 0 20px 20px;
+}
+
+.alignleft {
+  float: left;
+  margin: 5px 20px 20px 0;
+}
+
+.bypostauthor {
+  color: #3C2A10;
+}
+
+.screen-reader-text {
+  clip: rect(1px, 1px, 1px, 1px);
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}
+
 .wp-caption-text {
   margin-top: -20px;
 }
@@ -1690,6 +1725,9 @@ main .wp-pagenavi .current {
     font-size: 3.6rem;
     margin-bottom: 9.3%;
   }
+}
+.c-card__tag {
+  display: none;
 }
 .c-card__title-sub {
   height: auto;

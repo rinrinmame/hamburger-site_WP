@@ -30,6 +30,7 @@
             <?php get_template_part( 'template/card' ); //card.phpを読み込み?>
             <?php endwhile; else : ?>
                 <p>記事はありません</p>
+                <?php wp_link_pages(); ?>
             <?php endif; ?>
         </div>
     </section>

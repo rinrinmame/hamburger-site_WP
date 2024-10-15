@@ -30,11 +30,14 @@
                 else :
             ?>
                 <p>表示する記事がありません</p>
+                <?php wp_link_pages(); ?>
+                <?php the_posts_navigation(); ?>
             <?php
                 endif;
             ?>
         </div>
     </article>
 </main>
+<?php wp_list_comments(); ?>
 <?php get_sidebar(); //siderbar.phpを読み込むテンプレートタグ（インクルードタグ）?>
 <?php get_footer(); //footer.phpを読み込むテンプレートタグ（インクルードタグ）?>

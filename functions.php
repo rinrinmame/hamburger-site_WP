@@ -13,12 +13,13 @@
         //add_theme_support( 'menus' );  //カスタムメニューの有効化
         add_theme_support( 'title-tag' );   //管理画面からタイトルタグ登録可能に
         add_theme_support( 'post-thumbnails' ); //アイキャッチ機能の有効化
-        add_theme_support( "wp-block-styles" );
-        add_theme_support( "sensitive-embeds" );
-        //add_theme_support( "custom-logo", $args );
-        //add_theme_support( "custom-background", $args );
-        add_theme_support( "align-wide" );
-        //add_theme_support( "custom-header", $args );
+        add_theme_support( 'wp-block-styles' );
+        add_theme_support( 'responsive-embeds' );
+        add_theme_support( 'custom-logo' );
+        add_theme_support( 'custom-background' );
+        add_theme_support( 'align-wide' );
+        add_theme_support( 'custom-header' );
+        add_theme_support( 'automatic-feed-links' );
 
         register_nav_menus( array(
         //メニューの位置
@@ -29,7 +30,6 @@
         add_editor_style();
     }
     add_action( 'after_setup_theme', 'custom_theme_support'); //必要な機能を設定しafter_setup_themeのアクションフックにて実行
-
 
     //タイトル出力
     function Hamburger_title( $title ) {
@@ -47,7 +47,7 @@
     remove_filter( 'pre_term_description', 'wp_filter_kses' ); 
 
     //カテゴリー説明文から自動で付与されるpタグを除去
-    remove_filter( 'term_description', 'wpautop' ); 
+    remove_filter( 'term_description', 'wpautop' );
 
     //カスタムメニューにliクラス追加権限付与
     function add_additional_class($classes, $item, $args) {
@@ -58,9 +58,25 @@
     }
     add_filter('nav_menu_css_class', 'add_additional_class', 1, 3);
 
-    // the_archive_title() - 別の文字列にする 
+    //the_archive_title() - 別の文字列にする 
     add_filter( 'get_the_archive_title', function( $title ) {
         return single_cat_title('', false);
+    });
+
+    register_block_style( 'block',
+        Array(
+            'name'=>'',
+            'label'=>'',
+            'inline_style'=>'',
+            'style_handle'=>''
+        )
+    );
+
+    add_action( 'init', function() {
+        register_block_pattern_category(
+            'my-cat',
+            array( 'label' => __( 'My Category', 'hamburger-sitewp' ) )
+        );
     });
     
     function Hamburger_script() {

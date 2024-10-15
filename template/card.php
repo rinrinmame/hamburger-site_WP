@@ -12,7 +12,7 @@
         <figcaption class="c-card">
             <div class="c-inner__figcaption">
                 <div class="c-inner__card">
-                    <h2 class="c-card__title"><?php the_title(); ?></h2>
+                    <h2 class="c-card__title"><?php the_title(); ?></h2><p class="c-card__tag"><?php the_tags(); ?></p>
                     <?php
                         $content = $post->post_content;
                         //$content = strip_tags($content); // タグ除去

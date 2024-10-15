@@ -30,10 +30,9 @@
             <section class="p-page c-flexbox__page">
                 <?php wp_pagenavi(); //ページネーション?>
             </section>
-            <?php endwhile;
-                else :
-            ?>
+            <?php endwhile; else : ?>
                 <p>表示する記事がありません</p>
+                <?php wp_link_pages(); ?>
             <?php
                 endif;
             ?>
