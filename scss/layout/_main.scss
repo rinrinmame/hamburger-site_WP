@@ -8,32 +8,12 @@
         width: auto;
         display: block;
 
-    &__title {
-        height: auto;
-        width: auto;
-        display: block;
-        position: relative;
-    }
-
-    &__contents {
-        height: auto;
-        width: auto;
-        display: block;
-        position: relative;
-    }
-
+    &__title,
+    &__contents,
     &__access {
         height: auto;
         width: auto;
         display: block;
         position: relative;
     }
-
-    /*&__section {
-        margin-bottom: 3rem;
-
-        @include breakpoint(tablet) {
-            margin-bottom: 6rem;
-        }
-    }*/
 }

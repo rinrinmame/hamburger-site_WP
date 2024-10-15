@@ -522,27 +522,8 @@ main .wp-pagenavi .current {
   height: auto;
   width: auto;
   display: block;
-  /*&__section {
-      margin-bottom: 3rem;
-
-      @include breakpoint(tablet) {
-          margin-bottom: 6rem;
-      }
-  }*/
 }
-.l-main__title {
-  height: auto;
-  width: auto;
-  display: block;
-  position: relative;
-}
-.l-main__contents {
-  height: auto;
-  width: auto;
-  display: block;
-  position: relative;
-}
-.l-main__access {
+.l-main__title, .l-main__contents, .l-main__access {
   height: auto;
   width: auto;
   display: block;
