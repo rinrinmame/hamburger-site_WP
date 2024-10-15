@@ -591,25 +591,10 @@ main .wp-pagenavi .current {
   bottom: 0;
 }
 
-.c-button {
-  /*&__link {
-      font-family: "M PLUS 1p";
-      font-weight: bold;
-      height: auto;
-      width: auto;
-      display: flex;
-      flex-direction: column;
-      position: relative;
-      font-size: 1.6rem;
-      text-decoration: none;
-      color: $color--black;
-  }*/
-}
 .c-button__home {
   color: #707070;
 }
 .c-button__menu {
-  font-family: Roboto;
   color: #707070;
   font-weight: bold;
   position: relative;
@@ -634,14 +619,10 @@ main .wp-pagenavi .current {
 }
 .c-button__hamburger::before, .c-button__hamburger::after {
   content: "";
-  width: 45.25px;
-  height: 6px;
   background-color: #707070;
-  display: block;
   position: absolute;
-  left: calc(50% - 45.25px/2);
-  transition: transform 0.1s;
 }
+.c-button__hamburger::before, .c-button__hamburger::after,
 .c-button__hamburger > span {
   width: 45.25px;
   height: 6px;
@@ -670,7 +651,6 @@ main .wp-pagenavi .current {
   align-items: center;
 }
 .c-button__area a {
-  font-family: "M PLUS 1p";
   font-weight: bold;
   height: auto;
   width: auto;
@@ -1095,7 +1075,7 @@ main .wp-pagenavi .current {
     height: auto;
   }
 }
-.c-background__cheeseburger {
+.c-background__archive {
   height: 28.5rem;
   width: 100%;
   display: block;
@@ -1106,11 +1086,11 @@ main .wp-pagenavi .current {
   background-image: url(../images/main__takeout.jpg);
 }
 @media (min-width: 1024px) {
-  .c-background__cheeseburger {
+  .c-background__archive {
     height: 23.9rem;
   }
 }
-.c-background__cheeseburger-cover {
+.c-background__archive-cover {
   height: 100%;
   width: 100%;
   display: block;
@@ -1408,11 +1388,14 @@ main .wp-pagenavi .current {
 .c-category:hover {
   opacity: 0.6;
 }
-.c-category h3 {
-  font-family: Roboto;
+.c-category h3,
+.c-category dt {
   font-weight: bold;
   height: auto;
   width: auto;
+}
+.c-category h3 {
+  font-family: Roboto;
   color: #EAEAEA;
   display: inline-block;
   position: relative;
@@ -1430,9 +1413,6 @@ main .wp-pagenavi .current {
   }
 }
 .c-category dt {
-  font-weight: bold;
-  height: auto;
-  width: auto;
   font-size: 2.2rem;
   display: flex;
   flex-direction: column;
@@ -1460,11 +1440,15 @@ main .wp-pagenavi .current {
   position: relative;
 }
 
-.c-flexbox__header {
+.c-flexbox__header, .c-flexbox__search-form, .c-flexbox__branch-menu, .c-flexbox__footer, .c-flexbox__title, .c-flexbox__discription, .c-flexbox__container {
   display: flex;
   height: auto;
   width: auto;
+}
+.c-flexbox__header, .c-flexbox__branch-menu, .c-flexbox__title, .c-flexbox__discription, .c-flexbox__container, .c-flexbox__blockquote {
   flex-direction: column;
+}
+.c-flexbox__header {
   padding-left: 8.2%;
   padding-right: 6.9%;
 }
@@ -1481,11 +1465,9 @@ main .wp-pagenavi .current {
   }
 }
 .c-flexbox__search-form {
-  display: flex;
   justify-content: center;
   align-items: center;
   box-sizing: border-box;
-  height: auto;
   width: 100%;
 }
 @media (min-width: 768px) {
@@ -1499,8 +1481,6 @@ main .wp-pagenavi .current {
   }
 }
 .c-flexbox__branch-menu {
-  display: flex;
-  flex-direction: column;
   flex-grow: 1;
   gap: 2rem;
 }
@@ -1519,7 +1499,6 @@ main .wp-pagenavi .current {
 .c-flexbox__footer {
   height: 100%;
   width: 100%;
-  display: flex;
   justify-content: center;
   align-items: center;
   gap: 0.6rem;
@@ -1539,8 +1518,6 @@ main .wp-pagenavi .current {
 .c-flexbox__title {
   height: 100%;
   width: 100%;
-  display: flex;
-  flex-direction: column;
   position: relative;
   margin-left: 3.7rem;
   justify-content: center;
@@ -1559,22 +1536,12 @@ main .wp-pagenavi .current {
   }
 }
 .c-flexbox__discription {
-  height: auto;
-  width: auto;
-  display: flex;
-  flex-direction: column;
   gap: 2.5rem;
 }
 @media (min-width: 768px) {
   .c-flexbox__discription {
     gap: 2rem;
   }
-}
-.c-flexbox__container {
-  height: auto;
-  width: auto;
-  display: flex;
-  flex-direction: column;
 }
 .c-flexbox__page {
   display: flex;
@@ -1589,7 +1556,6 @@ main .wp-pagenavi .current {
 }
 .c-flexbox__blockquote {
   display: flex;
-  flex-direction: column;
 }
 .c-flexbox__img {
   display: flex;
@@ -1676,14 +1642,16 @@ main .wp-pagenavi .current {
   display: flex;
   flex-direction: column;
 }
-.c-card__title {
+.c-card__title, .c-card__title-sub, .c-card__text, .c-card__button-area, .c-card__button {
   height: auto;
   width: auto;
-  font-size: 2rem;
   display: flex;
   flex-direction: column;
   position: relative;
   color: #FFFFFF;
+}
+.c-card__title {
+  font-size: 2rem;
   margin-bottom: 5.9%;
 }
 @media (min-width: 1024px) {
@@ -1696,13 +1664,7 @@ main .wp-pagenavi .current {
   display: none;
 }
 .c-card__title-sub {
-  height: auto;
-  width: auto;
   font-size: 1.6rem;
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  color: #FFFFFF;
   margin-bottom: 1.9%;
 }
 @media (min-width: 1024px) {
@@ -1713,30 +1675,17 @@ main .wp-pagenavi .current {
 }
 .c-card__text {
   font-weight: 400;
-  height: auto;
-  width: auto;
   font-size: 1.6rem;
   line-height: 1.49;
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  color: #FFFFFF;
 }
 .c-card__button-area {
-  height: auto;
-  width: auto;
-  display: flex;
-  flex-direction: column;
-  position: relative;
   justify-content: center;
   align-items: center;
+  color: revert;
 }
 .c-card__button {
   height: 4.2rem;
   width: 16.3rem;
-  display: flex;
-  flex-direction: column;
-  position: relative;
   color: #707070;
   background-color: #FFFFFF;
   border-radius: 35px 35px 35px 35px;
@@ -1762,6 +1711,7 @@ main .wp-pagenavi .current {
   align-items: center;
   border-radius: 35px 35px 35px 35px;
 }
+
 .c-text {
   font-family: "M PLUS 1p";
   font-weight: 400;

@@ -18,12 +18,12 @@
                     <div class="c-inner__branch-menu">
                         <ul class="c-flexbox__branch-menu">
                             <?php
-                                $cat = get_category_by_slug( 'takeout' );
+                                $cat = get_category_by_slug( 'takeout' ); //takeoutのスラッグ取得
                             ?>
                             <li class="p-branch-menu__takeout c-category">
-                                <a href="<?php echo esc_html((get_category_link( $cat->cat_ID ))); ?>">
+                                <a href="<?php echo esc_html((get_category_link( $cat->cat_ID ))); //takeoutのURL取得 ?>">
                                     <h3>
-                                        <?php echo esc_html((get_cat_name( $cat->cat_ID )));?>
+                                        <?php echo esc_html((get_cat_name( $cat->cat_ID ))); //takeoutのタイトル取得 ?>
                                     </h3>
                                     <dl class="c-list">
                                         <div class="c-inner__category">
@@ -44,12 +44,12 @@
                                 </a>
                             </li>                              
                             <?php
-                                $cat = get_category_by_slug( 'eatin' );
+                                $cat = get_category_by_slug( 'eatin' ); //eatinのスラッグ取得
                             ?>
                             <li class="p-branch-menu__eatin c-category"> 
-                                <a href="<?php echo esc_html(get_category_link( $cat->cat_ID )); ?>">
+                                <a href="<?php echo esc_html(get_category_link( $cat->cat_ID )); //eatinのURL取得 ?>">
                                     <h3>
-                                        <?php echo esc_html(get_cat_name( $cat->cat_ID ));?>
+                                        <?php echo esc_html(get_cat_name( $cat->cat_ID )); //eatinのタイトル取得 ?>
                                     </h3>
                                     <dl class="c-list">                                                           
                                         <div class="c-inner__category">

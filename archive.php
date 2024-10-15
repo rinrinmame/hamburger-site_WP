@@ -1,11 +1,11 @@
 <?php get_header(); //header.phpを読み込むテンプレートタグ（インクルードタグ）?>
 <main class="l-main">
     <article class="l-main__title p-title">
-            <div class="c-background__cheeseburger">
-                <div class="c-background__cheeseburger-cover">
+            <div class="c-background__archive">
+                <div class="c-background__archive-cover">
                     <ul class="c-flexbox__title">   
                         <li class="c-title__archive"><h2>Menu:</h2></li>
-                        <li class="c-title__archive-sub"><p><?php esc_html(the_archive_title()); ?></p></li>
+                        <li class="c-title__archive-sub"><p><?php esc_html( the_archive_title() ); ?></p></li>
                     </ul>
                 </div>
             </div>
@@ -17,7 +17,7 @@
                     <div class="c-flexbox__discription">
                         <?php
                             if( is_category() && category_description() ) {
-                                echo (category_description());
+                                echo ( category_description() );
                             }
                         ?>
                     </div>

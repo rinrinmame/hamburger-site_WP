@@ -1,8 +1,8 @@
 <?php get_header(); //header.phpを読み込むテンプレートタグ（インクルードタグ）?>
 <main class="l-main">
     <article class="l-main__title p-title">
-        <div class="c-background__cheeseburger">
-            <div class="c-background__cheeseburger-cover">
+        <div class="c-background__archive">
+            <div class="c-background__archive-cover">
                 <ul class="c-flexbox__title">   
                     <li class="c-title__archive"><h2>Search:</h2></li>
                     <li class="c-title__archive-sub"><p><?php the_search_query(); ?></p></li>

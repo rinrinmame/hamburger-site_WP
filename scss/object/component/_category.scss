@@ -15,11 +15,15 @@
         opacity: 0.6;
     }
 
-    h3 {
-        font-family: Roboto;
+    h3,
+    dt {
         font-weight: bold;
         height: auto;
         width: auto;
+    }
+
+    h3 {
+        font-family: Roboto;
         color: $color--cream;
         display: inline-block;
         position: relative;
@@ -36,9 +40,6 @@
     }    
 
     dt {
-        font-weight: bold;
-        height: auto;
-        width: auto;
         font-size: 2.2rem;
         display: flex;
         flex-direction: column;
