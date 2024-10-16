@@ -9,7 +9,7 @@
         <?php else : ?>
             <img src=<?php echo esc_url($noimage); ?>>
         <?php endif; ?>
-        <figcaption class="c-card">
+        <figcaption class="c-card__all">
             <div class="c-inner__figcaption">
                 <div class="c-inner__card">
                     <h2 class="c-card__title"><?php the_title(); ?></h2><p class="c-card__tag"><?php the_tags(); ?></p>

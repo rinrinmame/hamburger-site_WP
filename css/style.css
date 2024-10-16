@@ -1633,22 +1633,19 @@ main .wp-pagenavi .current {
   font-size: 1.4rem;
 }
 
-.c-card {
-  font-family: "M PLUS 1p";
-  font-weight: bold;
-  height: 100%;
-  width: 100%;
-  background-color: #3C2B1C;
-  display: flex;
-  flex-direction: column;
-}
-.c-card__title, .c-card__title-sub, .c-card__text, .c-card__button-area, .c-card__button {
+.c-card, .c-card__button a, .c-card__button, .c-card__button-area, .c-card__text, .c-card__title-sub, .c-card__title, .c-card__all {
   height: auto;
   width: auto;
   display: flex;
   flex-direction: column;
   position: relative;
   color: #FFFFFF;
+}
+.c-card__all {
+  font-weight: 700;
+  height: 100%;
+  width: 100%;
+  background-color: #3C2B1C;
 }
 .c-card__title {
   font-size: 2rem;
@@ -1704,11 +1701,10 @@ main .wp-pagenavi .current {
   height: 100%;
   width: 100%;
   font-size: 1.6rem;
-  display: flex;
-  flex-direction: column;
   position: absolute;
   justify-content: center;
   align-items: center;
+  color: inherit;
   border-radius: 35px 35px 35px 35px;
 }
 

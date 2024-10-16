@@ -1,28 +1,23 @@
 @use "../../foundation/" as *;
 
 .c-card {
-    font-family: "M PLUS 1p";
-    font-weight: bold;
-    height: 100%;
-    width: 100%;
-    background-color: $color--darkbrown;
+    height: auto;
+    width: auto;
     display: flex;
     flex-direction: column;
+    position: relative;
+    color: $color--white;
 
-    &__title,
-    &__title-sub,
-    &__text,
-    &__button-area,
-    &__button {
-        height: auto;
-        width: auto;
-        display: flex;
-        flex-direction: column;
-        position: relative;
-        color: $color--white;
+    &__all {
+        @extend .c-card;
+        font-weight: 700;
+        height: 100%;
+        width: 100%;
+        background-color: $color--darkbrown;
     }
 
     &__title {
+        @extend .c-card;
         font-size: 2rem;
         margin-bottom: 5.9%;
 
@@ -37,6 +32,7 @@
     }
 
     &__title-sub {
+        @extend .c-card;
         font-size: 1.6rem;
         margin-bottom: 1.9%; 
 
@@ -47,18 +43,21 @@
     }
 
     &__text {
+        @extend .c-card;
         font-weight: 400;
         font-size: 1.6rem;
         line-height: 1.49;
     }
 
     &__button-area {
+        @extend .c-card;
         justify-content: center;
         align-items: center;
         color: revert;
     }
 
     &__button {
+        @extend .c-card;
         height: 4.2rem;
         width: 16.3rem;
         color: $color--gray;
@@ -76,14 +75,14 @@
         }
 
         a {
+            @extend .c-card;
             height: 100%;
             width: 100%;
             font-size: 1.6rem;
-            display: flex;
-            flex-direction: column;
             position: absolute;
             justify-content: center;
             align-items: center;
+            color: inherit;
             border-radius: 35px 35px 35px 35px;
         }
     }
