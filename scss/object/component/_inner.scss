@@ -1,24 +1,41 @@
 @use "../../foundation/" as *;
 
 .c-inner {
+    display: flex;
+    flex-direction: column;
+
+    &--auto {
+        @extend .c-inner;
+        height: auto;
+        width: auto;
+    }
+
+    &--100 {
+        @extend .c-inner;
+        height: 100%;
+        width: 100%;
+    }
+
+    &--center {
+        @extend .c-inner;
+        justify-content: center;
+        align-items: center;
+    }
 
     &__branch-menu {
+        @extend .c-inner;
         padding: 7.6%;
-        display: flex;
-        flex-direction: column;
         flex-grow: 1;
     }
 
     &__category {
+        @extend .c-inner;
         padding: 0 3.4% 0 3.4%;
-        display: flex;
-        flex-direction: column;
     }
 
     &__list {
+        @extend .c-inner;
         padding: 1.4rem 2rem 1.4rem 2rem;
-        display: flex;
-        flex-direction: column;
     }
 
     &__text {
@@ -43,20 +60,15 @@
     }
 
     &__menu {
+        @extend .c-inner;
         padding-bottom: 2.8rem;
-        display: flex;
-        flex-direction: column;
         justify-content: center;
     }
 
     &__footer {
-        height: 100%;
-        width: 100%;
+        @extend .c-inner--auto;
+        @extend .c-inner--center;
         padding: 4rem 0 1.6rem 0;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
 
         @include breakpoint(tablet) {
             padding: 3rem 0 2.4rem 0;
@@ -92,10 +104,7 @@
     }
 
     &__figcaption {
-        height: 100%;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
+        @extend .c-inner--100;
         padding-bottom: 12.3%;
 
         @include breakpoint(tablet) {
@@ -108,10 +117,7 @@
     }
 
     &__card {
-        height: 100%;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
+        @extend .c-inner--100;
         padding: 9.1% 4.79% 11.2% 4.79%;
 
         @include breakpoint(tablet) {
@@ -124,20 +130,13 @@
     }
 
     &__button-area {
-        height: auto;
-        width: auto;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        @extend .c-inner--auto;
+        @extend .c-inner--center;
         border-radius: 35px 35px 35px 35px;
     }
 
     &__single {
-        height: auto;
-        width: auto;
-        display: flex;
-        flex-direction: column;
+        @extend .c-inner--auto;
         padding: 3.4rem 5.3% 6.9rem 5.3%;
 
         @include breakpoint(tablet) {
@@ -161,10 +160,7 @@
     }
 
     &__blockquote {
-        height: auto;
-        width: auto;
-        display: flex;
-        flex-direction: column;
+        @extend .c-inner--auto;
         padding: 5rem 5.9% 5.7rem 5.9%;
 
         @include breakpoint(tablet) {
@@ -191,10 +187,7 @@
     }
 
     &__code {
-        height: auto;
-        width: auto;
-        display: flex;
-        flex-direction: column;
+        @extend .c-inner--auto;
         position: relative;
         margin: 5rem;
 
