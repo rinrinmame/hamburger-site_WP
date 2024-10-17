@@ -1624,7 +1624,7 @@ main .wp-pagenavi .current {
     align-items: center;
   }
 }
-.c-page__move-back {
+.c-page__move-back, .c-page__move-next {
   font-family: "M PLUS 1p";
   display: flex;
   height: 2.4rem;
@@ -1633,20 +1633,7 @@ main .wp-pagenavi .current {
   margin-left: 2rem;
 }
 @media (min-width: 768px) {
-  .c-page__move-back {
-    display: none;
-  }
-}
-.c-page__move-next {
-  font-family: "M PLUS 1p";
-  display: flex;
-  height: 2.4rem;
-  width: 3.2rem;
-  font-weight: 400;
-  margin-right: 2rem;
-}
-@media (min-width: 768px) {
-  .c-page__move-next {
+  .c-page__move-back, .c-page__move-next {
     display: none;
   }
 }

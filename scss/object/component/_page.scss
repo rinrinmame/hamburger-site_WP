@@ -35,8 +35,8 @@
     }
 
     &__move {
-
-        &-back {
+        &-back,
+        &-next {
             font-family: "M PLUS 1p";
             display: flex;
             height: 2.4rem;
@@ -47,19 +47,6 @@
             @include breakpoint(tablet) {
                 display: none;
             }        
-        }
-
-        &-next {
-            font-family: "M PLUS 1p";
-            display: flex;
-            height: 2.4rem;
-            width: 3.2rem;
-            font-weight: 400;
-            margin-right: 2rem;
-
-            @include breakpoint(tablet) {
-                display: none;
-            }
         }
     }
 }
