@@ -1,15 +1,14 @@
 @use "../../foundation/" as *;
 
 .c-item {
+    height: auto;
+    width: auto;
+    position: relative;
 
     &__sidebar {
-        font-family: "M PLUS 1p";
+        @extend .c-item;
         font-weight: 400;
         color: $color--gray;
-        height: auto;
-        width: auto;
-        position: relative;
-        //font-size: 3vmin;
         font-size: 2rem;
         margin-top: 2rem;
         margin-left: 2rem;
@@ -20,38 +19,14 @@
     }
 
     &__group {
-        font-family: "M PLUS 1p";
+        @extend .c-item;
         font-weight: 700;
-        height: auto;
-        width: auto;
         color: $color--black;
         display: block;
-        position: relative;
-        //margin-bottom: 5.7rem;
 
         p {
             font-weight: 400;
         }
-        
-        /*h2 {
-            font-size: 2.8rem;
-    
-            @include breakpoint(tablet) {
-                font-size: 3.6rem;
-            }
-        }
-    
-        h3 {
-            font-size: 2.4rem;
-    
-            @include breakpoint(tablet) {
-                font-size: 2.8rem;
-            }
-        }
-    
-        h4, h5, h6 {
-            font-size: 2rem;
-        }*/
     }
 
     &__sub {
