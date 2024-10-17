@@ -1,6 +1,9 @@
 @use "../../foundation/" as *;
 
 .c-grid {
+    height: auto;
+    width: auto;
+    display: grid;
 
     &__body {
         height: 100%;
@@ -15,62 +18,41 @@
         }
     }
 
-   &__card {
-        height: auto;
-        width: auto;
-        display: grid;
+    &__card {
+        @extend .c-grid;
         grid-template-rows: 1fr 1fr;
-        //margin-bottom: 2rem;
 
         @include breakpoint(tablet) {
             grid-template-rows: 1fr;
             grid-template-columns: 50% 50%;
         }
-
-        //@include breakpoint(pc) {
-            //margin-bottom: 3rem;
-        //}
     }
 
     &__article {
+        @extend .c-grid;
+        gap: 1rem;
+
+        @include breakpoint(tablet) {
+            gap: 2.1rem;
+        }
+
+        @include breakpoint(pc) {
+            gap: 4rem;
+        }
 
         &--1 {
-            height: auto;
-            width: auto;
-            display: grid;
+            @extend .c-grid__article;
             grid-template-columns: 43% 1fr;
-            gap: 1rem;
-
-            @include breakpoint(tablet) {
-                gap: 2.1rem;
-            }
-    
-            @include breakpoint(pc) {
-                gap: 4rem;
-            }
         }
 
         &--2 {
-            height: auto;
-            width: auto;
-            display: grid;
+            @extend .c-grid__article;
             grid-template-columns: 1fr 43%;
-            gap: 1rem;
-
-            @include breakpoint(tablet) {
-                gap: 2.1rem;
-            }
-    
-            @include breakpoint(pc) {
-                gap: 4rem;
-            }
         }
     }
 
     &__img {
-        height: auto;
-        width: auto;
-        display: grid;
+        @extend .c-grid;;
         margin-inline: auto;
         grid-template-rows: 1fr;
         grid-template-columns: 1fr;
