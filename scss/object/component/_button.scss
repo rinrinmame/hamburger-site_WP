@@ -7,6 +7,12 @@
     display: block;
     position: relative;
 
+    &__flex {
+        @extend .c-button;
+        display: flex;
+        flex-direction: column;
+    }
+
     &__home {
         color: $color--gray;
     }
@@ -67,19 +73,15 @@
     }
 
     &__area {
-        @extend .c-button;
+        @extend .c-button__flex;
         height: 100%;
         width: 100%;
-        display: flex;
-        flex-direction: column;
         justify-content: center;
         align-items: center;
 
         a {
-            @extend .c-button;
+            @extend .c-button__flex;
             font-weight: 700;
-            display: flex;
-            flex-direction: column;
             font-size: 1.6rem;
             text-decoration: none;
         }

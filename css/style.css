@@ -591,11 +591,15 @@ main .wp-pagenavi .current {
   bottom: 0;
 }
 
-.c-button, .c-button__area a, .c-button__area, .c-button__hamburger {
+.c-button, .c-button__hamburger, .c-button__flex, .c-button__area a, .c-button__area {
   width: auto;
   height: auto;
   display: block;
   position: relative;
+}
+.c-button__flex, .c-button__area a, .c-button__area {
+  display: flex;
+  flex-direction: column;
 }
 .c-button__home {
   color: #707070;
@@ -648,15 +652,11 @@ main .wp-pagenavi .current {
 .c-button__area {
   height: 100%;
   width: 100%;
-  display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 .c-button__area a {
   font-weight: 700;
-  display: flex;
-  flex-direction: column;
   font-size: 1.6rem;
   text-decoration: none;
 }
