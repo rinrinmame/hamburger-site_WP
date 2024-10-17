@@ -181,6 +181,17 @@ main .wp-block-gallery.wp-block-gallery-1 figure {
 main .wp-block-gallery.wp-block-gallery-1 figure img {
   height: 100%;
   width: 100%;
+  aspect-ratio: 336.11/230.53;
+}
+@media (min-width: 768px) {
+  main .wp-block-gallery.wp-block-gallery-1 figure img {
+    aspect-ratio: 378.28/354.5;
+  }
+}
+@media (min-width: 1024px) {
+  main .wp-block-gallery.wp-block-gallery-1 figure img {
+    aspect-ratio: 677/471;
+  }
 }
 @media (min-width: 768px) {
   main .wp-block-gallery.wp-block-gallery-1 {

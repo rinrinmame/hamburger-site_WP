@@ -133,6 +133,7 @@ main {
             grid-template-columns: 1fr;
             gap: 2rem;
             
+            
                 figure {
                     height: 100%;
                     width: 100%;
@@ -141,6 +142,15 @@ main {
                     img {
                         height: 100%;
                         width: 100%;
+                        aspect-ratio: 336.11 / 230.53;
+
+                        @include breakpoint(tablet) {
+                            aspect-ratio: 378.28 / 354.5;
+                        }
+
+                        @include breakpoint(pc) {    
+                            aspect-ratio: 677 / 471;
+                        }
                     }
                 }
 
