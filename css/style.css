@@ -1411,13 +1411,15 @@ main .wp-pagenavi .current {
   line-height: 1.7;
 }
 
-.c-flexbox__header, .c-flexbox__search-form, .c-flexbox__branch-menu, .c-flexbox__footer, .c-flexbox__title, .c-flexbox__discription, .c-flexbox__container {
-  display: flex;
+.c-flexbox, .c-flexbox__container, .c-flexbox__blockquote, .c-flexbox__page-arrow, .c-flexbox__page, .c-flexbox__discription, .c-flexbox__title, .c-flexbox__branch-menu, .c-flexbox__header, .c-flexbox__center, .c-flexbox__img, .c-flexbox__page-count, .c-flexbox__footer, .c-flexbox__search-form {
   height: auto;
   width: auto;
-}
-.c-flexbox__header, .c-flexbox__branch-menu, .c-flexbox__title, .c-flexbox__discription, .c-flexbox__container, .c-flexbox__blockquote {
+  display: flex;
   flex-direction: column;
+}
+.c-flexbox__center, .c-flexbox__img, .c-flexbox__page-count, .c-flexbox__footer, .c-flexbox__search-form {
+  justify-content: center;
+  align-items: center;
 }
 .c-flexbox__header {
   padding-left: 8.2%;
@@ -1436,15 +1438,9 @@ main .wp-pagenavi .current {
   }
 }
 .c-flexbox__search-form {
-  justify-content: center;
-  align-items: center;
-  box-sizing: border-box;
   width: 100%;
-}
-@media (min-width: 768px) {
-  .c-flexbox__search-form {
-    width: 100%;
-  }
+  flex-direction: inherit;
+  box-sizing: border-box;
 }
 @media (min-width: 1024px) {
   .c-flexbox__search-form {
@@ -1470,8 +1466,7 @@ main .wp-pagenavi .current {
 .c-flexbox__footer {
   height: 100%;
   width: 100%;
-  justify-content: center;
-  align-items: center;
+  flex-direction: revert;
   gap: 0.6rem;
   margin-inline: auto;
   margin-bottom: 7rem;
@@ -1501,11 +1496,6 @@ main .wp-pagenavi .current {
     margin-left: 8.6rem;
   }
 }
-@media (min-width: 1024px) {
-  .c-flexbox__title {
-    margin-left: 8.6rem;
-  }
-}
 .c-flexbox__discription {
   gap: 2.5rem;
 }
@@ -1514,26 +1504,6 @@ main .wp-pagenavi .current {
     gap: 2rem;
   }
 }
-.c-flexbox__page {
-  display: flex;
-}
-.c-flexbox__page-count {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.c-flexbox__page-arrow {
-  display: flex;
-}
-.c-flexbox__blockquote {
-  display: flex;
-}
-.c-flexbox__img {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .c-list {
   display: flex;
   flex-direction: column;

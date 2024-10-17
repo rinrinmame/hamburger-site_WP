@@ -1,29 +1,19 @@
 @use "../../foundation/" as *;
 
 .c-flexbox {
+    height: auto;
+    width: auto;
+    display: flex;
+    flex-direction: column;
 
-    &__header,
-    &__search-form,
-    &__branch-menu,
-    &__footer,
-    &__title,
-    &__discription,
-    &__container {
-        display: flex;
-        height: auto;
-        width: auto;
-    }
-
-    &__header,
-    &__branch-menu,
-    &__title,
-    &__discription,
-    &__container,
-    &__blockquote {
-        flex-direction: column;
+    &__center {
+        @extend .c-flexbox;
+        justify-content: center;
+        align-items: center;
     }
 
     &__header {
+        @extend .c-flexbox;
         padding-left: 8.2%;
         padding-right: 6.9%;
 
@@ -39,14 +29,10 @@
     }
 
     &__search-form {
-        justify-content: center;
-        align-items: center;
-        box-sizing: border-box;
+        @extend .c-flexbox__center;
         width: 100%;
-
-        @include breakpoint(tablet) {
-            width: 100%;
-        }
+        flex-direction: inherit;
+        box-sizing: border-box;
 
         @include breakpoint(pc) {
             width: auto;
@@ -54,6 +40,7 @@
     }
     
     &__branch-menu {
+        @extend .c-flexbox;
         flex-grow: 1;
         gap: 2rem;
         
@@ -69,10 +56,10 @@
     }
 
     &__footer {
+        @extend .c-flexbox__center;
         height: 100%;
         width: 100%;
-        justify-content: center;
-        align-items: center;
+        flex-direction: revert;
         gap: 0.6rem;
         margin-inline: auto;
         margin-bottom: 7rem;
@@ -87,6 +74,7 @@
     }
 
     &__title {
+        @extend .c-flexbox;
         height: 100%;
         width: 100%;
         position: relative;
@@ -99,13 +87,10 @@
             align-items: center;
             margin-left: 8.6rem;
         }
-    
-        @include breakpoint(pc) {
-            margin-left: 8.6rem;
-        }
     }
 
     &__discription {
+        @extend .c-flexbox;
         gap: 2.5rem;
 
         @include breakpoint(tablet) {
@@ -114,26 +99,23 @@
     }
 
     &__page {
-        display: flex;
+        @extend .c-flexbox;
 
         &-count {
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            @extend .c-flexbox__center;
         }
 
         &-arrow {
-            display: flex;
+            @extend .c-flexbox;
         }
     }
 
+    &__container,
     &__blockquote {
-        display: flex;
+        @extend .c-flexbox;
     }
 
     &__img {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @extend .c-flexbox__center;
     }
 }
