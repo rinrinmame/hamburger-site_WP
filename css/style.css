@@ -1362,31 +1362,22 @@ main .wp-pagenavi .current {
   }
 }
 
-.c-category {
+.c-category, .c-category dd, .c-category dt, .c-category h3 {
   height: auto;
   width: auto;
   display: flex;
   flex-direction: column;
-  font-family: "M PLUS 1p";
   color: #3C2A10;
-  background-color: #FFFFFF;
   background-size: cover;
   position: relative;
+  font-weight: 700;
 }
-.c-category:hover {
+.c-category:hover, .c-category dd:hover, .c-category dt:hover, .c-category h3:hover {
   opacity: 0.6;
 }
-.c-category h3,
-.c-category dt {
-  font-weight: bold;
-  height: auto;
-  width: auto;
-}
 .c-category h3 {
-  font-family: Roboto;
   color: #EAEAEA;
   display: inline-block;
-  position: relative;
   margin-bottom: 58%;
   font-size: 4.1rem;
 }
@@ -1402,9 +1393,6 @@ main .wp-pagenavi .current {
 }
 .c-category dt {
   font-size: 2.2rem;
-  display: flex;
-  flex-direction: column;
-  position: relative;
 }
 @media (min-width: 768px) {
   .c-category dt {
@@ -1420,12 +1408,7 @@ main .wp-pagenavi .current {
 .c-category dd {
   font-weight: 400;
   font-size: 1.6rem;
-  height: auto;
-  width: auto;
-  display: flex;
   line-height: 1.7;
-  flex-direction: column;
-  position: relative;
 }
 
 .c-flexbox__header, .c-flexbox__search-form, .c-flexbox__branch-menu, .c-flexbox__footer, .c-flexbox__title, .c-flexbox__discription, .c-flexbox__container {
@@ -1885,6 +1868,7 @@ main .wp-pagenavi .current {
   height: auto;
   width: auto;
   display: block;
+  background-color: #FFFFFF;
 }
 .p-branch-menu h3 {
   margin-top: 2.8rem;

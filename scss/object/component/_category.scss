@@ -5,28 +5,19 @@
     width: auto;
     display: flex;
     flex-direction: column;
-    font-family: "M PLUS 1p";
     color: $color--black;
-    background-color: $color--white;
     background-size: cover;
     position: relative;
+    font-weight: 700;
 
     &:hover {
         opacity: 0.6;
     }
 
-    h3,
-    dt {
-        font-weight: bold;
-        height: auto;
-        width: auto;
-    }
-
     h3 {
-        font-family: Roboto;
+        @extend .c-category;
         color: $color--cream;
         display: inline-block;
-        position: relative;
         margin-bottom: 58%;
         font-size: 4.1rem;
 
@@ -40,10 +31,8 @@
     }    
 
     dt {
+        @extend .c-category;
         font-size: 2.2rem;
-        display: flex;
-        flex-direction: column;
-        position: relative;
 
         @include breakpoint(tablet) {
             font-size: 2.4rem;
@@ -56,13 +45,9 @@
     }
 
     dd {
+        @extend .c-category;
         font-weight: 400;
         font-size: 1.6rem;
-        height: auto;
-        width: auto;
-        display: flex;
         line-height: 1.7;
-        flex-direction: column;
-        position: relative;
     }
 }
