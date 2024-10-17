@@ -707,11 +707,21 @@ main .wp-pagenavi .current {
 .c-inner__footer {
   height: 100%;
   width: 100%;
-  padding: 4.1rem 0 2.7rem 0;
+  padding: 4rem 0 1.6rem 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+@media (min-width: 768px) {
+  .c-inner__footer {
+    padding: 3rem 0 2.4rem 0;
+  }
+}
+@media (min-width: 1024px) {
+  .c-inner__footer {
+    padding: 4.1rem 0 2.7rem 0;
+  }
 }
 .c-inner__archive {
   padding: 3.2rem 5.3% 0 5.3%;
@@ -1005,17 +1015,20 @@ main .wp-pagenavi .current {
   margin-inline: auto;
 }
 
+.c-background, .c-background__footer, .c-background__button--child, .c-background__button--parent, .c-background__button__area, .c-background__blockquote, .c-background__title-single, .c-background__archive, .c-background__map-comment, .c-background__map-all, .c-background__category, .c-background__title, .c-background__branch-menu {
+  width: auto;
+  height: auto;
+  display: block;
+  position: relative;
+}
 .c-background__branch-menu {
   background-color: #FFFFFF;
-  display: flex;
   flex-direction: column;
   flex-grow: 1;
 }
 .c-background__title {
   width: 100%;
   height: 28.5rem;
-  display: block;
-  position: relative;
   overflow: hidden;
   background-size: cover;
   background-position: center;
@@ -1027,7 +1040,6 @@ main .wp-pagenavi .current {
 }
 .c-background__category {
   width: 100%;
-  height: auto;
   overflow: hidden;
   background-size: cover;
   background: rgba(255, 255, 255, 0.79);
@@ -1036,10 +1048,6 @@ main .wp-pagenavi .current {
   flex-direction: column;
 }
 .c-background__map-all {
-  width: auto;
-  height: auto;
-  display: block;
-  position: relative;
   z-index: 1;
   margin-bottom: 0;
   left: 0%;
@@ -1048,9 +1056,6 @@ main .wp-pagenavi .current {
 }
 .c-background__map-comment {
   width: 100%;
-  height: auto;
-  display: block;
-  position: relative;
   z-index: 2;
   margin-bottom: 0;
 }
@@ -1078,8 +1083,6 @@ main .wp-pagenavi .current {
 .c-background__archive {
   height: 28.5rem;
   width: 100%;
-  display: block;
-  position: relative;
   overflow: hidden;
   background-size: cover;
   background-position: center;
@@ -1099,9 +1102,6 @@ main .wp-pagenavi .current {
 }
 .c-background__title-single {
   height: 28.5rem;
-  width: auto;
-  display: block;
-  position: relative;
   overflow: hidden;
   background-size: cover;
   background-color: #D9D9D9;
@@ -1118,7 +1118,6 @@ main .wp-pagenavi .current {
   }
 }
 .c-background__blockquote {
-  height: auto;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -1138,25 +1137,14 @@ main .wp-pagenavi .current {
     height: auto;
   }
 }
-.c-background__button__area {
-  display: block;
-}
 .c-background__button--parent {
-  height: auto;
-  width: auto;
   border-radius: 20px;
 }
 .c-background__button--child {
   border-radius: 20px;
-  height: auto;
-  width: auto;
   border: 1px solid;
 }
 .c-background__footer {
-  height: auto;
-  width: auto;
-  display: block;
-  position: relative;
   overflow: hidden;
   background-image: url(../images/footer.png);
   background-repeat: repeat;

@@ -2,19 +2,22 @@
 @use "sass:math";
 
 .c-background {
+    width: auto;
+    height: auto;
+    display: block;
+    position: relative;
 
     &__branch-menu {
+        @extend .c-background;
         background-color: $color--white;
-        display: flex;
         flex-direction: column;
         flex-grow: 1;
     }
 
     &__title {
+        @extend .c-background;
         width: 100%;
         height: 28.5rem;
-        display: block;
-        position: relative;
         overflow: hidden;
         background-size: cover;
         background-position: center;
@@ -25,8 +28,8 @@
     }
 
     &__category {
+        @extend .c-background;
         width: 100%;
-        height: auto;
         overflow: hidden;
         background-size: cover;
         background: rgba($color: $color--white, $alpha: 0.79);
@@ -36,10 +39,7 @@
     }
 
     &__map-all {
-        width: auto;
-        height: auto;
-        display: block;
-        position: relative;
+        @extend .c-background;
         z-index: 1;
         margin-bottom: 0;
         left: 0%;
@@ -48,10 +48,8 @@
     }
 
     &__map-comment {
+        @extend .c-background;
         width: 100%;
-        height: auto;
-        display: block;
-        position: relative;
         z-index: 2;
         margin-bottom: 0;
 
@@ -77,10 +75,9 @@
     }
 
     &__archive {
+        @extend .c-background;
         height: 28.5rem;
         width: 100%;
-        display: block;
-        position: relative;
         overflow: hidden;
         background-size: cover;
         background-position: center;
@@ -100,10 +97,8 @@
     }
 
     &__title-single {
+        @extend .c-background;
         height: 28.5rem;
-        width: auto;
-        display: block;
-        position: relative;
         overflow: hidden;
         background-size: cover;
         background-color: $color--lightgray;
@@ -119,7 +114,7 @@
     }
 
     &__blockquote {
-        height: auto;
+        @extend .c-background;
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -143,52 +138,23 @@
     &__button {
 
         &__area {
-            display: block;
+            @extend .c-background;
         }
 
         &--parent {
-            //height: 8.1rem;
-            //width: 100%;
-            //display: flex;
-            //flex-direction: column;
-            //position: relative;
-            //background: $color--offWhite;
-            height: auto;
-            width: auto;
+            @extend .c-background;
             border-radius: 20px;
-
-            //@include breakpoint(tablet) {
-                //height: 10.4rem;
-                //width: 42.9rem;
-            //}
         }
 
         &--child {
-            //height: 8.1rem;
-            //width: 100%;
-            //display: flex;
-            //flex-direction: column;
-            //position: relative;
-            //background: $color--pinkishgray;
-            //mix-blend-mode: normal;
-            //justify-content: center;
-            //align-items: center;
+            @extend .c-background;
             border-radius: 20px;
-            height: auto;
-            width: auto;
             border: 1px solid;
-
-            //@include breakpoint(tablet) {
-                //height: 10.4rem;
-            //}
         }
     }
 
     &__footer {
-        height: auto;
-        width: auto;
-        display: block;
-        position: relative;
+        @extend .c-background;
         overflow: hidden;
         background-image: url(../images/footer.png);
         background-repeat: repeat;
