@@ -1983,17 +1983,6 @@ main .wp-pagenavi .current {
   font-size: 1.4rem;
 }
 
-.u-item {
-  /*&__list {
-      list-style-type: none;
-      padding-left: inherit;
-      margin-bottom: 1.7rem;
-  }
-
-  &__sub {
-      list-style-type: decimal;
-  }*/
-}
 .u-item__group {
   margin-bottom: 0;
 }
