@@ -23,7 +23,7 @@
                             <button class="c-button__home"><a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo( 'name' ); ?></a></button>
                         </h1>
                     </div>
-                    <div class="c-search-form">
+                    <div class="p-search-form">
                         <?php get_search_form(); ?>
                     </div>
                 </div>
