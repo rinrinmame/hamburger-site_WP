@@ -11,12 +11,18 @@
         @extend .c-background;
         background-size: cover;
         background-position: center;
+        overflow: hidden;
+    }
+
+    &__column {
+        @extend .c-background;
+        display: flex;
+        flex-direction: column;
     }
 
     &__branch-menu {
-        @extend .c-background;
+        @extend .c-background__column;
         background-color: $color--white;
-        flex-direction: column;
         flex-grow: 1;
     }
 
@@ -24,7 +30,6 @@
         @extend .c-background__cover;
         width: 100%;
         height: 28.5rem;
-        overflow: hidden;
 
         @include breakpoint(pc) {
             height: 53rem;
@@ -33,12 +38,10 @@
 
     &__category {
         @extend .c-background__cover;
+        @extend .c-background__column;
         width: 100%;
-        overflow: hidden;
         background: rgba($color: $color--white, $alpha: 0.79);
         margin-bottom: 3.2%;
-        display: flex;
-        flex-direction: column;
     }
 
     &__map-all {
@@ -81,7 +84,6 @@
         @extend .c-background__cover;
         height: 28.5rem;
         width: 100%;
-        overflow: hidden;
         background-image: url(../images/main__takeout.jpg);
 
         @include breakpoint(pc) {
@@ -100,7 +102,6 @@
     &__title-single {
         @extend .c-background__cover;
         height: 28.5rem;
-        overflow: hidden;
         background-color: $color--lightgray;
 
         @include breakpoint(tablet) {
@@ -109,45 +110,6 @@
         
         @include breakpoint(pc) {
             height: 50rem;
-        }
-    }
-
-    &__blockquote {
-        @extend .c-background;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        position: relative;
-        background-color: $color--clearcream;
-    }
-
-    &__code {
-        height: auto;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        position: relative;
-        background: $color--clearcream;
-
-        @include breakpoint(tablet) {
-            height: auto;
-        }
-    }
-
-    &__button {
-        &__area {
-            @extend .c-background;
-        }
-
-        &--parent {
-            @extend .c-background;
-            border-radius: 20px;
-        }
-
-        &--child {
-            @extend .c-background;
-            border-radius: 20px;
-            border: 1px solid;
         }
     }
 
