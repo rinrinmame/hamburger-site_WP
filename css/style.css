@@ -1646,23 +1646,15 @@ main .wp-pagenavi .current {
   left: 0;
 }
 
-.p-access {
+.p-access, .p-access__comment p, .p-access__comment h2, .p-access__map {
+  width: auto;
+  height: auto;
+  display: block;
   position: relative;
   font-family: "M PLUS 1p";
-  font-weight: bold;
-  height: auto;
-  width: auto;
-  display: block;
-}
-.p-access__map {
-  position: relative;
-  height: auto;
-  width: auto;
+  font-weight: 700;
 }
 .p-access__comment h2 {
-  height: auto;
-  width: auto;
-  position: relative;
   color: #FFFFFF;
   font-size: 3rem;
   margin-bottom: 2.9rem;
@@ -1691,10 +1683,7 @@ main .wp-pagenavi .current {
   }
 }
 .p-access__comment p {
-  height: auto;
-  width: auto;
   display: inline-block;
-  position: relative;
   color: #FFFFFF;
   font-size: 1.4rem;
   line-height: 2;

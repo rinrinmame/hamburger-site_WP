@@ -1,24 +1,21 @@
 @use "../../foundation/" as *;
 
 .p-access {
+    width: auto;
+    height: auto;
+    display: block;
     position: relative;
     font-family: "M PLUS 1p";
-    font-weight: bold;
-    height: auto;
-    width: auto;
-    display: block;
+    font-weight: 700;
 
     &__map {
-        position: relative;
-        height: auto;
-        width: auto;
+        @extend .p-access;
     }
 
     &__comment {
+
         h2 {
-            height: auto;
-            width: auto;
-            position: relative;
+            @extend .p-access;
             color: $color--white;
             font-size: 3rem;
             margin-bottom: 2.9rem;
@@ -40,17 +37,15 @@
             justify-content: left;
             background-color: $color--white;
             z-index: 3;
-  
+
             @include breakpoint(pc) {
                 bottom: -50.5px;
             }
         }
 
         p {
-            height: auto;
-            width: auto;
+            @extend .p-access;
             display: inline-block;
-            position: relative;
             color: $color--white;
             font-size: 1.4rem;
             line-height: 2;
