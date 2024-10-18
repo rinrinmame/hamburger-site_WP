@@ -1701,13 +1701,13 @@ main .wp-pagenavi .current {
   height: auto;
   width: auto;
   display: block;
-  background-color: #FFFFFF;
 }
 .p-branch-menu h3 {
   margin-top: 2.8rem;
   margin-left: 2.2rem;
   display: flex;
   flex-direction: column;
+  font-family: "Roboto";
 }
 .p-branch-menu h3:before {
   content: "";
@@ -1719,19 +1719,16 @@ main .wp-pagenavi .current {
   justify-content: left;
   background-color: #FFFFFF;
 }
-.p-branch-menu__takeout {
-  background-image: url(../images/main__takeout.jpg);
-  height: auto;
+.p-branch-menu__base, .p-branch-menu__eatin, .p-branch-menu__takeout {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
+.p-branch-menu__takeout {
+  background-image: url(../images/main__takeout.jpg);
+}
 .p-branch-menu__eatin {
   background-image: url(../images/main__eatin.jpg);
-  height: auto;
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 
 .p-menu {
@@ -1837,21 +1834,6 @@ main .wp-pagenavi .current {
 .p-blockquote__text {
   display: flex;
   flex-direction: column;
-}
-
-.p-article--1 img {
-  height: auto;
-  width: auto;
-  display: flex;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-.p-article--2 img {
-  height: auto;
-  width: auto;
-  display: flex;
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 
 .p-list__area--A {

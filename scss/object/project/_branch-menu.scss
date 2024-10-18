@@ -4,13 +4,13 @@
     height: auto;
     width: auto;
     display: block;
-    background-color: $color--white;
 
     h3 {
         margin-top: 2.8rem;
         margin-left: 2.2rem;
         display: flex;
         flex-direction: column;
+        font-family: "Roboto";
     }
 
     h3:before {
@@ -24,18 +24,18 @@
         background-color: $color--white;
     }
 
-    &__takeout {  
-        background-image: url(../images/main__takeout.jpg);
-        height: auto;
+    &__base {
         width: 100%;
         object-fit: cover;
     }
 
+    &__takeout {
+        @extend .p-branch-menu__base;
+        background-image: url(../images/main__takeout.jpg);
+    }
 
-    &__eatin {        
+    &__eatin {      
+        @extend .p-branch-menu__base;  
         background-image: url(../images/main__eatin.jpg);
-        height: auto;
-        width: 100%;
-        object-fit: cover;
     }
 }
