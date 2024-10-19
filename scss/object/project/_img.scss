@@ -1,9 +1,0 @@
-@use "../../foundation/" as *;
-
-.p-img {
-    &--big {
-        width: auto;
-        height: auto;
-        object-fit: cover;
-    }
-}

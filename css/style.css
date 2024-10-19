@@ -1803,37 +1803,6 @@ main .wp-pagenavi .current {
   }
 }
 
-.p-blockquote__text {
-  display: flex;
-  flex-direction: column;
-}
-
-.p-list__area--A {
-  margin-bottom: 5.7rem;
-}
-
-.p-code {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  color: #3C2A10;
-}
-
-.p-table__area {
-  height: auto;
-  width: 100%;
-  position: relative;
-  border-collapse: collapse;
-  margin-bottom: 6rem;
-}
-
-.p-img--big {
-  width: auto;
-  height: auto;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
 .p-title {
   position: relative;
   height: auto;

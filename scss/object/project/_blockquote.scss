@@ -1,9 +1,0 @@
-@use "../../foundation/" as *;
-
-.p-blockquote {
-
-    &__text {
-        display: flex;
-        flex-direction: column;
-    }
-}
