@@ -1,5 +1,5 @@
         <?php get_header(); //header.phpを読み込むテンプレートタグ（インクルードタグ）?>
-        <main class="l-main">
+        <main class="l-main c-grid__body__child--main">
             <article class="l-main__contents p-title">
                 <?php 
                     $url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );

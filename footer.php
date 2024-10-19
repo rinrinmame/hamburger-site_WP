@@ -1,4 +1,4 @@
-<footer class="l-footer c-background__footer">
+<footer class="l-footer c-background__footer c-grid__body__child--footer">
     <div class="c-inner__footer">
         <?php wp_nav_menu( array( 
                 'theme_location' => 'footer_nav',

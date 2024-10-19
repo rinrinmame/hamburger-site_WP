@@ -1,4 +1,4 @@
-<aside class="l-sidebar">
+<aside class="l-sidebar c-grid__body__child--sidebar">
 <?php if(is_user_logged_in()): //ログイン時とログアウト時でclass名切り替え ?>
     <div class="c-inner__sidebar u-login">
 <?php else : ?>

@@ -10,7 +10,7 @@
     </head>
     <body <?php body_class( 'l-body c-grid__body' ); ?>>
         <?php wp_body_open(); ?>
-        <header class="l-header c-inner__header">
+        <header class="l-header c-inner__header c-grid__body__child--header">
             <div class="l-header__nav">
                 <div class="l-header__button">
                     <h2>

@@ -1,5 +1,5 @@
 <?php get_header(); //header.phpを読み込むテンプレートタグ（インクルードタグ）?>
-<main class="l-main">
+<main class="l-main c-grid__body__child--main">
     <article class="l-main__title p-title">
             <div class="c-background__archive">
                 <div class="c-background__archive-cover">

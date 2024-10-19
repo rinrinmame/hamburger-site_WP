@@ -13,11 +13,6 @@
         margin-top: inherit;
     }
 
-    @include breakpoint(pc) {
-        grid-row: 1;
-        grid-column: 1;
-    }
-
     &__nav {
         height: auto;
         width: auto;
