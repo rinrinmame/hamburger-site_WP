@@ -859,7 +859,7 @@ main .wp-pagenavi .current {
 
 .c-sub {
   font-family: "M PLUS 1p";
-  font-weight: bold;
+  font-weight: 700;
   font-size: 2.4rem;
   height: 3.6rem;
 }
@@ -1099,13 +1099,20 @@ main .wp-pagenavi .current {
   }
 }
 
+.c-title, .c-title__discription, .c-title__single, .c-title__archive-sub p, .c-title__archive h2, .c-title__front {
+  width: auto;
+  height: auto;
+  font-weight: 700;
+  font-size: 3.6rem;
+  color: #FFFFFF;
+}
 .c-title__header {
   font-family: "Roboto";
-  color: #707070;
+  width: 20.3rem;
+  height: 4.7rem;
   font-weight: 700;
   font-size: 4rem;
-  height: 4.7rem;
-  width: 20.3rem;
+  color: #707070;
   margin: 4.3rem auto 0 auto;
 }
 @media (min-width: 768px) {
@@ -1116,20 +1123,15 @@ main .wp-pagenavi .current {
 }
 @media (min-width: 1024px) {
   .c-title__header {
-    font-size: 6.4rem;
-    height: 7.5rem;
     width: 32.5rem;
+    height: 7.5rem;
+    font-size: 6.4rem;
     margin: 6.6rem 6.5rem 6.7rem 6.5rem;
   }
 }
 .c-title__front {
   font-family: "M PLUS 1p";
-  font-weight: bold;
-  color: #FFFFFF;
-  height: auto;
-  width: auto;
   position: relative;
-  font-size: 3.6rem;
   margin: 12.2rem auto 11.1rem 2.5rem;
 }
 @media (min-width: 1024px) {
@@ -1140,14 +1142,9 @@ main .wp-pagenavi .current {
 }
 .c-title__archive h2 {
   font-family: "Roboto";
-  font-weight: 700;
-  color: #FFFFFF;
-  height: 100%;
-  width: 100%;
   display: flex;
   position: relative;
   align-items: center;
-  font-size: 3.6rem;
 }
 @media (min-width: 768px) {
   .c-title__archive h2 {
@@ -1156,14 +1153,10 @@ main .wp-pagenavi .current {
 }
 .c-title__archive-sub p {
   font-family: "M PLUS 1p";
-  font-weight: 700;
-  color: #FFFFFF;
-  height: 100%;
-  width: 100%;
+  font-size: 1.6rem;
   display: flex;
   position: relative;
   align-items: center;
-  font-size: 1.6rem;
 }
 @media (min-width: 768px) {
   .c-title__archive-sub p {
@@ -1172,12 +1165,7 @@ main .wp-pagenavi .current {
 }
 .c-title__single {
   font-family: "M PLUS 1p";
-  font-weight: 700;
-  color: #FFFFFF;
-  height: auto;
-  width: auto;
   position: absolute;
-  font-size: 3.6rem;
   margin-left: 6.93%;
 }
 @media (min-width: 768px) {
@@ -1193,13 +1181,10 @@ main .wp-pagenavi .current {
 }
 .c-title__discription {
   font-family: "M PLUS 1p";
-  font-weight: 700;
-  height: auto;
-  width: auto;
-  color: #3C2A10;
+  font-size: 2.8rem;
   display: inline-block;
   position: relative;
-  font-size: 2.8rem;
+  color: #3C2A10;
   margin-bottom: 2.5rem;
 }
 @media (min-width: 768px) {
@@ -1259,13 +1244,13 @@ main .wp-pagenavi .current {
   line-height: 1.7;
 }
 
-.c-flexbox, .c-flexbox__container, .c-flexbox__blockquote, .c-flexbox__page-arrow, .c-flexbox__page, .c-flexbox__discription, .c-flexbox__title, .c-flexbox__branch-menu, .c-flexbox__header, .c-flexbox__center, .c-flexbox__img, .c-flexbox__page-count, .c-flexbox__footer, .c-flexbox__search-form {
+.c-flexbox, .c-flexbox__container, .c-flexbox__blockquote, .c-flexbox__page-arrow, .c-flexbox__page, .c-flexbox__discription, .c-flexbox__title, .c-flexbox__branch-menu, .c-flexbox__header, .c-flexbox--center, .c-flexbox__img, .c-flexbox__page-count, .c-flexbox__footer, .c-flexbox__search-form {
   height: auto;
   width: auto;
   display: flex;
   flex-direction: column;
 }
-.c-flexbox__center, .c-flexbox__img, .c-flexbox__page-count, .c-flexbox__footer, .c-flexbox__search-form {
+.c-flexbox--center, .c-flexbox__img, .c-flexbox__page-count, .c-flexbox__footer, .c-flexbox__search-form {
   justify-content: center;
   align-items: center;
 }
@@ -1534,50 +1519,9 @@ main .wp-pagenavi .current {
   list-style: decimal inside;
 }
 
-.c-code {
-  margin-top: -2.8rem;
-  margin-bottom: -2.8rem;
-}
-
-/*.c-table {
-    font-family: "M PLUS 1p";
-    font-weight: 400;
-    height: 7.7rem;
-    width: 100%;
-    position: relative;
-    table-layout: fixed;
-    font-size: 1.6rem;
-    border: solid 1px $color--gray;
-
-    &__heading {
-        height: auto;
-        width: 42%;
-        font-weight: 400;
-        position: relative;
-        border: solid 1px $color--gray;
-        text-align: left;
-        padding-left: 6.9%;
-
-        @include breakpoint(tablet) {
-            padding-left: 4%;
-        }
-    }
-
-    &__data {
-        height: auto;
-        width: 58%;
-        position: relative;
-        border: solid 1px $color--gray;
-        padding-left: 6.9%;
-
-        @include breakpoint(tablet) {
-            padding-left: 4%;
-        }
-    }
-}*/
 .c-map {
-  height: 100%;
   width: 100%;
+  height: 100%;
   display: block;
   position: absolute;
   overflow: hidden;
@@ -1634,19 +1578,19 @@ main .wp-pagenavi .current {
   }
 }
 
-.p-branch-menu {
+.p-branch-menu, .p-branch-menu__eatin, .p-branch-menu__takeout {
   height: auto;
   width: auto;
   display: block;
 }
-.p-branch-menu h3 {
+.p-branch-menu h3, .p-branch-menu__eatin h3, .p-branch-menu__takeout h3 {
   margin-top: 2.8rem;
   margin-left: 2.2rem;
   display: flex;
   flex-direction: column;
   font-family: "Roboto";
 }
-.p-branch-menu h3:before {
+.p-branch-menu h3:before, .p-branch-menu__eatin h3:before, .p-branch-menu__takeout h3:before {
   content: "";
   position: absolute;
   bottom: -43px;
@@ -1656,15 +1600,16 @@ main .wp-pagenavi .current {
   justify-content: left;
   background-color: #FFFFFF;
 }
-.p-branch-menu__base, .p-branch-menu__eatin, .p-branch-menu__takeout {
+.p-branch-menu__takeout {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-}
-.p-branch-menu__takeout {
   background-image: url(../images/main__takeout.jpg);
 }
 .p-branch-menu__eatin {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
   background-image: url(../images/main__eatin.jpg);
 }
 
@@ -1676,11 +1621,6 @@ main .wp-pagenavi .current {
   line-height: normal;
   display: block;
   position: relative;
-  /*margin-bottom: 6rem;
-
-  @include breakpoint(tablet) {
-      margin-bottom: 4.8rem;
-  }*/
 }
 .p-menu__parent {
   height: auto;

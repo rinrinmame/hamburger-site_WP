@@ -1,13 +1,19 @@
 @use "../../foundation/" as *;
 
 .c-title {
+    width: auto;
+    height: auto;
+    font-weight: 700;
+    font-size: 3.6rem;
+    color: $color--white;
+
     &__header {
         font-family: "Roboto";
-        color: $color--gray;
+        width: 20.3rem;
+        height: 4.7rem;
         font-weight: 700;
         font-size: 4rem;
-        height: 4.7rem;
-        width: 20.3rem;
+        color: $color--gray;
         margin: 4.3rem auto 0 auto;
 
         @include breakpoint(tablet) {
@@ -16,21 +22,17 @@
         }
 
         @include breakpoint(pc) {
-            font-size: 6.4rem;
-            height: 7.5rem;
             width: 32.5rem;
+            height: 7.5rem;
+            font-size: 6.4rem;
             margin: 6.6rem 6.5rem 6.7rem 6.5rem;
         }
     }
 
     &__front {
+        @extend .c-title;
         font-family: "M PLUS 1p";
-        font-weight: bold;
-        color: $color--white;
-        height: auto;
-        width: auto;
         position: relative;
-        font-size: 3.6rem;
         margin: 12.2rem auto 11.1rem 2.5rem;
 
         @include breakpoint(pc) {
@@ -41,16 +43,14 @@
 
     &__archive {
         h2 {
+            @extend .c-title;
             font-family: "Roboto";
-            font-weight: 700;
-            color: $color--white;
-            height: 100%;
-            width: 100%;
+            //width: 100%;
+            //height: 100%;
             display: flex;
             position: relative;
             align-items: center;
-            font-size: 3.6rem;
-
+            
             @include breakpoint(tablet) {
                 font-size: 6rem;
             }
@@ -58,15 +58,14 @@
 
         &-sub {
             p {
+                @extend .c-title;
                 font-family: "M PLUS 1p";
-                font-weight: 700;
-                color: $color--white;
-                height: 100%;
-                width: 100%;
+                //width: 100%;
+                //height: 100%;
+                font-size: 1.6rem;
                 display: flex;
                 position: relative;
                 align-items: center;
-                font-size: 1.6rem;
 
                 @include breakpoint(tablet) {
                     margin-left: 1.9rem;
@@ -76,13 +75,9 @@
     }
 
     &__single {
+        @extend .c-title;
         font-family: "M PLUS 1p";
-        font-weight: 700;
-        color: $color--white;
-        height: auto;
-        width: auto;
         position: absolute;
-        font-size: 3.6rem;
         margin-left: 6.93%;
 
         @include breakpoint(tablet) {
@@ -96,14 +91,12 @@
     }
 
     &__discription {
+        @extend .c-title;
         font-family: "M PLUS 1p";
-        font-weight: 700;
-        height: auto;
-        width: auto;
-        color: $color--black;
+        font-size: 2.8rem;
         display: inline-block;
         position: relative;
-        font-size: 2.8rem;
+        color: $color--black;
         margin-bottom: 2.5rem;
 
         @include breakpoint(tablet) {

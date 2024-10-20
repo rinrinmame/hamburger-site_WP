@@ -24,18 +24,17 @@
         background-color: $color--white;
     }
 
-    &__base {
+    &__takeout {
+        @extend .p-branch-menu;
         width: 100%;
         object-fit: cover;
-    }
-
-    &__takeout {
-        @extend .p-branch-menu__base;
         background-image: url(../images/main__takeout.jpg);
     }
 
     &__eatin {      
-        @extend .p-branch-menu__base;  
+        @extend .p-branch-menu;
+        width: 100%;
+        object-fit: cover;  
         background-image: url(../images/main__eatin.jpg);
     }
 }
