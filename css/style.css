@@ -985,7 +985,8 @@ main .wp-pagenavi .current {
 .c-background__archive-cover {
   height: 100%;
   width: 100%;
-  display: block;
+  display: flex;
+  align-items: center;
   position: absolute;
   background: rgba(0, 0, 0, 0.5);
 }
@@ -1098,27 +1099,10 @@ main .wp-pagenavi .current {
   }
 }
 
-.c-title {
-  /*&__menu {
-      font-family: "M PLUS 1p";
-      font-weight: bold;
-      font-size: 2.4rem;
-      color: $color--gray;
-      height: auto;
-      width: auto;
-      position: relative;
-      margin-bottom: 4rem;
-
-      @include breakpoint(tablet) {
-          margin-bottom: 3.2rem;
-
-      }
-  }*/
-}
 .c-title__header {
   font-family: "Roboto";
   color: #707070;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 4rem;
   height: 4.7rem;
   width: 20.3rem;
@@ -1156,7 +1140,7 @@ main .wp-pagenavi .current {
 }
 .c-title__archive h2 {
   font-family: "Roboto";
-  font-weight: bold;
+  font-weight: 700;
   color: #FFFFFF;
   height: 100%;
   width: 100%;
@@ -1172,7 +1156,7 @@ main .wp-pagenavi .current {
 }
 .c-title__archive-sub p {
   font-family: "M PLUS 1p";
-  font-weight: bold;
+  font-weight: 700;
   color: #FFFFFF;
   height: 100%;
   width: 100%;
@@ -1188,28 +1172,28 @@ main .wp-pagenavi .current {
 }
 .c-title__single {
   font-family: "M PLUS 1p";
-  font-weight: bold;
+  font-weight: 700;
   color: #FFFFFF;
   height: auto;
   width: auto;
   position: absolute;
   font-size: 3.6rem;
-  margin: 9.3rem auto 8.9rem 6.93%;
+  margin-left: 6.93%;
 }
 @media (min-width: 768px) {
   .c-title__single {
-    margin: 21.5rem auto 20.1rem 10.3%;
+    margin-left: 10.3%;
     font-size: 6rem;
   }
 }
 @media (min-width: 1024px) {
   .c-title__single {
-    margin: 21.3rem auto 19.8rem 5.53%;
+    margin-left: 5.53%;
   }
 }
 .c-title__discription {
   font-family: "M PLUS 1p";
-  font-weight: bold;
+  font-weight: 700;
   height: auto;
   width: auto;
   color: #3C2A10;

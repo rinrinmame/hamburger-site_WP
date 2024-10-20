@@ -103,7 +103,8 @@
         &-cover {
             height: 100%;
             width: 100%;
-            display: block;
+            display: flex;
+            align-items: center;
             position: absolute;
             background: rgba($color: $color--clearblack, $alpha: 0.5);
         }
