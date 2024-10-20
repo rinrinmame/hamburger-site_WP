@@ -41,7 +41,7 @@
 }
 
 main {
-    font-family: "Roboto", sans-serif,"M PLUS 1p";
+    font-family: "Roboto", sans-serif, "M PLUS 1p";
     line-height: 1.5;
     font-size: 1.6rem;
     font-weight: 400;
@@ -88,9 +88,7 @@ main {
         }
 
         &__inner-container {
-            height: auto;
-            width: auto;
-            display: block;
+            @extend .wp-block-group;
         }
     }
 
@@ -132,7 +130,6 @@ main {
             grid-template-rows: 1fr;
             grid-template-columns: 1fr;
             gap: 2rem;
-            
             
                 figure {
                     height: 100%;
@@ -184,7 +181,6 @@ main {
             padding-left: 1.8rem;
 
             li {
-
                 &:first-child {
                     margin-top: 1.7rem;
                 }
@@ -196,23 +192,27 @@ main {
         }
     }
 
-    .wp-block-code,
+    .wp-block-code {
+        height: auto;
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        padding: 5rem;
+        font-size: 2rem;
+        font-family: initial;
+        border: none;
+    }
+
     .wp-block-quote {
         height: auto;
         width: auto;
         display: flex;
         flex-direction: column;
         position: relative;
-    }
-
-    .wp-block-code {
-        padding: 5rem;
-        font-size: 2rem;
-    }
-
-    .wp-block-quote {
         background-color: $color--clearcream;
         padding: 3rem 5.9% 3rem 5.9%;
+        border: none;
 
         @include breakpoint(tablet) {
             padding: 5rem 7% 5rem 7%;
@@ -239,8 +239,8 @@ main {
     }
 
     .wp-block-table {
-        tr, td {
-            border: solid 1px $color--gray;
+        tbody {
+            font-size: initial;
         }
 
         tr {
@@ -248,9 +248,12 @@ main {
             width: 100%;
             position: relative;
             table-layout: fixed;
+            border: solid 1px $color--gray;
         }
 
         td {
+            border: solid 1px $color--gray;
+
             &:first-child,
             &:last-child {
                 height: auto;
@@ -353,7 +356,32 @@ main {
             }
         }
 
-        .previouspostslink,
+        .previouspostslink {
+            width: 10rem;
+            height: 3.5rem;
+            display: flex;
+            border: none;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+
+            @include breakpoint (tablet) {
+                width: 3.5rem;
+                font-size: 0;
+            }
+
+            &::before {
+                content: "";
+                height: 1.8rem;
+                width: 1.8rem; 
+                display: inline-block;
+                position: absolute;
+                background: url(../images/pagearrow__left.png) no-repeat center center;
+                margin-right: 15px;
+                left: 7px;
+            }
+        }
+
         .nextpostslink {
             width: 10rem;
             height: 3.5rem;
@@ -367,30 +395,18 @@ main {
                 width: 3.5rem;
                 font-size: 0;
             }
+            &::after {
+                content: "";
+                height: 1.8rem;
+                width: 1.8rem; 
+                display: inline-block;
+                position: absolute;
+                background: url(../images/pagearrow__right.png) no-repeat center center;
+                right: 7px;
+            }
         }
 
-        .previouspostslink::before,
-        .nextpostslink::after {
-            content: "";
-            height: 1.8rem;
-            width: 1.8rem; 
-            display: inline-block;
-            position: absolute;
-        }
-
-        .previouspostslink::before {
-            background: url(../images/pagearrow__left.png) no-repeat center center;
-            margin-right: 15px;
-            left: 7px;
-        }
-
-        .nextpostslink::after {
-            background: url(../images/pagearrow__right.png) no-repeat center center;
-            right: 7px;
-        }
-        
-        .page,
-        .current { 
+        .page {
             height: 3.5rem;
             width: 3.5rem;
             display: flex;
@@ -405,24 +421,26 @@ main {
                 color: inherit;
                 background: inherit;
                 border: inherit;
-            }
-        }
-
-        .page {
-            @include breakpoint(tablet) {
                 gap: 15px;
                 border: 1px, solid, $color--gray;
             }
         }
 
         .current {
-            background-color: $color--white;
+            height: 3.5rem;
+            width: 3.5rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 15px;
             color: $color--white;
+            background: $color--white;;
             border: none;
 
             @include breakpoint(tablet) {
-                background-color: $color--darkbrown;
+                background: inherit;
                 border: inherit;
+                background-color: $color--darkbrown;
             }
         }
 
@@ -435,9 +453,9 @@ main {
     }
 }
 
-.archive, .search {
+.archive,
+.search {
     .p-card {
-        
         p {
             font-weight: 400;
             font-size: 1.6rem;

@@ -151,15 +151,15 @@
             margin-bottom: 5.5rem;
         }
 
-        > ol, ul {
+        /*> ol, ul {
 
             &:first-child {
                 margin-bottom: 0;
             }
-        }
+        }*/
     }
 
-    &__blockquote {
+    /*&__blockquote {
         @extend .c-inner--auto;
         padding: 5rem 5.9% 5.7rem 5.9%;
 
@@ -198,5 +198,5 @@
         @include breakpoint(pc) {
             margin: 5rem;
         }
-    }
+    }*/
 }
