@@ -20,6 +20,16 @@
         flex-direction: column;
     }
 
+    &__header {
+        background-color: $color--ivory;
+        margin-top: -46px;
+        justify-content: center;
+
+        @include breakpoint(sp600) {
+            margin-top: inherit;
+        }
+    }
+
     &__branch-menu {
         @extend .c-background__column;
         background-color: $color--white;

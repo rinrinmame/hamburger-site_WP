@@ -5,19 +5,9 @@
     width: auto;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    background-color: $color--ivory;
-    margin-top: -46px;
-
-    @include breakpoint(sp600) {
-        margin-top: inherit;
-    }
 
     &__nav {
-        height: auto;
-        width: auto;
-        display: flex;
-        flex-direction: column;
+        @extend .l-header;
         justify-content: space-around;
     }
 
@@ -38,10 +28,7 @@
     }
 
     &__title {
-        height: auto;
-        width: auto;
-        display: flex;
-        flex-direction: column;
+        @extend .l-header;
 
         h1 {
             text-align: center;
