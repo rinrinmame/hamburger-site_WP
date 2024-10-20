@@ -158,45 +158,4 @@
             }
         }*/
     }
-
-    /*&__blockquote {
-        @extend .c-inner--auto;
-        padding: 5rem 5.9% 5.7rem 5.9%;
-
-        @include breakpoint(tablet) {
-            padding: 5rem 7% 5.7rem 7%;
-        }
-
-        @include breakpoint(pc) {
-            padding: 5rem 6.4% 4.7rem 6.4%;
-        }
-    }
-
-    &__img {
-        padding: 0 10.1% 0 10.1%;
-
-        @include breakpoint(tablet) {
-            padding: 0;
-        }
-    }
-
-    &__list-area {
-        @include breakpoint(tablet) {
-            margin-left: 5rem;
-        }
-    }
-
-    &__code {
-        @extend .c-inner--auto;
-        position: relative;
-        margin: 5rem;
-
-        @include breakpoint(tablet) {
-            margin: 5rem;
-        }
-
-        @include breakpoint(pc) {
-            margin: 5rem;
-        }
-    }*/
 }
