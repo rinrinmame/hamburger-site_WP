@@ -1099,7 +1099,7 @@ main .wp-pagenavi .current {
   }
 }
 
-.c-title, .c-title__discription, .c-title__single, .c-title__archive-sub p, .c-title__archive h2, .c-title__front {
+.c-title, .c-title__discription, .c-title__single, .c-title__archive-sub p, .c-title__archive h2 {
   width: auto;
   height: auto;
   font-weight: 700;
@@ -1130,14 +1130,15 @@ main .wp-pagenavi .current {
   }
 }
 .c-title__front {
-  font-family: "M PLUS 1p";
-  position: relative;
-  margin: 12.2rem auto 11.1rem 2.5rem;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  margin-left: 2.5rem;
 }
 @media (min-width: 1024px) {
   .c-title__front {
-    font-size: 4rem;
-    margin: 23.4rem auto 23.7rem 8.6rem;
+    margin-left: 8.6rem;
   }
 }
 .c-title__archive h2 {
@@ -1709,10 +1710,15 @@ main .wp-pagenavi .current {
 }
 
 .p-title {
-  position: relative;
-  height: auto;
-  width: auto;
-  display: block;
+  font-family: "M PLUS 1p";
+  font-weight: 700;
+  font-size: 3.6rem;
+  color: #FFFFFF;
+}
+@media (min-width: 1024px) {
+  .p-title {
+    font-size: 4rem;
+  }
 }
 
 .p-discription__404 {

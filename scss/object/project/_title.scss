@@ -1,8 +1,12 @@
 @use "../../foundation/" as *;
 
 .p-title {
-    position: relative;
-    height: auto;
-    width: auto;
-    display: block;
+    font-family: "M PLUS 1p";
+    font-weight: 700;
+    font-size: 3.6rem;
+    color: $color--white;
+
+    @include breakpoint(pc) {
+        font-size: 4rem;
+    }
 }
