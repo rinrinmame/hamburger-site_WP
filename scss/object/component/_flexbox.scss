@@ -110,7 +110,10 @@
         }
     }
 
-    &__container,
+    &__container {
+        @extend .c-flexbox;
+    }
+    
     &__blockquote {
         @extend .c-flexbox;
     }
