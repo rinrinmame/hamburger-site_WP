@@ -380,6 +380,10 @@ main .wp-pagenavi span.pages:first-child {
     color: inherit;
   }
 }
+main .wp-pagenavi span.extend {
+  border: none;
+  color: #FFFFFF;
+}
 main .wp-pagenavi .previouspostslink {
   width: 10rem;
   height: 3.5rem;

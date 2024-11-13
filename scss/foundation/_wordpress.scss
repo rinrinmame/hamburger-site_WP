@@ -335,24 +335,31 @@ main {
             width: auto;
         }
 
-        span.pages {
-            display: none;
-
-            @include breakpoint(tablet) {
-                height: auto;
-                width: auto;
-                display: flex;
-                font-size: 1.6rem;
-                border: none; 
-                justify-content: center;
-            }
-
-            &:first-child {
-                padding-right: 15px;
+        span {
+            &.pages {
+                display: none;
 
                 @include breakpoint(tablet) {
-                    color: inherit;
+                    height: auto;
+                    width: auto;
+                    display: flex;
+                    font-size: 1.6rem;
+                    border: none; 
+                    justify-content: center;
                 }
+
+                &:first-child {
+                    padding-right: 15px;
+
+                    @include breakpoint(tablet) {
+                        color: inherit;
+                    }
+                }
+            }
+        
+            &.extend {
+                border: none;
+                color: $color--white;
             }
         }
 
