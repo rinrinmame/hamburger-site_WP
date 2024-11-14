@@ -18,7 +18,7 @@
             </div>
         <?php else : ?>
             <div class="c-background__title-single" style="background-image: url( '<?php echo esc_url($noimage); ?>' );">
-                <div class="c-background__cheeseburger-cover u-cover__single">
+                <div class="c-background__archive-cover u-cover__single">
                     <h1 class="c-title__single"><?php the_title(); ?></h1>
                 </div>
             </div>
