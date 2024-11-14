@@ -23,6 +23,7 @@ a {
   color: inherit;
   text-decoration: none;
 }
+<<<<<<< HEAD
 @media (hover: hover) {
   a:hover {
     color: inherit;
@@ -33,6 +34,25 @@ a {
 @media (hover: none) {
   a:hover {
     opacity: inherit;
+  }
+=======
+a:active {
+  color: inherit;
+  text-decoration: none;
+  opacity: 0.5;
+>>>>>>> 9c81e90ff1e61590f9e9ef5c17909d6bc98d24d2
+}
+@media (hover: hover) {
+  a:hover {
+    color: inherit;
+    text-decoration: none;
+    opacity: 0.5;
+  }
+}
+@media (hover: none) {
+  a:hover {
+    color: inherit;
+    text-decoration: none;
   }
 }
 
@@ -386,6 +406,10 @@ main .wp-pagenavi span.pages:first-child {
   main .wp-pagenavi span.pages:first-child {
     color: inherit;
   }
+}
+main .wp-pagenavi span.extend {
+  border: none;
+  color: #FFFFFF;
 }
 main .wp-pagenavi .previouspostslink {
   width: 10rem;

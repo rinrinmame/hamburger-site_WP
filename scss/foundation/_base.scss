@@ -26,6 +26,7 @@ a {
     color: inherit;
     text-decoration: none;
 
+<<<<<<< HEAD
     &:hover {
         @media (hover: hover) {
             color: inherit;
@@ -35,6 +36,25 @@ a {
 
         @media (hover: none) {
             opacity: inherit;
+        }
+=======
+    &:active {
+        color: inherit;
+        text-decoration: none;
+        opacity: 0.5;
+>>>>>>> 9c81e90ff1e61590f9e9ef5c17909d6bc98d24d2
+    }
+
+    &:hover {
+        @media (hover: hover) {
+            color: inherit;
+            text-decoration: none;
+            opacity: 0.5;
+        }
+
+            @media (hover: none) {
+            color: inherit;
+            text-decoration: none;
         }
     }
 }
