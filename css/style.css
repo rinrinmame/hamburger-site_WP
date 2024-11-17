@@ -900,13 +900,13 @@ main .wp-pagenavi .current {
   margin-inline: auto;
 }
 
-.c-background, .c-background__footer, .c-background__map-comment, .c-background__map-all, .c-background__column, .c-background__category, .c-background__branch-menu, .c-background__cover, .c-background__title-single, .c-background__archive, .c-background__title {
+.c-background, .c-background__footer, .c-background__map-comment, .c-background__map-all, .c-background__column, .c-background__category, .c-background__branch-menu, .c-background__cover, .c-background__title-single, .c-background__archive, .c-background__title, .c-background__dummy {
   width: auto;
   height: auto;
   display: block;
   position: relative;
 }
-.c-background__cover, .c-background__title-single, .c-background__archive, .c-background__category, .c-background__title {
+.c-background__cover, .c-background__title-single, .c-background__archive, .c-background__category, .c-background__title, .c-background__dummy {
   background-size: cover;
   background-position: center;
   overflow: hidden;
@@ -924,6 +924,9 @@ main .wp-pagenavi .current {
   .c-background__header {
     margin-top: inherit;
   }
+}
+.c-background__dummy {
+  background-image: url(../images/noimage.jpg);
 }
 .c-background__branch-menu {
   background-color: #FFFFFF;

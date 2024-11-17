@@ -30,6 +30,11 @@
         }
     }
 
+    &__dummy {
+        @extend .c-background__cover;
+        background-image: url(../images/noimage.jpg);
+    }
+
     &__branch-menu {
         @extend .c-background__column;
         background-color: $color--white;
