@@ -8,7 +8,6 @@
     <article id="post-<?php the_ID(); ?>" class="l-main__title p-title"<?php post_class(); ?>>
         <?php 
             $url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
-            $noimage = get_theme_file_uri( '/images/noimage.jpg' );
         ?>
         <?php if ($url) : ?>
             <div class="c-background__title-single" style="background-image: url( '<?php echo esc_url($url); ?>' );">
@@ -17,7 +16,7 @@
                 </div>
             </div>
         <?php else : ?>
-            <div class="c-background__title" style="background-image: url( '<?php echo esc_url($noimage); ?>' );">
+            <div class="c-background__title-single">
                 <div class="c-background__archive-cover u-cover__single">
                     <h1 class="c-title__single"><?php the_title(); ?></h1>
                 </div>

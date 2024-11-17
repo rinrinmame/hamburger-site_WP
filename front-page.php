@@ -3,14 +3,13 @@
             <article class="l-main__contents p-title">
                 <?php 
                     $url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
-                    $noimage = get_theme_file_uri( '/images/noimage.jpg' );
                 ?>
                 <?php if ($url) : ?>
                     <div class="c-background__title" style="background-image: url( '<?php echo esc_url($url); ?>' );">
                         <h2 class="c-title__front"><?php the_title(); ?></h2>
                     </div>
                 <?php else : ?>
-                    <div class="c-background__title" style="background-image: url( '<?php echo esc_url($noimage); ?>' );">
+                    <div class="c-background__title">
                         <h2 class="c-title__front"><?php the_title(); ?></h2>
                     </div>
                 <?php endif; ?>
