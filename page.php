@@ -7,7 +7,7 @@
     <article class="l-main__title p-title">
         <?php 
             $url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
-            $noimage = get_template_directory_uri() . 'images/noimage.jpg';
+            $noimage = get_template_directory_uri( '/images/noimage.jpg' );
         ?>
         <?php if ($url) : ?>
             <div class="c-background__title-single" style="background-image: url( '<?php echo esc_url($url); ?>' );">
