@@ -10,7 +10,7 @@
                         <h2 class="c-title__front"><?php the_title(); ?></h2>
                     </div>
                 <?php else : ?>
-                    <div class="c-background__title" style="background-image: url( '<?php echo esc_url($noimage); ?>' );">
+                    <div class="c-background__title" style="background-image: url( '<?php echo esc_url(get_template_directory_uri())?>/images/noimage.jpg' );">
                         <h2 class="c-title__front"><?php the_title(); ?></h2>
                     </div>
                 <?php endif; ?>

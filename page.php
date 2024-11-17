@@ -16,7 +16,7 @@
                 </div>
             </div>
         <?php else : ?>
-            <div class="c-background__title-single" style="background-image: url( '<?php echo esc_url($noimage); ?>' );">
+            <div class="c-background__title-single" style="background-image: url( '<?php echo esc_url(get_template_directory_uri())?>/images/noimage.jpg' );">
                 <div class="c-background__archive-cover u-cover__single">
                     <h2 class="c-title__single"><?php the_title() ?></h2>
                 </div>
