@@ -13,7 +13,7 @@
     <?php if ($url) : ?>
         <div class="c-background__title-single" style="background-image: url( '<?php echo esc_url($url); ?>' )">
             <div class="c-background__archive-cover u-cover__single">
-                <h1 class="c-title__single">たいとる</h1>
+                <h1 class="c-title__single"><?php the_title(); ?></h1>
             </div>
         </div>
     <?php else : ?>
