@@ -6,22 +6,22 @@
                 the_post(); ?>
     <article class="l-main__title p-title">
     <?php 
-            $url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
-            $noimage = get_template_directory_uri() . '/images/noimage.jpg';
-        ?>
-        <?php if ($url) : ?>
-            <div class="c-background__title-single" style="background-image: url( '<?php echo esc_url($url); ?>' );">
-                <div class="c-background__archive-cover u-cover__single">
-                    <h2 class="c-title__single"><?php the_title(); ?></h2>
-                </div>
+        $url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
+        $noimage = get_template_directory_uri() . '/images/noimage.jpg';
+    ?>
+    <?php if ($url) : ?>
+        <div class="c-background__title-single" style="background-image: url( '<?php echo esc_url($url); ?>' );">
+            <div class="c-background__archive-cover u-cover__single">
+                <h2 class="c-title__single"><?php the_title(); ?></h2>
             </div>
-        <?php else : ?>
-            <div class="c-background__title-single" style="background-image: url( '<?php echo esc_url($noimage); ?>' );">
-                <div class="c-background__archive-cover u-cover__single">
-                    <h2 class="c-title__single"><?php the_title() ?></h2>
-                </div>
+        </div>
+    <?php else : ?>
+        <div class="c-background__title-single" style="background-image: url( '<?php echo esc_url($noimage); ?>' );">
+            <div class="c-background__archive-cover u-cover__single">
+                <h2 class="c-title__single"><?php the_title() ?></h2>
             </div>
-        <?php endif; ?>    
+        </div>
+    <?php endif; ?>    
     </article>
     <article class="l-main__contents">
         <div id="post-<?php the_ID(); ?>" class="c-inner__single">
