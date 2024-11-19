@@ -358,8 +358,7 @@ main {
             }
         
             &.extend {
-                border: none;
-                color: $color--white;
+                display: none;
             }
         }
 
@@ -375,6 +374,7 @@ main {
             @include breakpoint (tablet) {
                 width: 3.5rem;
                 font-size: 0;
+                margin-right: 15px;
             }
 
             &::before {
@@ -385,7 +385,11 @@ main {
                 position: absolute;
                 background: url(../images/pagearrow__left.png) no-repeat center center;
                 margin-right: 15px;
-                left: 7px;
+                left: -12px;
+
+                @include breakpoint (tablet) {
+                    left: 7px;
+                }
             }
         }
 
@@ -402,6 +406,7 @@ main {
                 width: 3.5rem;
                 font-size: 0;
             }
+
             &::after {
                 content: "";
                 height: 1.8rem;
@@ -409,7 +414,11 @@ main {
                 display: inline-block;
                 position: absolute;
                 background: url(../images/pagearrow__right.png) no-repeat center center;
-                right: 7px;
+                right: -12px;
+
+                @include breakpoint (tablet) {
+                    right: 7px;
+                }
             }
         }
 
@@ -454,11 +463,11 @@ main {
     }
 }
 
-.single {
-    main {
-        padding-bottom: 367px;
-    }
-}
+//.single {
+    //main {
+    //    padding-bottom: 367px;
+    //}
+//}
 
 .archive,
 .search {

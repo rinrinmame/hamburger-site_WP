@@ -44,7 +44,7 @@ a:active {
 
 .l-body {
   height: 100%;
-  width: 100vw;
+  width: 100%;
   position: relative;
   min-height: 100%;
   font-family: "Roboto", sans-serif, "M PLUS 1p";
@@ -394,8 +394,7 @@ main .wp-pagenavi span.pages:first-child {
   }
 }
 main .wp-pagenavi span.extend {
-  border: none;
-  color: #FFFFFF;
+  display: none;
 }
 main .wp-pagenavi .previouspostslink {
   width: 10rem;
@@ -410,6 +409,7 @@ main .wp-pagenavi .previouspostslink {
   main .wp-pagenavi .previouspostslink {
     width: 3.5rem;
     font-size: 0;
+    margin-right: 15px;
   }
 }
 main .wp-pagenavi .previouspostslink::before {
@@ -420,7 +420,12 @@ main .wp-pagenavi .previouspostslink::before {
   position: absolute;
   background: url(../images/pagearrow__left.png) no-repeat center center;
   margin-right: 15px;
-  left: 7px;
+  left: -12px;
+}
+@media (min-width: 768px) {
+  main .wp-pagenavi .previouspostslink::before {
+    left: 7px;
+  }
 }
 main .wp-pagenavi .nextpostslink {
   width: 10rem;
@@ -444,7 +449,12 @@ main .wp-pagenavi .nextpostslink::after {
   display: inline-block;
   position: absolute;
   background: url(../images/pagearrow__right.png) no-repeat center center;
-  right: 7px;
+  right: -12px;
+}
+@media (min-width: 768px) {
+  main .wp-pagenavi .nextpostslink::after {
+    right: 7px;
+  }
 }
 main .wp-pagenavi .page {
   height: 3.5rem;
@@ -483,10 +493,6 @@ main .wp-pagenavi .current {
     border: inherit;
     background-color: #3C2B1C;
   }
-}
-
-.single main {
-  padding-bottom: 367px;
 }
 
 .archive .p-card p,
