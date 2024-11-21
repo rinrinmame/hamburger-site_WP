@@ -1462,6 +1462,8 @@ main .wp-pagenavi .current {
   justify-content: center;
   align-items: center;
   color: revert;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  cursor: pointer;
 }
 .c-card__button {
   height: 4.2rem;
