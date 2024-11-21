@@ -1479,7 +1479,7 @@ main .wp-pagenavi .current {
 @media (hover: none) {
   .c-card__button:hover {
     color: inherit;
-    background: inherit;
+    background-color: #FFFFFF;
   }
 }
 @media (min-width: 1024px) {
