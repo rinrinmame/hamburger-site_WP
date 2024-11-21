@@ -1227,6 +1227,8 @@ main .wp-pagenavi .current {
   position: relative;
   font-family: "M PLUS 1p";
   font-weight: 700;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  cursor: pointer;
 }
 .c-category:hover, .c-category dd:hover, .c-category dt:hover, .c-category h3:hover {
   opacity: 0.6;

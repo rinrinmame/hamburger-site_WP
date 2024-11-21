@@ -10,6 +10,8 @@
     position: relative;
     font-family: "M PLUS 1p";
     font-weight: 700;
+    -webkit-tap-highlight-color:rgba(0,0,0,0);
+    cursor:pointer;
 
     &:hover {
         opacity: 0.6;
