@@ -1700,8 +1700,10 @@ main .wp-pagenavi .current {
   }
 }
 
-.p-discription__404 {
-  min-height: 450px;
+@media (min-width: 1024px) {
+  .p-discription__404 {
+    min-height: 450px;
+  }
 }
 
 .p-search-form {
