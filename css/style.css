@@ -1470,9 +1470,11 @@ main .wp-pagenavi .current {
   background-color: #FFFFFF;
   border-radius: 35px 35px 35px 35px;
 }
-.c-card__button:hover {
-  color: #3C2A10;
-  background: rgba(222, 216, 211, 0.9);
+@media (hover: hover) {
+  .c-card__button:hover {
+    color: #3C2A10;
+    background: rgba(222, 216, 211, 0.9);
+  }
 }
 @media (min-width: 1024px) {
   .c-card__button {
