@@ -6,9 +6,11 @@ jQuery( function( $ ) {
 		}
 		timer = setTimeout(function() {
 		location.reload();
-		}, 100);
+		}, 10000000);
 	} );
 } );
+
+
 
 jQuery( function( $ ) {
 	if (window.matchMedia( '(max-width: 1203px)' ).matches) {
