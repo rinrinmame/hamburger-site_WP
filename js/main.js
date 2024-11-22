@@ -6,7 +6,7 @@ jQuery( function( $ ) {
 		}
 		timer = setTimeout(function() {
 		location.reload();
-		}, 10000000);
+		}, 50);
 	} );
 } );
 
