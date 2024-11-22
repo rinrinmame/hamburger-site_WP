@@ -1,4 +1,4 @@
-jQuery( function( $ ) {
+/*jQuery( function( $ ) {
 	var timer = false;
 		$(window).resize(function() {
 		if (timer !== false) {
@@ -8,7 +8,7 @@ jQuery( function( $ ) {
 		location.reload();
 		}, 50);
 	} );
-} );
+} );*/
 
 jQuery( function( $ ) {
 	if (window.matchMedia( '(max-width: 1203px)' ).matches) {
