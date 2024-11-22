@@ -1,4 +1,4 @@
-/*jQuery( function( $ ) {
+jQuery( function( $ ) {
 	var timer = false;
 		$(window).resize(function() {
 		if (timer !== false) {
@@ -6,9 +6,9 @@
 		}
 		timer = setTimeout(function() {
 		location.reload();
-		}, 50);
+		}, 100);
 	} );
-} );*/
+} );
 
 jQuery( function( $ ) {
 	if (window.matchMedia( '(max-width: 1203px)' ).matches) {
