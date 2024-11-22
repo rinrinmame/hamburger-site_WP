@@ -64,6 +64,11 @@
         background-color: $color--white;
         border-radius: 35px 35px 35px 35px;
 
+        &:active {
+            color: $color--black;
+            background: rgba($color: $color--pinkishgray, $alpha: 0.9);
+        }
+
         &:hover {
             @media (hover: hover) {
                 color: $color--black;

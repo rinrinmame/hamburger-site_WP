@@ -10,6 +10,10 @@
     position: relative;
     font-family: "M PLUS 1p";
     font-weight: 700;
+
+    &:active {
+        opacity: 0.6;
+    }
     
     &:hover {
         color: inherit;
