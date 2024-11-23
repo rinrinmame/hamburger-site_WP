@@ -863,6 +863,14 @@ main .wp-pagenavi .current {
     padding: 1rem 1rem 1rem 6.1rem;
   }
 }
+.c-search-form__keyword:active {
+  background-color: #FFFFFF;
+}
+@media (hover: hover) {
+  .c-search-form__keyword:hover {
+    background-color: #FFFFFF;
+  }
+}
 .c-search-form__submit {
   width: 28.3%;
   margin-left: 3.8%;
@@ -879,6 +887,14 @@ main .wp-pagenavi .current {
 @media (min-width: 1024px) {
   .c-search-form__submit {
     width: 13.6rem;
+  }
+}
+.c-search-form__submit:active {
+  background: rgba(112, 112, 112, 0.2);
+}
+@media (hover: hover) {
+  .c-search-form__submit:hover {
+    background: rgba(112, 112, 112, 0.2);
   }
 }
 
