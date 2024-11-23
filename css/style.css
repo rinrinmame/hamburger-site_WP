@@ -1227,14 +1227,8 @@ main .wp-pagenavi .current {
 .c-category:active, .c-category dd:active, .c-category dt:active, .c-category h3:active {
   opacity: 0.6;
 }
-.c-category:hover, .c-category dd:hover, .c-category dt:hover, .c-category h3:hover {
-  color: inherit;
-  text-decoration: none;
-}
 @media (hover: hover) {
   .c-category:hover, .c-category dd:hover, .c-category dt:hover, .c-category h3:hover {
-    color: inherit;
-    text-decoration: none;
     opacity: 0.6;
   }
 }
@@ -1254,6 +1248,17 @@ main .wp-pagenavi .current {
     font-size: 8rem;
   }
 }
+.c-category h3:active {
+  opacity: 0.6;
+}
+.c-category h3:hover {
+  text-decoration: none;
+}
+@media (hover: hover) {
+  .c-category h3:hover {
+    opacity: 0.6;
+  }
+}
 .c-category dt {
   font-size: 2.2rem;
 }
@@ -1268,10 +1273,32 @@ main .wp-pagenavi .current {
     margin-bottom: 1.8rem;
   }
 }
+.c-category dt:active {
+  opacity: 0.6;
+}
+.c-category dt:hover {
+  text-decoration: none;
+}
+@media (hover: hover) {
+  .c-category dt:hover {
+    opacity: 0.6;
+  }
+}
 .c-category dd {
   font-weight: 400;
   font-size: 1.6rem;
   line-height: 1.7;
+}
+.c-category dd:active {
+  opacity: 0.6;
+}
+.c-category dd:hover {
+  text-decoration: none;
+}
+@media (hover: hover) {
+  .c-category dd:hover {
+    opacity: 0.6;
+  }
 }
 
 .c-flexbox, .c-flexbox__blockquote, .c-flexbox__container, .c-flexbox__page-arrow, .c-flexbox__page, .c-flexbox__discription, .c-flexbox__title, .c-flexbox__branch-menu, .c-flexbox__header, .c-flexbox--center, .c-flexbox__img, .c-flexbox__page-count, .c-flexbox__footer, .c-flexbox__search-form {

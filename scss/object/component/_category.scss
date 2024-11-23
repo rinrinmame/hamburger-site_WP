@@ -16,12 +16,7 @@
     }
     
     &:hover {
-        color: inherit;
-        text-decoration: none;
-
         @media (hover: hover) {
-            color: inherit;
-            text-decoration: none;
             opacity: 0.6;
         }
     }
@@ -40,6 +35,17 @@
         @include breakpoint(pc) { 
             font-size: 8rem;    
         }
+
+        &:active {
+            opacity: 0.6;
+        }
+        
+        &:hover {
+            text-decoration: none;
+            @media (hover: hover) {
+                opacity: 0.6;
+            }
+        }
     }    
 
     dt {
@@ -54,6 +60,17 @@
         @include breakpoint(pc) {        
             margin-bottom: 1.8rem;   
         }
+
+        &:active {
+            opacity: 0.6;
+        }
+        
+        &:hover {
+            text-decoration: none;
+            @media (hover: hover) {
+                opacity: 0.6;
+            }
+        }
     }
 
     dd {
@@ -61,5 +78,16 @@
         font-weight: 400;
         font-size: 1.6rem;
         line-height: 1.7;
+
+        &:active {
+            opacity: 0.6;
+        }
+        
+        &:hover {
+            text-decoration: none;
+            @media (hover: hover) {
+                opacity: 0.6;
+            }
+        }
     }
 }
