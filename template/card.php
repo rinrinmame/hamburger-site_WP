@@ -1,12 +1,15 @@
 <div class="p-card c-flexbox__container">
     <figure class="p-card__item c-grid__card">
         <?php
-            $ID = get_post_thumbnail_id( $post->ID ); //アイキャッチ画像のID取得
+            //アイキャッチ画像のID取得
+            $ID = get_post_thumbnail_id( $post->ID );
 
+            //アイキャッチ画像があるときの処理
             $url = wp_get_attachment_url( $ID ); //アイキャッチ画像のID→アイキャッチ画像URL取得
-            $noimage = get_template_directory_uri() . '/images/noimage.jpg'; //テーマディレクトリURL＋アイキャッチ画像URL
-
             $alt = get_post_meta( $ID, '_wp_attachment_image_alt', true ); //アイキャッチ画像alt属性取得
+            
+            //アイキャッチ画像がないときの処理（ダミー画像表示）
+            $noimage = get_template_directory_uri() . '/images/noimage.jpg'; //テーマディレクトリURL＋ダミー画像URL
         ?>
         <?php if ( $url ) : ?>
             <img src="<?php echo esc_url( $url ); ?>" alt="<?php echo esc_html( $alt ); ?>">

@@ -1,21 +1,26 @@
 <?php get_header(); //header.phpを読み込むテンプレートタグ（インクルードタグ）?>
 <main class="l-main c-grid__body__child--main">
     <article class="l-main__contents p-title">
-    <?php 
-        $ID = get_post_thumbnail_id( $post->ID ); //アイキャッチ画像のID取得
+    <?php
+        //アイキャッチ画像のID取得
+        $ID = get_post_thumbnail_id( $post->ID );
 
+        //アイキャッチ画像があるときの処理
         $url = wp_get_attachment_url( $ID ); //アイキャッチ画像のID→アイキャッチ画像URL取得
-        $noimage = get_template_directory_uri() . '/images/noimage.jpg'; //テーマディレクトリURL＋アイキャッチ画像URL
+        $alt = get_post_meta( $ID, '_wp_attachment_image_alt', true ); //アイキャッチ画像alt属性取得
+        
+        //アイキャッチ画像がないときの処理（ダミー画像表示）
+        $noimage = get_template_directory_uri() . '/images/noimage.jpg'; //テーマディレクトリURL＋ダミー画像URL
     ?>
-        <?php if ( $url ) : ?>
-            <div class="c-background__title" style="background-image: url( '<?php echo esc_url( $url ); ?>' );">
-                <h2 class="c-title__front"><?php the_title(); ?></h2>
-            </div>
-        <?php else : ?>
-            <div class="c-background__title" style="background-image: url( '<?php echo esc_url( $noimage ); ?>' );">
-                <h2 class="c-title__front"><?php the_title(); ?></h2>
-            </div>
-        <?php endif; ?>
+    <?php if ( $url ) : ?>
+        <div class="c-background__title" style="background-image: url( '<?php echo esc_url( $url ); ?>' );">
+            <h2 class="c-title__front"><?php the_title(); ?></h2>
+        </div>
+    <?php else : ?>
+        <div class="c-background__title" style="background-image: url( '<?php echo esc_url( $noimage ); ?>' );">
+            <h2 class="c-title__front"><?php the_title(); ?></h2>
+        </div>
+    <?php endif; ?>
         <div class="p-branch-menu c-background__branch-menu">
             <div class="c-inner__branch-menu">
                 <ul class="c-flexbox__branch-menu">

@@ -1,15 +1,15 @@
 <?php get_header(); //header.phpを読み込むテンプレートタグ（インクルードタグ）?>
 <main class="l-main c-grid__body__child--main">
     <article class="l-main__title p-title">
-            <div class="c-background__archive">
-                <div class="c-background__archive-cover">
-                    <ul class="c-flexbox__title">   
-                        <li class="c-title__archive"><h2>Menu:</h2></li>
-                        <li class="c-title__archive-sub"><p><?php esc_html( the_archive_title() ); ?></p></li>
-                    </ul>
-                </div>
+        <div class="c-background__archive">
+            <div class="c-background__archive-cover">
+                <ul class="c-flexbox__title">   
+                    <li class="c-title__archive"><h2>Menu:</h2></li>
+                    <li class="c-title__archive-sub"><p><?php esc_html( the_archive_title() ); ?></p></li>
+                </ul>
             </div>
-        </article>
+        </div>
+    </article>
     <section class="l-main__discription p-discription">
         <div class="c-inner__archive">
             <div class="c-background__discription">
