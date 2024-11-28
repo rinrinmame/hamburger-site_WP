@@ -15,7 +15,7 @@
             <div class="c-background__discription">
                 <div class="c-inner__discription">
                     <div class="c-flexbox__discription">
-                        <h2 class="c-title__discription">「 <?php the_search_query(); ?> 」の検索結果：<?php echo esc_html($wp_query->found_posts); ?>件</h2>
+                        <h2 class="c-title__discription">「 <?php the_search_query(); ?> 」の検索結果：<?php echo esc_html( $wp_query->found_posts ); ?>件</h2>
                     </div>
                 </div>
             </div>
