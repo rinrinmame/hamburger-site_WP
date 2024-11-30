@@ -962,10 +962,26 @@ main .wp-pagenavi .current {
 .c-background__title {
   width: 100%;
   height: 28.5rem;
+  position: relative;
 }
 @media (min-width: 1024px) {
   .c-background__title {
     height: 53rem;
+  }
+}
+.c-background__title img {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 19/25;
+}
+@media (min-width: 768px) {
+  .c-background__title img {
+    aspect-ratio: 278/95;
+  }
+}
+@media (min-width: 1024px) {
+  .c-background__title img {
+    aspect-ratio: 1553/530;
   }
 }
 .c-background__category {
@@ -1164,15 +1180,19 @@ main .wp-pagenavi .current {
   }
 }
 .c-title__front {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  margin-left: 2.5rem;
+  position: absolute;
+  left: 6.66%;
+  transform: translateY(-50%);
+  top: 50%;
+}
+@media (min-width: 768px) {
+  .c-title__front {
+    left: 10.31%;
+  }
 }
 @media (min-width: 1024px) {
   .c-title__front {
-    margin-left: 8.6rem;
+    left: 5.5%;
   }
 }
 .c-title__archive h2 {
