@@ -18,16 +18,14 @@
         $noimage = get_template_directory_uri() . '/images/noimage.jpg'; //テーマディレクトリURL＋ダミー画像URL
     ?>
     <?php if ( $url ) : ?>
-        <div class="c-background__title-single" style="background-image: url( '<?php echo esc_url( $url ); ?>' )">
-            <div class="c-background__archive-cover u-cover__single">
-                <h1 class="c-title__single"><?php the_title(); ?></h1>
-            </div>
+        <div class="c-background__title-single">
+            <img src="<?php echo esc_url( $url ); ?>" alt="<?php echo esc_html( $alt ); ?>">
+            <h1 class="c-title__single"><?php the_title(); ?></h1>
         </div>
     <?php else : ?>
         <div class="c-background__title-single">
-            <div class="c-background__archive-cover u-cover__single" style="background-image: url( '<?php echo esc_url( $noimage ); ?>' )">
-                <h1 class="c-title__single"><?php the_title(); ?></h1>
-            </div>
+            <img src="<?php echo esc_url( $url ); ?>" alt="<?php echo esc_html( $noimage ); ?>">
+            <h1 class="c-title__single"><?php the_title(); ?></h1>
         </div>
     <?php endif; ?>
     </article>

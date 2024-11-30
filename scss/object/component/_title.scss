@@ -44,6 +44,22 @@
         }
     }
 
+    &__single {
+        @extend .c-title__front;
+        font-family: "M PLUS 1p";
+        left: 6.93%;
+
+        @include breakpoint(tablet) {
+            left: 10.3%;
+            font-size: 6rem;
+        }
+
+        @include breakpoint(pc) {
+            left: 5.53%;
+        }
+    }
+
+
     &__archive {
         h2 {
             @extend .c-title;
@@ -70,22 +86,6 @@
                     margin-left: 1.9rem;
                 }
             }
-        }
-    }
-
-    &__single {
-        @extend .c-title;
-        font-family: "M PLUS 1p";
-        position: absolute;
-        margin-left: 6.93%;
-
-        @include breakpoint(tablet) {
-            margin-left: 10.3%;
-            font-size: 6rem;
-        }
-
-        @include breakpoint(pc) {
-            margin-left: 5.53%;
         }
     }
 
