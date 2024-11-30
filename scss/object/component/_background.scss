@@ -41,6 +41,7 @@
         width: 100%;
         height: 28.5rem;
         position: relative;
+        background-color: $color--gray;
 
         @include breakpoint(pc) {
             height: 53rem;
@@ -58,7 +59,7 @@
         width: 100%;
         height: 22.5rem;
         position: relative;
-        background-color: $color--black;
+        background-color: $color--gray;
         overflow: hidden;
         display: flex;
         justify-content: center;
