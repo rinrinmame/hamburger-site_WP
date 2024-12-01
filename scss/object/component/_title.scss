@@ -41,7 +41,7 @@
         }
 
         @include breakpoint(pc) {
-            left: 5.5%;
+            left: 4.47%;
             font-size: 4rem;
         }
     }
@@ -60,35 +60,35 @@
         }
 
         @include breakpoint(pc) {
-            left: 5.53%;
+            left: 4.47%;
         }
     }
 
     &__archive {
-        h2 {
-            @extend .c-title;
-            font-family: "Roboto";
-            display: flex;
-            position: relative;
-            align-items: center;
-            
-            @include breakpoint(tablet) {
-                font-size: 6rem;
-            }
+        @extend .c-title;
+        font-family: "Roboto";
+        position: relative;
+        left: 9.86%;
+        display: flex;
+        align-items: center;
+        
+        @include breakpoint(tablet) {
+            font-size: 6rem;
+            left: 10.31%;
+        }
+
+        @include breakpoint(pc) {
+            left: 4.47%;
         }
 
         &-sub {
-            p {
-                @extend .c-title;
-                font-family: "M PLUS 1p";
-                font-size: 1.6rem;
-                display: flex;
-                position: relative;
-                align-items: center;
+            @extend .c-title__archive;
+            font-family: "M PLUS 1p";
+            font-size: 1.6rem;
 
-                @include breakpoint(tablet) {
-                    margin-left: 1.9rem;
-                }
+            @include breakpoint(tablet) {
+                margin-left: 1.9rem;
+                transform: translateY(0.5rem);
             }
         }
     }

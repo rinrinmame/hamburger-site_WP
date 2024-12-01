@@ -75,17 +75,15 @@
 
     &__title {
         @extend .c-flexbox;
-        height: 100%;
-        width: 100%;
-        position: relative;
-        margin-left: 3.7rem;
-        justify-content: center;
+        position: absolute;
+        left: 9.86%;
+        transform: translateY(-50%);
+        top: 50%;
     
         @include breakpoint(tablet) {
+            left: 10.31%;
             flex-direction: inherit;
-            justify-content: inherit;
-            align-items: center;
-            margin-left: 8.6rem;
+            align-items: center; 
         }
     }
 

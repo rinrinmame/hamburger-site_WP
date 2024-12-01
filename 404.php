@@ -2,11 +2,10 @@
 <main class="l-main c-grid__body__child--main">
     <article class="l-main__title p-title">
         <div class="c-background__archive">
-            <div class="c-background__archive-cover">
-                <ul class="c-flexbox__title">
-                    <li class="c-title__archive"><h2>404 Not Found</h2></li>
-                </ul>
-            </div>
+            <img src="<?php echo get_template_directory_uri() . '/images/main__takeout.jpg'; ?>" alt="" aria-hidden="true">
+            <ul class="c-flexbox__title">
+                <li class="c-list__archive"><h2 class="c-title__archive">404 Not Found</h2></li>
+            </ul>
         </div>
     </article>
     <section class="l-main__discription p-discription__404">
