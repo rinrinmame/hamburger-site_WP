@@ -30,6 +30,7 @@
     }
 
     &__front {
+        @extend .c-title;
         position: absolute;
         left: 6.66%;
         transform: translateY(-50%);
@@ -45,9 +46,12 @@
     }
 
     &__single {
-        @extend .c-title__front;
+        @extend .c-title;
         font-family: "M PLUS 1p";
+        position: absolute;
         left: 6.93%;
+        transform: translateY(-50%);
+        top: 50%;
 
         @include breakpoint(tablet) {
             left: 10.3%;
@@ -58,7 +62,6 @@
             left: 5.53%;
         }
     }
-
 
     &__archive {
         h2 {
