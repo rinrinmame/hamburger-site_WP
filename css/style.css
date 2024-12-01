@@ -1198,6 +1198,7 @@ main .wp-pagenavi .current {
 @media (min-width: 1024px) {
   .c-title__front {
     left: 5.5%;
+    font-size: 4rem;
   }
 }
 .c-title__single {
