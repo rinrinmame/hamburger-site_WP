@@ -2,7 +2,7 @@
 <main class="l-main c-grid__body__child--main">
     <article class="l-main__title p-title">
         <div class="c-background__archive">
-            <img src="<?php echo get_template_directory_uri() . '/images/main__takeout.jpg'; ?>" alt="" aria-hidden="true">
+            <img src="<?php echo get_template_directory_uri() . '/images/main__takeout.jpg'; ?>" alt="3つのハンバーガーとポテトの写真" aria-hidden="true" />
             <ul class="c-flexbox__title">
                 <li class="c-list__archive"><h2 class="c-title__archive">Menu:</h2></li>
                 <li class="c-list__archive"><p class="c-title__archive-sub"><?php esc_html( the_archive_title() ); ?></p></li>

@@ -1,13 +1,12 @@
 <?php get_header(); //header.phpを読み込むテンプレートタグ（インクルードタグ）?>
 <main class="l-main c-grid__body__child--main">
     <article class="l-main__title p-title">
-        <div class="c-background__archive">
-            <div class="c-background__archive-cover">
-                <ul class="c-flexbox__title">   
-                    <li class="c-title__archive"><h2>Search:</h2></li>
-                    <li class="c-title__archive-sub"><p><?php the_search_query(); ?></p></li>
-                </ul>
-            </div>
+        <div class="c-background__archive"> 
+            <img src="<?php echo get_template_directory_uri() . '/images/main__takeout.jpg'; ?>" alt="3つのハンバーガーとポテトの写真" aria-hidden="true" />
+            <ul class="c-flexbox__title">
+                <li class="c-list__archive"><h2 class="c-title__archive">Search:</h2></li>
+                <li class="c-list__archive"><p class="c-title__archive-sub"><?php the_search_query(); ?></p></li>
+            </ul>
         </div>
     </article>
     <section class="l-main__discription p-discription">

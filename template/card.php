@@ -12,9 +12,9 @@
             $noimage = get_template_directory_uri() . '/images/noimage.jpg'; //テーマディレクトリURL＋ダミー画像URL
         ?>
         <?php if ( $url ) : ?>
-            <img src="<?php echo esc_url( $url ); ?>" alt="<?php echo esc_html( $alt ); ?>">
+            <img src="<?php echo esc_url( $url ); ?>" alt="<?php echo esc_html( $alt ); ?>" />
         <?php else : ?>
-            <img src="<?php echo esc_url( $noimage ); ?>" alt="">
+            <img src="<?php echo esc_url( $noimage ); ?>" alt="ダミー画像" aria-hidden="true" />
         <?php endif; ?>
         <figcaption class="c-card__all">
             <div class="c-inner__figcaption">

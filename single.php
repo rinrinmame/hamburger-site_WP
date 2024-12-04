@@ -19,12 +19,12 @@
     ?>
     <?php if ( $url ) : ?>
         <div class="c-background__title-single">
-            <img src="<?php echo esc_url( $url ); ?>" alt="<?php echo esc_html( $alt ); ?>">
+            <img src="<?php echo esc_url( $url ); ?>" alt="<?php echo esc_html( $alt ); ?>" />
             <h1 class="c-title__single"><?php the_title(); ?></h1>
         </div>
     <?php else : ?>
         <div class="c-background__title-single">
-            <img src="<?php echo esc_url( $url ); ?>" alt="<?php echo esc_html( $noimage ); ?>">
+            <img src="<?php echo esc_url( $noimage ); ?>" alt="ダミー画像" aria-hidden="true" />
             <h1 class="c-title__single"><?php the_title(); ?></h1>
         </div>
     <?php endif; ?>
