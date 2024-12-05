@@ -1225,19 +1225,12 @@ main .wp-pagenavi .current {
 .c-title__archive, .c-title__archive-sub {
   font-family: "Roboto";
   position: relative;
-  left: 9.86%;
   display: flex;
   align-items: center;
 }
 @media (min-width: 768px) {
   .c-title__archive, .c-title__archive-sub {
     font-size: 6rem;
-    left: 10.31%;
-  }
-}
-@media (min-width: 1024px) {
-  .c-title__archive, .c-title__archive-sub {
-    left: 4.47%;
   }
 }
 .c-title__archive-sub {
@@ -1434,6 +1427,11 @@ main .wp-pagenavi .current {
     left: 10.31%;
     flex-direction: inherit;
     align-items: center;
+  }
+}
+@media (min-width: 1024px) {
+  .c-flexbox__title {
+    left: 5.53%;
   }
 }
 .c-flexbox__discription {

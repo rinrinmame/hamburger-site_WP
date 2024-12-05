@@ -68,17 +68,11 @@
         @extend .c-title;
         font-family: "Roboto";
         position: relative;
-        left: 9.86%;
         display: flex;
         align-items: center;
         
         @include breakpoint(tablet) {
             font-size: 6rem;
-            left: 10.31%;
-        }
-
-        @include breakpoint(pc) {
-            left: 4.47%;
         }
 
         &-sub {

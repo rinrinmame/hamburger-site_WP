@@ -85,6 +85,10 @@
             flex-direction: inherit;
             align-items: center; 
         }
+
+        @include breakpoint(pc) {
+            left: 5.53%;
+        }
     }
 
     &__discription {
