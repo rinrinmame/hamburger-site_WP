@@ -565,10 +565,6 @@ main .wp-pagenavi .current {
   top: 8px;
   right: 8px;
 }
-.l-header__title h1 {
-  text-align: center;
-}
-
 .l-main, .l-main__access, .l-main__contents, .l-main__title {
   position: relative;
   height: auto;
@@ -1172,6 +1168,7 @@ main .wp-pagenavi .current {
   font-size: 4rem;
   color: #707070;
   margin: 4.3rem auto 0 auto;
+  text-align: center;
 }
 @media (min-width: 768px) {
   .c-title__header {
@@ -1184,7 +1181,7 @@ main .wp-pagenavi .current {
     width: 32.5rem;
     height: 7.5rem;
     font-size: 6.4rem;
-    margin: 6.6rem 6.5rem 6.7rem 6.5rem;
+    margin: 7rem 6.5rem 7rem 6.5rem;
   }
 }
 .c-title__front {

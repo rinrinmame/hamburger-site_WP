@@ -15,6 +15,7 @@
         font-size: 4rem;
         color: $color--gray;
         margin: 4.3rem auto 0 auto;
+        text-align: center;
 
         @include breakpoint(tablet) {
             height: 5.3rem;
@@ -25,7 +26,7 @@
             width: 32.5rem;
             height: 7.5rem;
             font-size: 6.4rem;
-            margin: 6.6rem 6.5rem 6.7rem 6.5rem;
+            margin: 7rem 6.5rem 7rem 6.5rem;
         }
     }
 
