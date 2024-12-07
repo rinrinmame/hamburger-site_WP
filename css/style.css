@@ -628,7 +628,7 @@ main .wp-pagenavi .current {
   bottom: 0;
 }
 
-.c-button, .c-button__hamburger, .c-button__flex, .c-button__area a, .c-button__area {
+.c-button, .c-button__hamburger, .c-button__home, .c-button__flex, .c-button__area a, .c-button__area {
   width: auto;
   height: auto;
   display: block;
@@ -639,7 +639,11 @@ main .wp-pagenavi .current {
   flex-direction: column;
 }
 .c-button__home {
+  display: flex;
+  flex-direction: column;
   color: #707070;
+  transform: translateY(-50%);
+  top: 50%;
 }
 .c-button__menu {
   color: #707070;
@@ -1153,7 +1157,7 @@ main .wp-pagenavi .current {
   }
 }
 
-.c-title, .c-title__discription, .c-title__archive, .c-title__archive-sub, .c-title__single, .c-title__front {
+.c-title, .c-title__discription, .c-title__archive, .c-title__archive-sub, .c-title__single, .c-title__front, .c-title__header {
   width: auto;
   height: auto;
   font-weight: 700;
@@ -1164,11 +1168,11 @@ main .wp-pagenavi .current {
   font-family: "Roboto";
   width: 20.3rem;
   height: 4.7rem;
-  font-weight: 700;
   font-size: 4rem;
   color: #707070;
   margin: 4.3rem auto 0 auto;
   text-align: center;
+  position: relative;
 }
 @media (min-width: 768px) {
   .c-title__header {
@@ -1178,10 +1182,11 @@ main .wp-pagenavi .current {
 }
 @media (min-width: 1024px) {
   .c-title__header {
-    width: 32.5rem;
-    height: 7.5rem;
+    width: 100%;
+    height: 100%;
+    position: relative;
     font-size: 6.4rem;
-    margin: 7rem 6.5rem 7rem 6.5rem;
+    margin: 0 6.5rem;
   }
 }
 .c-title__front {
