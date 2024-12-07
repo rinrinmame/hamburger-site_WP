@@ -567,14 +567,12 @@ main .wp-pagenavi .current {
   top: 8px;
   right: 8px;
 }
-.l-header__title {
-  position: relative;
-  left: 4.18%;
-}
 @media (min-width: 1024px) {
   .l-header__title {
     transform: translateY(-50%);
     top: 50%;
+    left: 4.18%;
+    position: relative;
   }
 }
 
@@ -659,7 +657,6 @@ main .wp-pagenavi .current {
 .c-button__menu {
   color: #707070;
   font-weight: 700;
-  position: relative;
 }
 .c-button__hamburger {
   width: 32px;
@@ -1183,7 +1180,6 @@ main .wp-pagenavi .current {
   color: #707070;
   margin: 4.3rem auto 0 auto;
   text-align: center;
-  position: relative;
 }
 @media (min-width: 768px) {
   .c-title__header {

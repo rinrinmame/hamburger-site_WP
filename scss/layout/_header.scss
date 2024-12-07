@@ -32,12 +32,12 @@
 
     &__title {
         @extend .l-header;
-        position: relative;
-        left: 4.18%;
-
+        
         @include breakpoint(pc) {
             transform: translateY(-50%);
             top: 50%;
+            left: 4.18%;
+            position: relative;
         }
     }
 }
