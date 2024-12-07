@@ -547,8 +547,10 @@ main .wp-pagenavi .current {
   display: flex;
   flex-direction: column;
 }
-.l-header__nav {
-  justify-content: space-around;
+@media (min-width: 1024px) {
+  .l-header__nav {
+    justify-content: space-around;
+  }
 }
 .l-header__button {
   display: block;

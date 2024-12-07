@@ -8,7 +8,10 @@
 
     &__nav {
         @extend .l-header;
-        justify-content: space-around;
+
+        @include breakpoint(pc) {
+            justify-content: space-around;
+        }
     }
 
     &__button {
