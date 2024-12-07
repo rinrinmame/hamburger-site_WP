@@ -1,1 +1,4 @@
-# hamburger-sitewp
+テーマ概要: RaiseTech最終課題で作成した架空ハンバーガーサイトです
+URL: https://rina-hamburger.site/
+課題の概要: FLOCSS設計を用いてFigmaのデザインカンプから静的コーディングを行い、さらにWordPress化を行いました
+画面や機能の説明: 実際にメニュー名やキーワードで検索できる検索窓を配置しています
