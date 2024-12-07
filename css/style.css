@@ -565,6 +565,17 @@ main .wp-pagenavi .current {
   top: 8px;
   right: 8px;
 }
+.l-header__title {
+  position: relative;
+  left: 4.18%;
+}
+@media (min-width: 1024px) {
+  .l-header__title {
+    transform: translateY(-50%);
+    top: 50%;
+  }
+}
+
 .l-main, .l-main__access, .l-main__contents, .l-main__title {
   position: relative;
   height: auto;
@@ -642,8 +653,6 @@ main .wp-pagenavi .current {
   display: flex;
   flex-direction: column;
   color: #707070;
-  transform: translateY(-50%);
-  top: 50%;
 }
 .c-button__menu {
   color: #707070;
@@ -859,8 +868,7 @@ main .wp-pagenavi .current {
 }
 @media (min-width: 1024px) {
   .c-search-form__keyword {
-    width: 39.6rem;
-    padding: 1rem 1rem 1rem 6.1rem;
+    padding-left: 15.4%;
   }
 }
 .c-search-form__keyword:active {
@@ -886,7 +894,8 @@ main .wp-pagenavi .current {
 }
 @media (min-width: 1024px) {
   .c-search-form__submit {
-    width: 13.6rem;
+    margin-left: 2.5%;
+    width: 24.9%;
   }
 }
 .c-search-form__submit:active {
@@ -1186,7 +1195,7 @@ main .wp-pagenavi .current {
     height: 100%;
     position: relative;
     font-size: 6.4rem;
-    margin: 0 6.5rem;
+    margin: inherit;
   }
 }
 .c-title__front {
@@ -1372,17 +1381,14 @@ main .wp-pagenavi .current {
   .c-flexbox__header {
     flex-direction: row;
     padding: inherit;
+    justify-content: space-between;
+    flex-grow: 1;
   }
 }
 .c-flexbox__search-form {
   width: 100%;
   flex-direction: inherit;
   box-sizing: border-box;
-}
-@media (min-width: 1024px) {
-  .c-flexbox__search-form {
-    width: auto;
-  }
 }
 .c-flexbox__branch-menu {
   flex-grow: 1;
@@ -1801,8 +1807,9 @@ main .wp-pagenavi .current {
 }
 @media (min-width: 1024px) {
   .p-search-form {
-    width: auto;
-    margin: 8.6rem 3.1rem 8.5rem auto;
+    width: 35.15%;
+    margin: inherit;
+    right: 1.99%;
   }
 }
 .p-search-form::before {
@@ -1812,18 +1819,13 @@ main .wp-pagenavi .current {
   background: url(../images/header__search-form.png) no-repeat center center;
   display: inline-block;
   position: absolute;
-  top: 55%;
+  top: 50%;
   transform: translateY(-50%);
   left: 5px;
 }
 @media (min-width: 768px) {
   .p-search-form::before {
     left: 12px;
-  }
-}
-@media (min-width: 1024px) {
-  .p-search-form::before {
-    left: 1.2rem;
   }
 }
 

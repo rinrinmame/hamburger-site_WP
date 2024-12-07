@@ -25,6 +25,8 @@
         @include breakpoint(pc) {
             flex-direction: row;
             padding: inherit;
+            justify-content: space-between;
+            flex-grow: 1;
         }
     }
 
@@ -33,10 +35,6 @@
         width: 100%;
         flex-direction: inherit;
         box-sizing: border-box;
-
-        @include breakpoint(pc) {
-            width: auto;
-        }
     }
     
     &__branch-menu {

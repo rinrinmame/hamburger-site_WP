@@ -14,8 +14,9 @@
     margin: 4rem 0 3.8rem 0;
 
     @include breakpoint(pc) {
-        width: auto;
-        margin: 8.6rem 3.1rem 8.5rem auto;
+        width: 35.15%;
+        margin: inherit;
+        right: 1.99%;
     }
 
     &::before {
@@ -25,16 +26,12 @@
         background: url(../images/header__search-form.png) no-repeat center center;
         display: inline-block;
         position: absolute;
-        top: 55%;
+        top: 50%;
         transform: translateY(-50%);
         left: 5px;
 
         @include breakpoint(tablet) {
             left: 12px;
-        }
-
-        @include breakpoint(pc) {
-            left: 1.2rem;
         }
     }
 }

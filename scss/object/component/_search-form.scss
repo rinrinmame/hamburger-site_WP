@@ -19,8 +19,7 @@
         }
 
         @include breakpoint(pc) {
-            width: 39.6rem;
-            padding: 1rem 1rem 1rem 6.1rem;
+            padding-left: 15.4%;
         }
 
         &:active {
@@ -48,7 +47,8 @@
         }
 
         @include breakpoint(pc) {
-            width: 13.6rem;
+            margin-left: 2.5%;
+            width: 24.9%;
         }
 
         &:active {
