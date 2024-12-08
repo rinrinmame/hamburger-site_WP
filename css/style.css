@@ -1363,19 +1363,19 @@ main .wp-pagenavi .current {
   align-items: center;
 }
 .c-flexbox__header {
-  padding-left: 8.2%;
-  padding-right: 6.9%;
+  margin-left: 8.2%;
+  margin-right: 6.9%;
 }
 @media (min-width: 768px) {
   .c-flexbox__header {
-    padding-left: 17.2%;
-    padding-right: 17.2%;
+    margin-left: 17.2%;
+    margin-right: 17.2%;
   }
 }
 @media (min-width: 1024px) {
   .c-flexbox__header {
     flex-direction: row;
-    padding: inherit;
+    margin: inherit;
     justify-content: space-between;
   }
 }

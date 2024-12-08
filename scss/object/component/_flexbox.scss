@@ -14,19 +14,18 @@
 
     &__header {
         @extend .c-flexbox;
-        padding-left: 8.2%;
-        padding-right: 6.9%;
+        margin-left: 8.2%;
+        margin-right: 6.9%;
 
         @include breakpoint(tablet) {
-            padding-left: 17.2%;
-            padding-right: 17.2%;
+            margin-left: 17.2%;
+            margin-right: 17.2%;
         }
 
         @include breakpoint(pc) {
             flex-direction: row;
-            padding: inherit;
+            margin: inherit;
             justify-content: space-between;
-            //flex-grow: 1;
         }
     }
 
