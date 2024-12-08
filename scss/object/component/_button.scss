@@ -14,9 +14,6 @@
     }
 
     &__home {
-        @extend .c-button;
-        display: flex;
-        flex-direction: column;
         color: $color--gray;
     }
     

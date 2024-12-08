@@ -547,10 +547,8 @@ main .wp-pagenavi .current {
   display: flex;
   flex-direction: column;
 }
-@media (min-width: 1024px) {
-  .l-header__nav {
-    justify-content: space-around;
-  }
+.l-header__nav {
+  justify-content: space-around;
 }
 .l-header__button {
   display: block;
@@ -639,7 +637,7 @@ main .wp-pagenavi .current {
   bottom: 0;
 }
 
-.c-button, .c-button__hamburger, .c-button__home, .c-button__flex, .c-button__area a, .c-button__area {
+.c-button, .c-button__hamburger, .c-button__flex, .c-button__area a, .c-button__area {
   width: auto;
   height: auto;
   display: block;
@@ -650,8 +648,6 @@ main .wp-pagenavi .current {
   flex-direction: column;
 }
 .c-button__home {
-  display: flex;
-  flex-direction: column;
   color: #707070;
 }
 .c-button__menu {
