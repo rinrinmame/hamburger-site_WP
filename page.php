@@ -35,8 +35,6 @@
                 else :
             ?>
                 <p>表示する記事がありません</p>
-                <?php wp_link_pages(); ?>
-                <?php the_posts_navigation(); ?>
             <?php
                 endif;
             ?>
