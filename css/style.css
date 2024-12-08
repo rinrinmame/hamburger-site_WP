@@ -653,6 +653,7 @@ main .wp-pagenavi .current {
 .c-button__menu {
   color: #707070;
   font-weight: 700;
+  position: relative;
 }
 .c-button__hamburger {
   width: 32px;
@@ -1161,7 +1162,7 @@ main .wp-pagenavi .current {
   }
 }
 
-.c-title, .c-title__discription, .c-title__archive, .c-title__archive-sub, .c-title__single, .c-title__front, .c-title__header {
+.c-title, .c-title__discription, .c-title__archive, .c-title__archive-sub, .c-title__single, .c-title__front {
   width: auto;
   height: auto;
   font-weight: 700;
@@ -1173,9 +1174,9 @@ main .wp-pagenavi .current {
   width: 20.3rem;
   height: 4.7rem;
   font-size: 4rem;
+  font-weight: 700;
   color: #707070;
   margin: 4.3rem auto 0 auto;
-  text-align: center;
 }
 @media (min-width: 768px) {
   .c-title__header {
@@ -1376,7 +1377,6 @@ main .wp-pagenavi .current {
     flex-direction: row;
     padding: inherit;
     justify-content: space-between;
-    flex-grow: 1;
   }
 }
 .c-flexbox__search-form {

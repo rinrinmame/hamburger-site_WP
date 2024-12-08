@@ -8,14 +8,13 @@
     color: $color--white;
 
     &__header {
-        @extend .c-title;
         font-family: "Roboto";
         width: 20.3rem;
         height: 4.7rem;
         font-size: 4rem;
+        font-weight: 700;
         color: $color--gray;
         margin: 4.3rem auto 0 auto;
-        text-align: center;
 
         @include breakpoint(tablet) {
             height: 5.3rem;
