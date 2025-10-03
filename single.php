@@ -42,17 +42,7 @@
                 endif;
             ?>
         </div>
-    <?php //おすすめ情報 ?>
-    </article> 
-        <article class="l-main__contents">
-        <div class="c-inner__single">
-            <?php the_meta(); ?>
-            <?php echo post_custom('おすすめ情報タイトル'); ?>
-            <?php echo post_custom('概要'); ?>
-            <?php echo post_custom('リンク'); ?>
-        </div>
     </article>
-    <?php //ここまで ?>
 </main>
 <?php get_sidebar(); //siderbar.phpを読み込むテンプレートタグ（インクルードタグ）?>
 <?php get_footer(); //footer.phpを読み込むテンプレートタグ（インクルードタグ）?>
